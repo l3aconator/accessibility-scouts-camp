@@ -1,0 +1,27 @@
+name: Camp
+version: 0.0.1
+description: "Camp Thesis Theme"
+icon: empire
+author:
+  name: Kyle Bacon
+  email: hello@kylebaconcreative.com
+  url: http://kylebaconcreative.com
+homepage: http://accessibility-scouts.camp
+demo: http://accessibility-scouts.camp
+keywords: theme, core, modern, fast, responsive, html5, css3
+bugs: hello@kylebaconcreative.com
+license: N/A
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
