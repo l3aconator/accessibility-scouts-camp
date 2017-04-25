@@ -4,15 +4,22 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    htmlreplace = require('gulp-html-replace'),
+    replace = require('gulp-replace'),
     runSequence = require('run-sequence'),
+    sourcemaps = require('gulp-sourcemaps'),
     imagemin = require('gulp-imagemin'),
     svgo = require('gulp-svgo'),
     browserSync = require('browser-sync').create();
 
+// TODO: SVGGO IN THEME AND PAGES DIRECTORY
+// TODO: IMG MIN IN THEME AND PAGES DIRECTORY
+// TODO: ENVIRONMENT REPLACEMENT IN BASE.HTML.TWIG
+
 var config = {
     scripts: {
         src: [
-            'js/index.js'
+            'js/*.js'
         ],
         dest: 'dist/js-min'
     },
