@@ -10,10 +10,9 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     imagemin = require('gulp-imagemin'),
     svgo = require('gulp-svgo'),
+    sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create();
 
-// TODO: SVGGO IN THEME AND PAGES DIRECTORY
-// TODO: IMG MIN IN THEME AND PAGES DIRECTORY
 // TODO: ENVIRONMENT REPLACEMENT IN BASE.HTML.TWIG
 
 var config = {
@@ -21,16 +20,25 @@ var config = {
         src: [
             'js/*.js'
         ],
-        dest: 'dist/js-min'
+        destDev: 'dist/js/js-compiled',
+        destBuild: 'dist/js/js-min'
+    },
+
+    images: {
+        srcOne: 'images/**/*',
+        destOne: 'images',
+        srcTwo: '../../pages/**/*',
+        destTwo: '../../pages'
     },
 
     sass: {
-        src: 'styles/scss/**/*.scss'
+        src: 'styles/scss/**/*.scss',
+        dest: 'dist/styles/css-compiled'
     },
 
     css: {
-        src: 'styles/css/styles.css',
-        dest: 'dist/styles/css-compiled'
+        src: 'dist/styles/css-compiled/styles.css',
+        dest: 'dist/styles/css-min'
     },
 
     templates: {
@@ -44,65 +52,81 @@ var config = {
 
 gulp.task('minify-css', function() {
 	return gulp.src(config.css.src)
-	.pipe(cleanCSS({debug: true}, function(details) {
-		console.log(details.name + ': ' + details.stats.originalSize);
-		console.log(details.name + ': ' + details.stats.minifiedSize);
-	}))
-    .pipe(rename('styles.min.css'))
-	.pipe(gulp.dest(config.css.dest))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('sass', function() {
-	return gulp.src(config.sass.src)
-	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('styles/css'))
-	.pipe(browserSync.stream());
-});
-
-gulp.task('sass-build', function (callback) {
-	runSequence('sass', 'minify-css', callback)
-});
-
-gulp.task('sass:watch', ['minify-css'], function () {
-	gulp.watch(config.sass.src, ['sass']);
-});
-
-gulp.task('scripts', function() {
-    return gulp.src(config.scripts.src)
-        .pipe(concat('scripts.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(config.scripts.dest))
+    	.pipe(cleanCSS({debug: true}, function(details) {
+    		console.log(details.name + ': ' + details.stats.originalSize);
+    		console.log(details.name + ': ' + details.stats.minifiedSize);
+    	}))
+        .pipe(rename('styles.min.css'))
+    	.pipe(gulp.dest(config.css.dest))
         .pipe(browserSync.stream());
 });
 
-/*
-gulp.task('image-min', function() {
-    // need to finish building this
-    gulp.src('src/img/*')
+gulp.task('sassCompileDev', function() {
+	return gulp.src(config.sass.src)
+        .pipe(sourcemaps.init())
+    	.pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+    	.pipe(gulp.dest(config.sass.dest))
+    	.pipe(browserSync.stream());
+});
+
+gulp.task('sassCompileBuild', function() {
+	return gulp.src(config.sass.src)
+    	.pipe(sass().on('error', sass.logError))
+    	.pipe(gulp.dest(config.sass.dest))
+});
+
+gulp.task('sassBuild', function (callback) {
+	runSequence('sassCompileBuild', 'minify-css', callback)
+});
+
+gulp.task('sass:watch', function () {
+	gulp.watch(config.sass.src, ['sass']);
+});
+
+gulp.task('scriptsDev', function() {
+    return gulp.src(config.scripts.src)
+        .pipe(sourcemaps.init())
+        .pipe(concat('scripts.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(config.scripts.destDev))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsBuild', function() {
+    return gulp.src(config.scripts.src)
+        .pipe(concat('scripts.min.js'))
+        .pipe(gulp.dest(config.scripts.destBuild))
+});
+
+gulp.task('image-minOne', function() {
+    gulp.src(config.images.srcOne)
        .pipe(imagemin())
        .pipe(svgo())
-       .pipe(gulp.dest('dist/img-min'));
+       .pipe(gulp.dest(config.images.destOne));
 });
-*/
+
+gulp.task('image-minTwo', function() {
+    gulp.src(config.images.srcTwo)
+       .pipe(imagemin())
+       .pipe(svgo())
+       .pipe(gulp.dest(config.images.destTwo));
+});
 
 gulp.task('dev', function(callback) {
 	browserSync.init({
 		proxy: "http://scoutscamp.dev:8888/"
 	})
 
-    runSequence('sass-build', 'scripts', callback)
+    runSequence('sassCompileDev', 'scriptsDev', callback)
 
-    gulp.watch(config.scripts.src, ['scripts'])
-    gulp.watch(config.sass.src, ['sass-build'])
+    gulp.watch(config.scripts.src, ['scriptsDev'])
+    gulp.watch(config.sass.src, ['sassCompileDev'])
 	gulp.watch(config.content.src).on('change', browserSync.reload)
 	gulp.watch(config.templates.src).on('change', browserSync.reload);
 });
 
 gulp.task('build', function(callback) {
-
-    runSequence('sass-build', 'scripts', callback)
-
-    gulp.watch(config.scripts.src, ['scripts'])
-    gulp.watch(config.sass.src, ['sass-build'])
+    runSequence('sassBuild', 'scriptsBuild', 'image-minOne', 'image-minTwo', callback)
 });
