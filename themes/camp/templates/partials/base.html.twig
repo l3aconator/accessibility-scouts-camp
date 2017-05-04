@@ -10,32 +10,35 @@
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
+    {# Load fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+
+    {# Load stylesheets #}
     {% block stylesheets %}
-        {% do assets.addCss('theme://styles/css/styles.css') %}
+        <!--build:css-->{% do assets.addCss('theme://dist/styles/css-compiled/styles.css') %}<!--endbuild:css-->
     {% endblock %}
     {{ assets.css() }}
 
+    {# Load js #}
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
-        {% do assets.addJs('theme://js/index.js', 100) %}
+        <!--build:js-->{% do assets.addJs('theme://dist/js/js-compiled/index.js', 100) %}<!--endbuild:js-->
     {% endblock %}
     {{ assets.js() }}
 
 {% endblock head %}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
-    <div id="sb-site">
+    <div>
         {% block header %}
-        <header id="header">
-            <div id="navbar">
+        <header class="header">
+            <div class="container" id="navbar">
                 {% block header_navigation %}
-                {% include 'partials/navigation.html.twig' %}
+                    {% include 'partials/navigation.html.twig' %}
                 {% endblock %}
             </div>
         </header>
         {% endblock %}
-
-        {% block showcase %}{% endblock %}
 
         {% block body %}
         <section id="body" class="{{ class }}">
@@ -44,8 +47,17 @@
         {% endblock %}
 
         {% block footer %}
-        <footer id="footer">
-            testing
+        <footer class="footer">
+            <div class="container">
+                <div class="flex-grid--gutters">
+                    <div class="col">
+                        <span>&copy; 2017, Built with love by Kyle Bacon</span>
+                    </div>
+                    <div class="col">
+                        <a href="/about-manual/colophon">Colophon &raquo;</a>
+                    </div>
+                </div>
+            </div>
         </footer>
         {% endblock %}
     </div>

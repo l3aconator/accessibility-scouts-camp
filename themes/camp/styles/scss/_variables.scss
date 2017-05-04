@@ -1,0 +1,67 @@
+// -- Colors
+$color--gray-lightest: #F6FDFF;
+$color--gray-light: #E7ECEF;
+$color--gray-base: #C7CFDC;
+$color--gray-dark: #777E89;
+$color--gray-darkest: #3B434F;
+
+$color--default: $color--gray-base;
+$color--default__hover: darken($color--default, 10%);
+
+$color--primary: #68D8FF;
+$color--primary__hover: darken($color--primary, 10%);
+
+$color--secondary: #00264D;
+$color--secondary__hover: darken($color--secondary, 10%);
+
+$color--success: #A3FFDD;
+$color--success__hover: darken($color--success, 10%);
+
+$color--info: #3A5475;
+$color--info__hover: darken($color--info, 10%);
+
+$color--warning: #FFCA87;
+$color--warning__hover: darken($color--warning, 10%);
+
+$color--danger: #FF8686;
+$color--danger__hover: darken($color--danger, 10%);
+
+// -- Typography
+$base-font-family: "ministry", Helvetica, Arial, sans-serif;
+
+$type--size__h1: 2.5rem;
+$type--size__h2: 2rem;
+$type--size__h3: 1.5rem;
+$type--size__h4: 1.375rem;
+$type--size__h5: 1.125rem;
+$type--size__h6: 1rem;
+
+$type--size__small: 14px;
+$type--size__base: 16px;
+$type--size__large: $type--size__h4;
+
+// -- Grid
+$container: 80%;
+$grid--gutter: 30px;
+
+// -- Padding
+$padding--container: 60px;
+$padding--small: 15px;
+$padding--base: 30px;
+$padding--medium: 45px;
+$padding--large: 60px;
+
+$padding--button--small__vertical: 10px;
+$padding--button--small__horizontal: 15px;
+$padding--button--base__vertical: 15px;
+$padding--button--base__horizontal: 20px;
+$padding--button--large__vertical: 20px;
+$padding--button--large__horizontal: 25px;
+
+// -- Breakpoints
+$breakpoint--mobile: 480px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 480px;
+
+// -- Transitions
+$transition--default__button: all 200ms ease-in;
