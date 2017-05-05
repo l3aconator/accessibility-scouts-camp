@@ -1,0 +1,16 @@
+body {
+    background-color: $color--default;
+    color: $color--primary;
+}
+
+p {
+    font-size: $type--paragraph;
+}
+
+ul {
+    font-size: $type--paragraph;
+}
+
+#body {
+    z-index: 10;
+}

@@ -12,6 +12,8 @@
 
     {# Load fonts #}
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <script src="https://use.typekit.net/cam2mhj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     {# Load stylesheets #}
     {% block stylesheets %}
@@ -32,10 +34,17 @@
     <div>
         {% block header %}
         <header class="header">
-            <div class="container" id="navbar">
-                {% block header_navigation %}
-                    {% include 'partials/navigation.html.twig' %}
-                {% endblock %}
+            <div class="container flex-header">
+                <div class="header--logo">
+                    <a href="/">
+                        <img src="{{ url('theme://images/logo-placeholder.png') }}" alt="Logo" />
+                    </a>
+                </div>
+                <div class="header--navbar">
+                    {% block header_navigation %}
+                        {% include 'partials/navigation.html.twig' %}
+                    {% endblock %}
+                </div>
             </div>
         </header>
         {% endblock %}
@@ -51,7 +60,7 @@
             <div class="container">
                 <div class="flex-grid--gutters">
                     <div class="col">
-                        <span>&copy; 2017, Built with love by Kyle Bacon</span>
+                        <span class="copyright">&copy; 2017, Built with love by Kyle Bacon</span>
                     </div>
                     <div class="col">
                         <a href="/about-manual/colophon">Colophon &raquo;</a>

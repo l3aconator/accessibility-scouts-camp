@@ -13,5 +13,9 @@
 @import "framework/typography/base";
 @import "framework/typography/headings";
 
+@import "framework/ui/base";
 @import "framework/ui/buttons";
 @import "framework/ui/links";
+
+@import "templates/partials/nav";
+@import "templates/partials/footer";

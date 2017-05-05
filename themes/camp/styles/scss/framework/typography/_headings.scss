@@ -5,5 +5,29 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: $heading-font-family;
+}
+
+h1 {
+    font-size: $type--size__h1;
+}
+
+h2 {
+    font-size: $type--size__h2;
+}
+
+h3 {
+    font-size: $type--size__h3;
+}
+
+h4 {
+    font-size: $type--size__h4;
+}
+
+h5 {
+    font-size: $type--size__h5;
+}
+
+h6 {
+    font-size: $type--size__h6;
 }

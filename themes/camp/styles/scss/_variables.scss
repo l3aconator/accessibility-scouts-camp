@@ -1,50 +1,57 @@
-// -- Colors
+// ---- Colors ----
 $color--gray-lightest: #F6FDFF;
 $color--gray-light: #E7ECEF;
 $color--gray-base: #C7CFDC;
 $color--gray-dark: #777E89;
 $color--gray-darkest: #3B434F;
 
-$color--default: $color--gray-base;
+$color--default: #FDE9DD;
 $color--default__hover: darken($color--default, 10%);
 
-$color--primary: #68D8FF;
+$color--primary: #2E112D;
 $color--primary__hover: darken($color--primary, 10%);
 
 $color--secondary: #00264D;
 $color--secondary__hover: darken($color--secondary, 10%);
 
-$color--success: #A3FFDD;
+$color--success: #019875;
 $color--success__hover: darken($color--success, 10%);
 
-$color--info: #3A5475;
+$color--info: #FFA11B;
 $color--info__hover: darken($color--info, 10%);
 
-$color--warning: #FFCA87;
+$color--warning: #FF6C40;
 $color--warning__hover: darken($color--warning, 10%);
 
-$color--danger: #FF8686;
+$color--danger: #CC0037;
 $color--danger__hover: darken($color--danger, 10%);
 
-// -- Typography
-$base-font-family: "ministry", Helvetica, Arial, sans-serif;
+// ---- Typography ----
+$base-font-family: 'Noto Serif', serif;
+$heading-font-family: 'Century Gothic', "foco", sans-serif;
 
-$type--size__h1: 2.5rem;
-$type--size__h2: 2rem;
-$type--size__h3: 1.5rem;
-$type--size__h4: 1.375rem;
-$type--size__h5: 1.125rem;
-$type--size__h6: 1rem;
-
-$type--size__small: 14px;
+$type--size__large: 3.583em;
+$type--size__h1: 2.986em;
+$type--size__h2: 2.488em;
+$type--size__h3: 2.074em;
+$type--size__h4: 1.728em;
+$type--size__h5: 1.44em;
+$type--size__h6: 1.2em;
 $type--size__base: 16px;
-$type--size__large: $type--size__h4;
+$type--size__small: 0.833em;
 
-// -- Grid
+$type--paragraph: $type--size__h5;
+
+// ---- Grid ----
 $container: 80%;
+$container--content: 55%;
 $grid--gutter: 30px;
 
-// -- Padding
+// ---- Nav ----
+$nav--height: 80px;
+$nav--height__hover: 90px;
+
+// ---- Padding ----
 $padding--container: 60px;
 $padding--small: 15px;
 $padding--base: 30px;
@@ -58,10 +65,13 @@ $padding--button--base__horizontal: 20px;
 $padding--button--large__vertical: 20px;
 $padding--button--large__horizontal: 25px;
 
-// -- Breakpoints
+// ---- Radius ----
+$border-radius--default: 15px;
+
+// ---- Breakpoints ----
 $breakpoint--mobile: 480px;
 $breakpoint--tablet: 768px;
 $breakpoint--desktop: 480px;
 
-// -- Transitions
-$transition--default__button: all 200ms ease-in;
+// ---- Transitions ----
+$transition--default__button: all 200ms ease-in-out;

@@ -1,0 +1,11 @@
+.footer {
+    background-color: $color--primary;
+    color: $color--default;
+    padding: $padding--base;
+
+    .copyright {
+        text-transform: uppercase;
+        font-size: $type--size__base;
+        letter-spacing: 0.02em;
+    }
+}
