@@ -41,6 +41,13 @@
                     </a>
                 </div>
                 <div class="header--navbar">
+                    {% if config.plugins.login.enabled and grav.user.username %}
+                        {% include 'partials/login-status.html.twig' %}
+                    {% else %}
+                        <span class="login-status">
+                            <a href="/register">Create an Account &raquo;</a> or <a href="/login">Login &raquo;</a>
+                        </span>
+                    {% endif %}
                     {% block header_navigation %}
                         {% include 'partials/navigation.html.twig' %}
                     {% endblock %}
@@ -62,8 +69,8 @@
                     <div class="col">
                         <span class="copyright">&copy; 2017, Built with love by Kyle Bacon</span>
                     </div>
-                    <div class="col">
-                        <a href="/about-manual/colophon">Colophon &raquo;</a>
+                    <div class="col col--custom__footer">
+                        <a class="footer--link" href="/about-manual/colophon">Colophon &raquo;</a>
                     </div>
                 </div>
             </div>

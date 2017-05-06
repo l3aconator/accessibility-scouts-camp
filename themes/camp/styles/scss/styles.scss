@@ -16,6 +16,10 @@
 @import "framework/ui/base";
 @import "framework/ui/buttons";
 @import "framework/ui/links";
+@import "framework/ui/notices";
+@import "framework/ui/images";
 
 @import "templates/partials/nav";
 @import "templates/partials/footer";
+@import "templates/partials/section-badge";
+@import "templates/partials/login-status";

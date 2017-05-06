@@ -1,13 +1,5 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-	{% if contentContainer %}
-	<div class="container--content">
-		{{ page.content }}
-	</div>
-	{% else %}
-	<div class="container">
-		{{ page.content }}
-	</div>
-	{% endif %}
+	{{ page.content }}
 {% endblock %}

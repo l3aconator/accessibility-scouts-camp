@@ -1,3 +1,4 @@
 ---
-title: Audio
+title: Audio Manual
+icon: audio
 ---

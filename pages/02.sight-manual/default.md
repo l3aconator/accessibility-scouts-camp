@@ -1,3 +1,4 @@
 ---
-title: Sight
+title: Sight Manual
+icon: sight
 ---

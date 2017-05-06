@@ -1,0 +1,13 @@
+.section--badge-cta {
+    position: relative;
+
+    &__yellow {
+        background-color: $color--info;
+    }
+
+    .badge--box {
+        position: absolute;
+        top: -60px;
+    }
+
+}

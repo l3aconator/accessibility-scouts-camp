@@ -1,3 +1,4 @@
 ---
 title: Settings
+icon: settings
 ---

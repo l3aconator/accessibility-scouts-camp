@@ -1,4 +1,7 @@
 // ---- Colors ----
+$theme--images: '../../../images/';
+
+// ---- Colors ----
 $color--gray-lightest: #F6FDFF;
 $color--gray-light: #E7ECEF;
 $color--gray-base: #C7CFDC;
@@ -39,6 +42,7 @@ $type--size__h5: 1.44em;
 $type--size__h6: 1.2em;
 $type--size__base: 16px;
 $type--size__small: 0.833em;
+$type--size__smallest: 0.694em;
 
 $type--paragraph: $type--size__h5;
 
@@ -48,7 +52,7 @@ $container--content: 55%;
 $grid--gutter: 30px;
 
 // ---- Nav ----
-$nav--height: 80px;
+$nav--height: 100px;
 $nav--height__hover: 90px;
 
 // ---- Padding ----
@@ -72,6 +76,9 @@ $border-radius--default: 15px;
 $breakpoint--mobile: 480px;
 $breakpoint--tablet: 768px;
 $breakpoint--desktop: 480px;
+
+// ---- Box shadows ----
+$box-shadow--default: 0 4px 11px 0 rgba(192,151,127,0.73);
 
 // ---- Transitions ----
 $transition--default__button: all 200ms ease-in-out;

@@ -1,33 +1,50 @@
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
+.h5,
 h6 {
     font-family: $heading-font-family;
+    margin-top: $padding--medium;
+    margin-bottom: $padding--medium;
+
+    &__serif {
+        font-family: $base-font-family;
+    }
 }
 
-h1 {
+h1,
+.h1 {
     font-size: $type--size__h1;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: $type--size__h2;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: $type--size__h3;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: $type--size__h4;
 }
 
-h5 {
+h5,
+.h5 {
     font-size: $type--size__h5;
 }
 
-h6 {
+h6,
+.h6 {
     font-size: $type--size__h6;
 }

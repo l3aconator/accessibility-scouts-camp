@@ -1,40 +1,94 @@
 ---
 title: Home
 visible: false
+twig_first: true
+process:
+    twig: true
 ---
+<section class="container--content" markdown="1">
+# Making the scary forest of the web a better place for all
 
-# Grav is Running!
-## You have installed **Grav** successfully
+### Welcome fellow scouts!
 
-Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **antimatter** theme to get you started.
+The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the wild forest of the Internet and make it usable for all. (Or as close as we can get!)
 
-!!! If you want a more **full-featured** base install, you should check out [**Skeleton** packages available in the downloads](http://getgrav.org/downloads).
+We'll be looking at the three senses used to interact with content: sight, touch, and hearing. People with one disability, or a combination of several, impacts the experience of a website or web app. Information, learning, or a specific tool shouldn't cater to one audience, but many.
 
-### Find out all about Grav
+#### These are the field manuals you’ll be going through:
+</section>
+<section class="container">
+    <div class="flex-grid--gutters">
+        <div class="col">
+            <div class="cover--box">
+                <img alt="The cover of the accessibilityscouts.camp sight manual." src="/user/pages/01.home/sight-cover.png">
+            </div>
+            <h4>SIGHT Manual</h4>
+            <ul class="toc--list">
+            {% for child in page.find('/sight-manual').children %}
+                <li class="toc--list-item">
+                    <a class="toc--list-item-link" href="{{ child.url }}">{{ child.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col">
+            <div class="cover--box">
+                <img alt="The cover of the accessibilityscouts.camp sound manual." src="/user/pages/01.home/sound-cover.png">
+            </div>
+            <h4>AUDIO Manual</h4>
+            <ul class="toc--list">
+            {% for child in page.find('/audio-manual').children %}
+                <li class="toc--list-item">
+                    <a class="toc--list-item-link" href="{{ child.url }}">{{ child.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col">
+            <div class="cover--box">
+                <img alt="The cover of the accessibilityscouts.camp touch manual." src="/user/pages/01.home/touch-cover.png">
+            </div>
+            <h4>TOUCH Manual</h4>
+            <ul class="toc--list">
+            {% for child in page.find('/touch-manual').children %}
+                <li class="toc--list-item">
+                    <a class="toc--list-item-link" href="{{ child.url }}">{{ child.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col">
+            <div class="cover--box">
+                <img alt="The cover of the accessibilityscouts.camp about manual." src="/user/pages/01.home/about-cover.png">
+            </div>
+            <h4>ABOUT Manual</h4>
+            <ul class="toc--list">
+            {% for child in page.find('/about-manual').children %}
+                <li class="toc--list-item">
+                    <a class="toc--list-item-link" href="{{ child.url }}">{{ child.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="container--content section--marg" markdown="1">
+<div class="box purple stripe" markdown="1">
+#### A note from the camp counselor
 
-* Learn about **Grav** by checking out our dedicated [Learn Grav](http://learn.getgrav.org) site.
-* Download **plugins**, **themes**, as well as other Grav **skeleton** packages from the [Grav Downloads](http://getgrav.org/downloads) page.
-* Check out our [Grav Development Blog](http://getgrav.org/blog) to find out the latest goings on in the Grav-verse.
-
-### Edit this Page
-
-To edit this page, simply navigate to the folder you installed **Grav** into, and then browse to the `user/pages/01.home` folder and open the `default.md` file in your [editor of choice](http://learn.getgrav.org/basics/requirements).  You will see the content of this page in [Markdown format](http://learn.getgrav.org/content/markdown).
-
-### Create a New Page
-
-Creating a new page is a simple affair in **Grav**.  Simply follow these simple steps:
-
-1. Navigate to your pages folder: `user/pages/` and create a new folder.  In this example, we will use [explicit default ordering](http://learn.getgrav.org/content/content-pages) and call the folder `02.mypage`.
-2. Launch your text editor and paste in the following sample code:
-
-        ---
-        title: My New Page
-        ---
-        # My New Page!
-
-        This is the body of **my new page** and I can easily use _Markdown_ syntax here.
-
-3. Save this file in the `user/pages/02.mypage/` folder as `default.md`. This will tell **Grav** to render the page using the **default** template.
-4. That is it! Reload your browser to see your new page in the menu.
-
-! NOTE: The page will automatically show up in the Menu after the "Home" menu item. If you wish to change the name that shows up in the Menu, simple add: `menu: My Page` between the dashes in the page content. This is called the YAML front matter, and it is where you configure page-specific options.
+Consider if a business didn't have wheelchair ramps for those to get inside? Or cashiers told visually impaired patients the wrong amount of money to pay for something and pocketed the excess? Or denied service because the patron can't hear you? All these are extreme edge cases, but it happens. The severity of those concepts happen on the web. Let's work together to make the web better for everyone. Ready to start exploring?
+</div>
+</section>
+<section class="container section--pad">
+    <div class="flex-grid--gutters">
+        <div class="col--width__four">
+            <div class="badge--box">
+                <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
+            </div>
+        </div>
+        <div class="col--width__eight">
+            <h3>Ready to jump in and start earnin’ some  merit badges?</h3>
+            <p class="h3 h3__serif">Let's start with <a class="img--badge__trigger" href="/sight-manual/color-contrast">color contrast &raquo;</a></p>
+        </div>
+    </div>
+</section>

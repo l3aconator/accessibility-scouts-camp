@@ -1,6 +1,7 @@
 body {
     background-color: $color--default;
     color: $color--primary;
+    background-image: url('#{$theme--images}light-noise.png');
 }
 
 p {

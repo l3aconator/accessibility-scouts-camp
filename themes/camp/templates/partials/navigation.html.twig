@@ -29,11 +29,11 @@
     {% else %}
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-            <li class="{{ current_page }} nav--item {{ page.title|lower }}">
-                <a class="nav--link" href="{{ page.url }}">
-                    {{ page.menu }}
-                </a>
-            </li>
+            <a class="nav--wrap" href="{{ page.url }}">
+                <li class="{{ current_page }} nav--item nav--item__{{ page.header.icon|lower }}">
+                    {% include 'partials/navigation-icons.html.twig' %}
+                </li>
+            </a>
         {% endfor %}
     {% endif %}
 </ul>
