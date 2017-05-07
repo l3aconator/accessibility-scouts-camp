@@ -10,7 +10,6 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     imagemin = require('gulp-imagemin'),
     svgo = require('gulp-svgo'),
-    sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create();
 
 // TODO: ENVIRONMENT REPLACEMENT IN BASE.HTML.TWIG
