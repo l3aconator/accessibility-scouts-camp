@@ -3,6 +3,17 @@
 
     &__yellow {
         background-color: $color--info;
+        background-image: url('#{$theme--images}light-noise.png');
+    }
+
+    &__purple {
+        background-color: $color--primary;
+        background-image: url('#{$theme--images}dark-noise.png');
+        color: $color--default;
+
+        h5 {
+            font-family: $base-font-family;
+        }
     }
 
     .badge--box {

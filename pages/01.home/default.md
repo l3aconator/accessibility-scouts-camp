@@ -16,6 +16,7 @@ We'll be looking at the three senses used to interact with content: sight, touch
 
 #### These are the field manuals you’ll be going through:
 </section>
+
 <section class="container">
     <div class="flex-grid--gutters">
         <div class="col">
@@ -72,13 +73,17 @@ We'll be looking at the three senses used to interact with content: sight, touch
         </div>
     </div>
 </section>
-<section class="container--content section--marg" markdown="1">
+
+<section>
+<div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
 #### A note from the camp counselor
 
 Consider if a business didn't have wheelchair ramps for those to get inside? Or cashiers told visually impaired patients the wrong amount of money to pay for something and pocketed the excess? Or denied service because the patron can't hear you? All these are extreme edge cases, but it happens. The severity of those concepts happen on the web. Let's work together to make the web better for everyone. Ready to start exploring?
 </div>
+</div>
 </section>
+
 <section class="container section--pad">
     <div class="flex-grid--gutters">
         <div class="col--width__four">
