@@ -5,8 +5,14 @@ twig_first: true
 process:
     twig: true
 ---
+<section>
+    <img src="user/pages/01.home/placeholder-ratio.jpg" alt="An illustration of a computer in a forest" />
+</section>
+
 <section class="container--content" markdown="1">
 # Making the scary forest of the web a better place for all
+
+---
 
 ### Welcome fellow scouts!
 

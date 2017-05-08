@@ -24,7 +24,7 @@
     {# Load js #}
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
-        <!--build:js-->{% do assets.addJs('theme://dist/js/js-compiled/index.js', 100) %}<!--endbuild:js-->
+        <!--build:js-->{% do assets.addJs('theme://dist/js/js-compiled/scripts.js', 100) %}<!--endbuild:js-->
     {% endblock %}
     {{ assets.js() }}
 
@@ -54,6 +54,9 @@
                 </div>
             </div>
         </header>
+        {% if theme_config.dropdown.enabled %}
+        {% include 'partials/navigation-secondary.html.twig' %}
+        {% endif %}
         {% endblock %}
 
         {% block body %}

@@ -1,5 +1,6 @@
 ---
 title: Color Contrast
+visible: true
 ---
 <section>
 [ILLUSTRATION]

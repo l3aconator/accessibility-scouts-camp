@@ -3,21 +3,35 @@
 {% block content %}
     {% if config.plugins.login.enabled and grav.user.authenticated %}
     <section>
-        <div class="container">
+        <div class="container mt--90 mb--90">
             <div class="flex-grid--gutters">
-                <div class="col--width__four">
+                <div class="col--width__five">
                     <img class="img--coat" alt="A scout coat illustration" src="/user/pages/06.badge-manual/coat.png">
                 </div>
-                <div class="col--width__eight">
-                    <h1 class="h3">Hiya {{ grav.user.fullname ?: grav.user.username }}! Here are the badges you’ve earned so far.</h1>
+                <div class="col--width__seven">
+                    <h1>Hiya {{ grav.user.fullname ?: grav.user.username }}! Here are the badges you’ve earned so far.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <p>
+                {{ grav.user.badges.testing }}
+            </p>
+        </div>
+    </section>
+    {% else %}
+    <section>
+        <div class="container mt--90 mb--90" markdown="1">
+            <div class="flex-grid--gutters">
+                <div class="col--width__five">
+                    <img class="img--coat" alt="A scout coat illustration" src="/user/pages/06.badge-manual/coat.png">
+                </div>
+                <div class="col--width__seven">
+                    <h1>Hiya scout! If you’d like  to keep track of your badges, <a href="/register">create an account</a>!</h1>
+                    <h3>If you already have one, <a href="/login">login here &raquo;</a></h3>
                 </div>
             </div>
         </div>
     </section>
-    {% else %}
-    <div class="container--content" markdown="1">
-        <h1>Hiya scout! If you'd like to keep track of your badges, why don't you <a href="/register">create an account</a>?</h1>
-        <h3>Already have one?! <a href="/login">Login here &raquo;</a></h3>
-    </div>
     {% endif %}
 {% endblock %}

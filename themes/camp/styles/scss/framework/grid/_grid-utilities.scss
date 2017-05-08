@@ -11,12 +11,20 @@
     &--60 {
         padding-top: $padding--large;
     }
+
+    &--90 {
+        padding-top: $padding--huge;
+    }
 }
 
 .pb {
 
     &--60 {
         padding-bottom: $padding--large;
+    }
+
+    &--90 {
+        padding-bottom: $padding--huge;
     }
 }
 
@@ -32,11 +40,19 @@
     &--60 {
         margin-top: $padding--large;
     }
+
+    &--90 {
+        margin-top: $padding--huge;
+    }
 }
 
 .mb {
 
     &--60 {
         margin-bottom: $padding--large;
+    }
+
+    &--90 {
+        margin-bottom: $padding--huge;
     }
 }

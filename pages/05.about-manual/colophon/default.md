@@ -1,5 +1,6 @@
 ---
 title: Colophon
+visible: true
 ---
 [ILLUSTRATION] [BADGE]
 <section class="container--content" markdown="1">

@@ -1,5 +1,6 @@
 ---
 title: Color Blindness
+visible: true
 ---
 <section>
 [ILLUSTRATION]
