@@ -44,6 +44,11 @@ var config = {
         src: './templates/**/*.twig'
     },
 
+    baseTemplate: {
+        src: './templates/partials/base.html.twig',
+        dest: './templates/partials/'
+    },
+
     content: {
         src: '../../pages/**/*.md'
     }
@@ -113,12 +118,44 @@ gulp.task('image-minTwo', function() {
        .pipe(gulp.dest(config.images.destTwo));
 });
 
+// Injects dev css (unminified) for quicker compile times
+gulp.task('envDev', function() {
+    gulp.src(config.baseTemplate.src)
+    .pipe(htmlreplace({
+        'css': {
+            src: "{% do assets.addCss('theme://dist/styles/css-compiled/styles.css') %}",
+            tpl: '<!-- build:css -->%s<!-- endbuild -->'
+        },
+        'js': {
+            src: "{% do assets.addJs('theme://dist/js/js-compiled/scripts.js', {'priority': 101, 'group':'footer'}) %}",
+            tpl: '<!-- build:js -->%s<!-- endbuild -->'
+        }
+    }))
+    .pipe(gulp.dest(config.baseTemplate.dest));
+});
+
+// Injects prod css minified
+gulp.task('envBuild', function() {
+    gulp.src(config.baseTemplate.src)
+    .pipe(htmlreplace({
+        'css': {
+            src: "{% do assets.addCss('theme://dist/styles/css-min/styles.min.css') %}",
+            tpl: '<!-- build:css -->%s<!-- endbuild -->'
+        },
+        'js': {
+            src: "{% do assets.addJs('theme://dist/js/js-min/scripts.min.js', {'priority': 101, 'group':'footer'}) %}",
+            tpl: '<!-- build:js -->%s<!-- endbuild -->'
+        }
+    }))
+    .pipe(gulp.dest(config.baseTemplate.dest));
+});
+
 gulp.task('dev', function(callback) {
-	browserSync.init({
+    runSequence('envDev', 'sassCompileDev', 'scriptsDev', callback)
+
+    browserSync.init({
 		proxy: "http://scoutscamp.dev:8888/"
 	})
-
-    runSequence('sassCompileDev', 'scriptsDev', callback)
 
     gulp.watch(config.scripts.src, ['scriptsDev'])
     gulp.watch(config.sass.src, ['sassCompileDev'])
@@ -127,5 +164,5 @@ gulp.task('dev', function(callback) {
 });
 
 gulp.task('build', function(callback) {
-    runSequence('sassBuild', 'scriptsBuild', 'image-minOne', 'image-minTwo', callback)
+    runSequence('envBuild', 'sassBuild', 'scriptsBuild', 'image-minOne', 'image-minTwo', callback)
 });

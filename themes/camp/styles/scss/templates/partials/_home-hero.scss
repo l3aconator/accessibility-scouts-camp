@@ -1,0 +1,73 @@
+.hero--down {
+
+    a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    .hero--down-icon {
+        animation: wiggle 1s ease-in-out infinite;
+        cursor: pointer;
+        transition: all 500ms ease;
+
+        &:hover,
+        &:active,
+        &:focus {
+            animation: badge 3s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes badge {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(360deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .hero--type {
+        font-size: 4.5em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .4;
+        line-height: 1.2;
+
+        &__second-line {
+            font-size: 1.43em;
+            letter-spacing: .4;
+        }
+    }
+}
