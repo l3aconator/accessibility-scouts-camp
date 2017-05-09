@@ -22,7 +22,4 @@ form:
           placeholder: Password
           label: PLUGIN_LOGIN.PASSWORD
 ---
-
-# User Login
-
-This page is restricted...
+<h1 class="h2">Login to your account! Great to see you, scout.</h1>

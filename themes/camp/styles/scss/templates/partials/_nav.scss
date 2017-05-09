@@ -19,6 +19,7 @@
     .header--logo {
         width: auto;
         position: absolute;
+        margin-top: $padding--small;
         z-index: 10001;
 
         a {
