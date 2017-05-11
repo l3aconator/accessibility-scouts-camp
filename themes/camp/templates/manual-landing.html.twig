@@ -1,0 +1,61 @@
+{% extends 'default.html.twig' %}
+
+{% block content %}
+
+{% set collection = page.collection() %}
+
+<section>
+    <div class="">
+        <img src="{{ page.header.heroImg }}" alt="{{ page.header.heroImgAlt }}" />
+    </div>
+    <div class="container">
+        <div class="flex-grid--gutters">
+            <div class="col--width__seven">
+                <h2>{{ page.title }}</h2>
+                <h3>Inside you’ll find:</h3>
+                <ul class="manual-landing--list">
+                    {% for child in collection %}
+                    <li class="manual-landing--list-item">
+
+                        <hr />
+                        
+                        <a href="{{ child.url }}">
+                            <h4>{{ child.title }}</h4>
+                        </a>
+
+                        {% if child.header.stats %}
+                        <div class="manual-landing--status">
+                            <ul class="manual-landing--status-list">
+                                <li class="manual-landing--status-list-item">
+                                    {% if child.header.stats.examples %}<span>{{ child.header.stats.examples }}</span>{% endif %}
+                                </li>
+                                <li class="manual-landing--status-item">
+                                    {% if child.header.stats.readingTime %}<span>{{ child.header.stats.readingTime }}</span>{% endif %}
+                                </li>
+                                <li class="manual-landing--status-item">
+                                    {% if child.header.stats.badges %}<span>{{ child.header.stats.badges }}</span>{% endif %}
+                                </li>
+                            </ul>
+                        </div>
+                        {% endif %}
+
+                        {% if child.header.summary %}
+                        <p class="manual-landing--summary">
+                            {{ child.header.summary|slice(0,200) }}&hellip;<a href="{{ child.url }}"> Start this section &raquo;</a>
+                        </p>
+                        {% endif %}
+
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col--width__five">
+                <h5>Merit badges you can add to your coat once you finish!</h5>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
