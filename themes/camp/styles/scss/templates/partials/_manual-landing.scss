@@ -1,0 +1,84 @@
+.manual-landing--hero {
+    position: relative;
+
+    .manual-landing--hero-cover {
+        position: absolute;
+        top: 24%;
+        right: 14.5%;
+        width: 25%;
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .manual-landing--list {
+        margin: 0;
+        padding: 0;
+
+        .manual-landing--list-item {
+
+            &:before {
+                display: none;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            &:last-child {
+                margin-bottom: $padding--huge;
+            }
+
+            .manual-landing--list-item-link {
+
+                h4 {
+                    display: inline;
+                    transition: $transition--default__button;
+                    border-radius: 5px;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    padding: 0;
+
+
+                    h4 {
+                        padding: 2px 10px;
+                        background-color: $color--success;
+                    }
+                }
+            }
+
+            .manual-landing--status {
+
+                .manual-landing--status-list {
+                    padding: 0;
+                }
+
+                .manual-landing--status-list-item {
+                    font-size: $type--size__base;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    padding-left: $padding--button--base__horizontal;
+                    font-weight: bold;
+                    font-style: italic;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .manual-landing--sidebar {
+        margin-top: 40%
+    }
+}

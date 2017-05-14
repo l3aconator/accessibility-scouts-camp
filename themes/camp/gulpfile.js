@@ -12,8 +12,6 @@ var gulp = require('gulp'),
     svgo = require('gulp-svgo'),
     browserSync = require('browser-sync').create();
 
-// TODO: ENVIRONMENT REPLACEMENT IN BASE.HTML.TWIG
-
 var config = {
     scripts: {
         src: [

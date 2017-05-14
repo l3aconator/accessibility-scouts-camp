@@ -5,8 +5,9 @@
 {% set collection = page.collection() %}
 
 <section>
-    <div class="">
+    <div class="manual-landing--hero">
         <img src="{{ page.header.heroImg }}" alt="{{ page.header.heroImgAlt }}" />
+        <img class="manual-landing--hero-cover" src="{{ page.header.heroCover }}" alt="An illustrated cover of the {{ page.title }} manual"/>
     </div>
     <div class="container">
         <div class="flex-grid--gutters">
@@ -17,9 +18,9 @@
                     {% for child in collection %}
                     <li class="manual-landing--list-item">
 
-                        <hr />
-                        
-                        <a href="{{ child.url }}">
+                        <hr class="mt--60 mb--60" />
+
+                        <a class="manual-landing--list-item-link" href="{{ child.url }}">
                             <h4>{{ child.title }}</h4>
                         </a>
 
@@ -27,13 +28,13 @@
                         <div class="manual-landing--status">
                             <ul class="manual-landing--status-list">
                                 <li class="manual-landing--status-list-item">
-                                    {% if child.header.stats.examples %}<span>{{ child.header.stats.examples }}</span>{% endif %}
+                                    {% if child.header.stats.examples %}<span>{{ child.header.stats.examples }} examples</span>{% endif %}
                                 </li>
-                                <li class="manual-landing--status-item">
-                                    {% if child.header.stats.readingTime %}<span>{{ child.header.stats.readingTime }}</span>{% endif %}
+                                <li class="manual-landing--status-list-item">
+                                    {% if child.header.stats.readingTime %}<span>{{ child.header.stats.readingTime }} to read</span>{% endif %}
                                 </li>
-                                <li class="manual-landing--status-item">
-                                    {% if child.header.stats.badges %}<span>{{ child.header.stats.badges }}</span>{% endif %}
+                                <li class="manual-landing--status-list-item">
+                                    {% if child.header.stats.badges %}<span>{{ child.header.stats.badges }} badges</span>{% endif %}
                                 </li>
                             </ul>
                         </div>
@@ -50,7 +51,9 @@
                 </ul>
             </div>
             <div class="col--width__five">
-                <h5>Merit badges you can add to your coat once you finish!</h5>
+                <div class="manual-landing--sidebar">
+                    <h5>Merit badges you can add to your coat once you finish!</h5>
+                </div>
             </div>
         </div>
 

@@ -2,45 +2,53 @@
 
     {% if page.find('/sight-manual').children.visible %}
     <ul class="nav--dropdown nav--dropdown__sight">
-        {% for p in page.find('/sight-manual').children.visible %}
-            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
-            <li class="{{ current_page }} nav--sub-item">
-                {% include 'partials/navigation-icons.html.twig' with {'page':p} %}
-            </li>
-        {% endfor %}
+        <div class="nav--dropdown__margin">
+            {% for p in page.find('/sight-manual').children.visible %}
+                {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }} nav--sub-item">
+                    <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
+                </li>
+            {% endfor %}
+        </div>
     </ul>
     {% endif %}
 
     {% if page.find('/audio-manual').children.visible %}
     <ul class="nav--dropdown nav--dropdown__audio">
-        {% for p in page.find('/audio-manual').children.visible %}
-            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
-            <li class="{{ current_page }} nav--sub-item">
-                {% include 'partials/navigation-icons.html.twig' with {'page':p} %}
-            </li>
-        {% endfor %}
+        <div class="nav--dropdown__margin">
+            {% for p in page.find('/audio-manual').children.visible %}
+                {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }} nav--sub-item">
+                    <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
+                </li>
+            {% endfor %}
+        </div>
     </ul>
     {% endif %}
 
     {% if page.find('/touch-manual').children.visible %}
     <ul class="nav--dropdown nav--dropdown__touch">
-        {% for p in page.find('/touch-manual').children.visible %}
-            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
-            <li class="{{ current_page }} nav--sub-item">
-                {% include 'partials/navigation-icons.html.twig' with {'page':p} %}
-            </li>
-        {% endfor %}
+        <div class="nav--dropdown__margin">
+            {% for p in page.find('/touch-manual').children.visible %}
+                {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }} nav--sub-item">
+                    <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
+                </li>
+            {% endfor %}
+        </div>
     </ul>
     {% endif %}
 
     {% if page.find('/about-manual').children.visible %}
     <ul class="nav--dropdown nav--dropdown__about">
-        {% for p in page.find('/about-manual').children.visible %}
-            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
-            <li class="{{ current_page }} nav--sub-item">
-                {% include 'partials/navigation-icons.html.twig' with {'page':p} %}
-            </li>
-        {% endfor %}
+        <div class="nav--dropdown__margin">
+            {% for p in page.find('/about-manual').children.visible %}
+                {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }} nav--sub-item">
+                    <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
+                </li>
+            {% endfor %}
+        </div>
     </ul>
     {% endif %}
 

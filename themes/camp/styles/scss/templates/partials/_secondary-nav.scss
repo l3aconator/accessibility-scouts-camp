@@ -35,6 +35,41 @@
             z-index: 1000;
             background-image: url('#{$theme--images}light-noise.png');
             transition: $transition--default__button;
+            list-style-type: none;
+
+            .nav--dropdown__margin {
+                margin-left: 32%;
+                margin-right: auto;
+            }
+
+            .nav--sub-item {
+                padding-top: $padding--small;
+                font-family: $heading-font-family;
+                font-weight: bold;
+                transition: $transition--default__button;
+
+                &:last-child {
+                    padding-bottom: $padding--small;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: darken($color--primary, 50%);
+                    transform: scale(1.1);
+                }
+            }
+
+            .nav--wrap {
+                color: $color--primary;
+                text-decoration: underline;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
 
             &.open {
                 min-height: auto;
@@ -43,18 +78,34 @@
 
             &__sight {
                 background-color: $color--danger;
+
+                &.open {
+                    height: 280px;
+                }
             }
 
             &__audio {
                 background-color: $color--info;
+
+                &.open {
+                    height: 150px;
+                }
             }
 
             &__touch {
                 background-color: $color--success;
+
+                &.open {
+                    height: 220px;
+                }
             }
 
             &__about {
                 background-color: $color--warning;
+
+                &.open {
+                    height: 220px;
+                }
             }
 
             &__badge {

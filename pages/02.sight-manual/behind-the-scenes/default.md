@@ -5,7 +5,7 @@ summary: 'The web is a wonderful and scary place, but mostly wonderful. The acce
 stats:
     examples: '2'
     readingTime: '20 minutes'
-    badges: '10 badges'
+    badges: '10'
 ---
 <section>
 [ILLUSTRATION] [BADGE]
