@@ -36,6 +36,7 @@
             background-image: url('#{$theme--images}light-noise.png');
             transition: $transition--default__button;
             list-style-type: none;
+            box-shadow: 0 4px 11px 0 rgba(0,0,0,0.23);
 
             .nav--dropdown__margin {
                 margin-left: 32%;
