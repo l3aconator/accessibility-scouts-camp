@@ -1,0 +1,17 @@
+enabled: true
+built_in_css: true
+providers:
+  Facebook:
+    enabled: false
+    enable_email: false
+  Google:
+    enabled: false
+  GitHub:
+    enabled: true
+    credentials:
+      key: 5dbe944a53a27fb5e712
+      secret: d6992a22476513794df2a7ec8ccb72ed10d39756
+  Twitter:
+    enabled: false
+  Linkedin:
+    enabled: false

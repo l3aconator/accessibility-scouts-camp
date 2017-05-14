@@ -23,6 +23,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-login
         path: user/plugins/login
         branch: master
+    login-oauth:
+        url: https://github.com/getgrav/grav-plugin-login-oauth
+        path: user/plugins/login-oauth
+        branch: master
     archives:
         url: https://github.com/getgrav/grav-plugin-archives
         path: user/plugins/archives
@@ -59,6 +63,10 @@ links:
     login:
         src: grav-plugin-login
         path: user/plugins/login
+        scm: github
+    login-oauth:
+        src: grav-plugin-login-oauth
+        path: user/plugins/login-oauth
         scm: github
     archives:
         src: grav-plugin-archives
