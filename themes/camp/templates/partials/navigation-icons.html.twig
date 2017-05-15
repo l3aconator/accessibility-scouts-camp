@@ -1,11 +1,8 @@
 {% if page.header.icon == 'settings' %}
-    {% if grav.user.authenticated %}
-        <a class="nav--wrap" href="{{ page.url }}">
-            <img class="nav--icon__{{ page.header.icon|lower }}" src="{{ url('theme://images/settings.svg') }}" alt="Settings Icon" />
-        </a>
-        {% else %}
-        &nbsp;
-    {% endif %}
+    <a class="nav--wrap js-badgeAuth" href="{{ page.url }}">
+        <img class="nav--icon__{{ page.header.icon|lower }}" src="{{ url('theme://images/settings.svg') }}" alt="Settings Icon" />
+    </a>
+    <span class="js-badgeNoAuth">&nbsp;</span>
 {% else %}
     {% if page.header.icon == 'sight' %}
         <a class="nav--wrap" href="{{ page.url }}">

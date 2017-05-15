@@ -41,13 +41,7 @@
                     </a>
                 </div>
                 <div class="header--navbar">
-                    {% if config.plugins.login.enabled and grav.user.username %}
-                        {% include 'partials/login-status.html.twig' %}
-                    {% else %}
-                        <span class="login-status">
-                            <a href="/register">Create an Account &raquo;</a> or <a href="/login">Login &raquo;</a>
-                        </span>
-                    {% endif %}
+                    {% include 'partials/login-status.html.twig' %}
                     {% block header_navigation %}
                         {% include 'partials/navigation.html.twig' %}
                     {% endblock %}
@@ -81,6 +75,19 @@
         {% endblock %}
     </div>
     {% block bottom %}
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyB1X8bT9Oafv7zmcE6m_CTOj93m2uljS8g",
+            authDomain: "accessibilityscouts-camp.firebaseapp.com",
+            databaseURL: "https://accessibilityscouts-camp.firebaseio.com",
+            projectId: "accessibilityscouts-camp",
+            storageBucket: "accessibilityscouts-camp.appspot.com",
+            messagingSenderId: "141901880495"
+          };
+          firebase.initializeApp(config);
+        </script>
         {{ assets.js('footer') }}
     {% endblock %}
 </body>

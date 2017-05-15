@@ -13,13 +13,13 @@ form:
           type: text
           id: username
           placeholder: Username
-          label: PLUGIN_LOGIN.USERNAME_EMAIL
+          label: Username/email
           autofocus: true
 
         - name: password
           type: password
           id: password
           placeholder: Password
-          label: PLUGIN_LOGIN.PASSWORD
+          label: Password
 ---
 <h1 class="h2">Login to your account! Great to see you, scout.</h1>

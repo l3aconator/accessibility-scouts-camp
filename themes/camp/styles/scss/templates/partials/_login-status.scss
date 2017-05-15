@@ -5,4 +5,20 @@
     text-align: right;
     padding-top: $padding--small;
     font-size: $type--size__small;
+
+    .js-badgeAuth {
+        display: none; // display none because no auth
+
+        &.auth {
+            display: block; // add auth class, show
+        }
+    }
+
+    .js-badgeNoAuth {
+        display: block; // display because haven't authed user yet
+
+        &.auth {
+            display: none; // display none once user is authed, removed element with js from
+        }
+    }
 }
