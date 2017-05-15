@@ -3,7 +3,7 @@
 {% block content %}
 
 {# if user is authenticated #}
-<section class="js-badgeAuth">
+<section class="hidden" id="js-badgeAuth">
     <div class="container mt--90 mb--90">
         <div class="flex-grid--gutters">
             <div class="col--width__five">
@@ -16,7 +16,7 @@
     </div>
     <div class="">
         <p>
-            
+            {{ page.content }}
         </p>
         <div class="flex-grid--gutters">
             <ul>
@@ -30,7 +30,7 @@
 {# endif user is authenticated #}
 
 {# if user is authenticated #}
-<section class="js-badgeNoAuth">
+<section class="" id="js-badgeNoAuth">
     <div class="container mt--90 mb--90" markdown="1">
         <div class="flex-grid--gutters">
             <div class="col--width__five">
