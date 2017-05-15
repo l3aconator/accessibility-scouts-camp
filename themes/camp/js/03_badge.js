@@ -19,7 +19,6 @@ var auth = firebase.auth(),
     badgeManualAuth = document.getElementById('js-badgeAuth'),
     badgeManualNoAuth = document.getElementById('js-badgeNoAuth');
 
-
 // ---- Prevent form submission ----
 if (loginForm) {
     loginForm.addEventListener('submit', function(e) {
@@ -33,9 +32,9 @@ if (registerForm) {
     });
 }
 
-
 // ---- Handles the sign in button press. ----
 function toggleSignIn() {
+
     if (auth.currentUser) {
         // [START signout]
         auth.signOut();
@@ -43,10 +42,12 @@ function toggleSignIn() {
     } else {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
+
         if (email.length < 4) {
             alert('Please enter an email address.');
             return;
         }
+
         if (password.length < 4) {
             alert('Please enter a password.');
             return;
@@ -71,6 +72,7 @@ function toggleSignIn() {
         });
         // [END authwithemail]
     }
+
     signIn.disabled = true;
 }
 
@@ -102,7 +104,9 @@ function handleSignUp() {
     }
     // Sign in with email and pass.
     // [START createwithemail]
-    auth.createUserWithEmailAndPassword(email, password).catch(function(error) {
+    auth.createUserWithEmailAndPassword(email, password).then(function(result) {
+        window.location = '/badge-manual'
+    }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -132,6 +136,7 @@ function sendEmailVerification() {
 
 function sendPasswordReset() {
     var email = document.getElementById('email').value;
+
     // [START sendpasswordemail]
     auth.sendPasswordResetEmail(email).then(function() {
         // Password Reset Email Sent!
@@ -142,12 +147,14 @@ function sendPasswordReset() {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
+
         // [START_EXCLUDE]
         if (errorCode == 'auth/invalid-email') {
             alert(errorMessage);
         } else if (errorCode == 'auth/user-not-found') {
             alert(errorMessage);
         }
+
         console.log(error);
         // [END_EXCLUDE]
     });
@@ -160,6 +167,7 @@ function sendPasswordReset() {
 *    out, and that is where we update the UI.
 */
 function initApp() {
+
     // Listening for auth state changes.
     // [START authstatelistener]
     auth.onAuthStateChanged(function(user) {
@@ -171,7 +179,6 @@ function initApp() {
         // [END_EXCLUDE]
 
         if (user) {
-
             // ---- User is signed in. ----
             var displayName = user.displayName;
             var email = user.email;
@@ -182,14 +189,14 @@ function initApp() {
             var uid = user.uid;
             var providerData = user.providerData;
 
-            function writeUserData(userId, email, badge) {
+            function writeUserData(userId, email) {
+
                 database.ref('users/' + userId).set({
-                    email: email,
-                    badge: badge
+                    email: email
                 });
             }
 
-            writeUserData(uid, email, '1');
+            writeUserData(uid, email);
 
             var starCountRef = database.ref('users/' + uid + '/badge');
             starCountRef.on('value', function(snapshot) {
@@ -221,6 +228,7 @@ function initApp() {
             }
 
             if (signUp) {
+
                 signUpStatus.textContent = 'Great to see you, scout.';
                 signUp.textContent = 'Sign out of my account »';
 
@@ -304,3 +312,24 @@ function initApp() {
 window.onload = function() {
     initApp();
 };
+
+// manuals: {
+//     sightManual: {
+//         badgesEarned: [badges]
+//     },
+//     audioManual: {
+//         badgesEarned: [badges]
+//     },
+//     touchManual: {
+//         badgesEarned: [badges]
+//     },
+//     aboutManual: {
+//         badgesEarned: [badges]
+//     },
+//     badgeManual: {
+//         badgesEarned: [badges]
+//     },
+//     miscManual: {
+//         badgesEarned: [badges]
+//     }
+// }
