@@ -1,8 +1,8 @@
 {% if page.header.icon == 'settings' %}
-    <a class="nav--wrap js-badgeAuth" href="{{ page.url }}">
+    <a class="nav--wrap hidden" id="js-settingsAuth" href="{{ page.url }}">
         <img class="nav--icon__{{ page.header.icon|lower }}" src="{{ url('theme://images/settings.svg') }}" alt="Settings Icon" />
     </a>
-    <span class="js-badgeNoAuth">&nbsp;</span>
+    <span id="js-settingsNoAuth">&nbsp;</span>
 {% else %}
     {% if page.header.icon == 'sight' %}
         <a class="nav--wrap" href="{{ page.url }}">

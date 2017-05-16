@@ -17,7 +17,9 @@ var auth = firebase.auth(),
     headerLogoutButton = document.getElementById('js-headerLogoutButton'),
     verifyEmail = document.getElementById('quickstart-verify-email'),
     badgeManualAuth = document.getElementById('js-badgeAuth'),
-    badgeManualNoAuth = document.getElementById('js-badgeNoAuth');
+    badgeManualNoAuth = document.getElementById('js-badgeNoAuth'),
+    settingsAuth = document.getElementById('js-settingsAuth'),
+    settingsNoAuth = document.getElementById('js-settingsNoAuth');
 
 // ---- Prevent form submission ----
 if (loginForm) {
@@ -212,6 +214,9 @@ function initApp() {
                 badgeManualNoAuth.classList.add('hidden');
             }
 
+            settingsAuth.classList.remove('hidden');
+            settingsNoAuth.classList.add('hidden');
+
             if (headerUsername) {
                 headerUsername.textContent = (displayName == 'null' ?  displayName : 'scout');
             }
@@ -281,6 +286,9 @@ function initApp() {
                 badgeManualAuth.classList.add('hidden');
                 badgeManualNoAuth.classList.remove('hidden');
             }
+
+            settingsAuth.classList.add('hidden');
+            settingsNoAuth.classList.remove('hidden');
             // [END_EXCLUDE]
 
         }

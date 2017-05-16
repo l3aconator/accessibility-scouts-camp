@@ -7,24 +7,65 @@
     <div class="container mt--90 mb--90">
         <div class="flex-grid--gutters">
             <div class="col--width__five">
-                <img class="img--coat" alt="A scout coat illustration" src="/user/pages/06.badge-manual/coat.png">
+                <img class="img--coat" src="/user/pages/06.badge-manual/coat.png" alt="A scout coat illustration" />
             </div>
             <div class="col--width__seven">
-                <h1>Hiya <span class="js-authUsername">{{ username }}</span>! Here are the badges you’ve earned so far.</h1>
+                <h1>Hiya <span id="js-username"></span>! Here are the badges you’ve earned so far.</h1>
+                <div class="flex-grid--gutters">
+                    <div class="col">
+                        <div class="flex-grid--gutters">
+                            <div class="col--width__two">
+                                <img class="badge-manual--badge-amount__flag" src="{{ url('theme://images/green-flag.svg') }}" alt="" />
+                            </div>
+                            <div class="col--width__ten">
+                                <span class="badge-manual--badge-amount badge-manual--badge-amount__green">0 badges collected</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="flex-grid--gutters">
+                            <div class="col--width__two">
+                                <img class="badge-manual--badge-amount__flag" src="{{ url('theme://images/red-flag.svg') }}" alt="" />
+                            </div>
+                            <div class="col--width__ten">
+                                <span class=" badge-manual--badge-amount badge-manual--badge-amount__red">22 badges left to earn</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="">
-        <p>
-            {{ page.content }}
-        </p>
-        <div class="flex-grid--gutters">
-            <ul>
-                <li>
-                    testing
+    <div class="mt--90">
+        <div class="container">
+            <ul class="flex-grid--gutters badge-manual--list">
+                <li class="badge-manual--list-item col ">
+                    <img class="badge-manual--list-item__image" src="user/pages/06.badge-manual/badge/color-contrast/color-contrast-badge.png" alt="" />
+                    <div class="badge-manual--list-item__content">
+                        <h5>Title of the badge goes here man!</h5>
+                        <p>This is a short funny description of that badge and where it came from in your scouting journey</p>
+                    </div>
+                </li>
+                <li class="badge-manual--list-item col">
+                    <img class="badge-manual--list-item__image" src="user/pages/06.badge-manual/badge/color-contrast/color-contrast-badge.png" alt="" />
+                    <div class="badge-manual--list-item__content">
+                        <h5>Title of the badge goes here man!</h5>
+                        <p>This is a short funny description of that badge and where it came from in your scouting journey</p>
+                    </div>
+                </li>
+                <li class="badge-manual--list-item col">
+                    <img class="badge-manual--list-item__image" src="user/pages/06.badge-manual/badge/color-contrast/color-contrast-badge.png" alt="" />
+                    <div class="badge-manual--list-item__content">
+                        <h5>Title of the badge goes here man!</h5>
+                        <p>This is a short funny description of that badge and where it came from in your scouting journey</p>
+                    </div>
                 </li>
             </ul>
         </div>
+        <p>
+            {{ page.content }}
+        </p>
     </div>
 </section>
 {# endif user is authenticated #}

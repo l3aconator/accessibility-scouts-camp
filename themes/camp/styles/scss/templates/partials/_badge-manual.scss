@@ -1,15 +1,69 @@
-.js-badgeAuth {
-    display: none; // display none because no auth
+.badge-manual--badge-amount {
+    font-size: $type--size__h3;
+    font-style: italic;
 
-    &.auth {
-        display: block; // add auth class, show
+    &__flag {
+        width: 40px;
+    }
+
+    &__red {
+        color: $color--danger;
+    }
+
+    &__green {
+        color: $color--success;
     }
 }
 
-.js-badgeNoAuth {
-    display: block; // display because haven't authed user yet
+.badge-manual--list-item {
+    position: relative;
+    height: 100%;
+    margin-top: $padding--huge;
+    transition: $transition--default__button;
 
-    &.auth {
-        display: none; // display none once user is authed, removed element with js from
+    .box {
+        padding: 0;
+    }
+
+    &:before {
+        display: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: scale(1.025);
+
+
+        .badge-manual--list-item__content {
+            box-shadow: none;
+        }
+    }
+}
+
+.badge-manual--list-item__image {
+    position: absolute;
+    left: 25px;
+    top: -30%;
+    width: auto;
+    display: block;
+}
+
+.badge-manual--list-item__content {
+    font-size: .7em;
+    padding: 30px;
+    background-color: white;
+    background-image: url('#{$theme--images}light-noise.png');
+    border-bottom-left-radius: $border-radius--default;
+    border-bottom-right-radius: $border-radius--default;
+    box-shadow: $box-shadow--default;
+    transition: $transition--default__button;
+
+    h5 {
+        padding-top: 50%;
+    }
+
+    p {
+        margin-bottom: 0;
     }
 }

@@ -1,16 +1,9 @@
 {% extends 'default.html.twig' %}
 
 {% block content %}
-    {% if config.plugins.login.enabled and grav.user.authenticated %}
-    <section>
-        <div class="container">
-            settings
+    <section class="section--marg">
+        <div class="container--content">
+            <h1>Here are your account settings!</h1>
         </div>
     </section>
-    {% else %}
-    <div class="container--content" markdown="1">
-        <h1>Hiya scout! If you'd like to keep track of your badges and be able to edit some custom settings, why don't you <a href="/register">create an account</a>?</h1>
-        <h3>Already have one?! <a href="/login">Login here &raquo;</a></h3>
-    </div>
-    {% endif %}
 {% endblock %}
