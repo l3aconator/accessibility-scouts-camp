@@ -3,6 +3,8 @@ var auth = firebase.auth(),
     database = firebase.database(),
     loginForm = document.getElementById('login'),
     registerForm = document.getElementById('register'),
+    settingsEmailForm = document.getElementById('settingsEmail'),
+    settingsPasswordForm = document.getElementById('settingsPassword'),
     formField = document.getElementsByClassName('form-field'),
     signIn = document.getElementById('quickstart-sign-in'),
     signInStatus = document.getElementById('quickstart-sign-in-status'),
@@ -19,7 +21,10 @@ var auth = firebase.auth(),
     badgeManualAuth = document.getElementById('js-badgeAuth'),
     badgeManualNoAuth = document.getElementById('js-badgeNoAuth'),
     settingsAuth = document.getElementById('js-settingsAuth'),
-    settingsNoAuth = document.getElementById('js-settingsNoAuth');
+    settingsNoAuth = document.getElementById('js-settingsNoAuth'),
+    changeEmailInput = document.getElementById('changeEmail'),
+    changeEmailReset = document.getElementById('quickstart-email-reset'),
+    changePasswordEmailInput = document.getElementById('email');
 
 // ---- Prevent form submission ----
 if (loginForm) {
@@ -30,6 +35,18 @@ if (loginForm) {
 
 if (registerForm) {
     registerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+    });
+}
+
+if (settingsEmailForm) {
+    settingsEmailForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+    });
+}
+
+if (settingsPasswordForm) {
+    settingsPasswordForm.addEventListener('submit', function(e) {
         e.preventDefault();
     });
 }
@@ -163,6 +180,30 @@ function sendPasswordReset() {
     // [END sendpasswordemail];
 }
 
+function updateEmail() {
+    var email = changeEmailInput.value;
+    auth.currentUser.updateEmail(email).then(function() {
+        // Email updated!
+        // [START_EXCLUDE]
+        alert('Email updated');
+        // [END_EXCLUDE]
+    }, function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/invalid-email') {
+            alert(errorMessage);
+        } else if (errorCode == 'auth/user-not-found') {
+            alert(errorMessage);
+        }
+
+        console.log(error);
+        // [END_EXCLUDE]
+    });
+}
+
 /**
 * initApp handles setting up UI event listeners and registering Firebase auth listeners:
 *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
@@ -255,6 +296,10 @@ function initApp() {
             }
             // [END_EXCLUDE]
 
+            if (changePasswordEmailInput) {
+                changePasswordEmailInput.setAttribute('value', email);
+            }
+
         } else {
 
             // ---- User is signed out. ----
@@ -310,6 +355,10 @@ function initApp() {
 
     if (passwordReset) {
         passwordReset.addEventListener('click', sendPasswordReset, false);
+    }
+
+    if (changeEmailReset) {
+        changeEmailReset.addEventListener('click', updateEmail, false);
     }
 
     if (headerLogout) {

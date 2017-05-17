@@ -3,7 +3,59 @@
 {% block content %}
     <section class="section--marg">
         <div class="container--content">
-            <h1>Here are your account settings!</h1>
+            <h1>Your account settings, scout!</h1>
+            <h5>(Change if you need/want to&hellip;)</h5>
+            {#
+            <div class="box white stripe mt--60">
+                <form action="/settings" id="settingsBrightness" method="post" name="changeBrightness">
+                    <div class="form-field">
+                        <div class="form-label">
+                            <label class="inline h4" for="email">Site too, well, bright?</label>
+                        </div>
+                        <div class="form-data" data-grav-default="null" data-grav-disabled="true" data-grav-field="email">
+                            <div class="form-input-wrapper">
+                                nightmode toggle goes here
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            #}
+            <div class="box white stripe mt--60">
+                <form action="/settings" id="settingsPassword" method="post" name="changePassword">
+                    <div class="form-field">
+                        <div class="form-label">
+                            <label class="inline h4" for="email">Change your password (dang hackers&hellip;)</label>
+                        </div>
+                        <div class="form-data" data-grav-default="null" data-grav-disabled="true" data-grav-field="email">
+                            <div class="form-input-wrapper">
+                                <input autofocus="autofocus" id="email" name="data[email]" placeholder="email" type="email" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="form--link__large" id="quickstart-password-reset" name="verify-email">Send Password Reset Email &raquo;</button>
+                    </div>
+                </form>
+            </div>
+            <div class="box white stripe mt--60">
+                <form action="/settings" id="settingsEmail" method="post" name="changeEmail">
+                    <div class="form-field">
+                        <div class="form-label">
+                            <label class="inline h4" for="changeEmail">Change your email (just cause&hellip;)</label>
+                        </div>
+                        <div class="form-data" data-grav-default="null" data-grav-disabled="true" data-grav-field="email">
+                            <div class="form-input-wrapper">
+                                <input autofocus="autofocus" id="changeEmail" name="data[email]" placeholder="email" type="email" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="form--link__large" id="quickstart-email-reset" name="emailReset" type="submit">Change my email &raquo;</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </section>
 {% endblock %}
