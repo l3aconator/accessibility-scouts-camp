@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/02.sight-manual/sight-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -37,8 +37,8 @@ Way finding lives and dies by good typography and iconography. Here we are going
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -74,8 +74,8 @@ Some features of a type face to consider:
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -102,7 +102,7 @@ The size and color one uses can ruin a well designed typeface. Here are some dos
 * Use fonts with think stroke weights or too thick stroke weights
 	* these end up being to thin to read or too thick and the counters fill in at smaller sizes
 
-[ILLUSTRATION]
+![ILLUSTRATION](http://placehold.it/450x250)
 
 Still confused on the best practices or pairings for accessible typography?! Fret no more scout. The camp has created some best practice type pairings using system fonts and those that can be found for free on Google fonts.
 
@@ -120,10 +120,6 @@ Still confused on the best practices or pairings for accessible typography?! Fre
 * Review the dos and don’ts of the use of typography
 * Can’t stress enough trying and refining things
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section class="section--badge-cta section--badge-cta__yellow mt--60">

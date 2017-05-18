@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/04.touch-manual/touch-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -39,8 +39,8 @@ With color and type, we can create hierarchy of where the user should look first
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -131,10 +131,6 @@ We are now going to be combining our UX, UI, and accessible code skills together
 <div class="container--content" markdown="1">
 These are only a few examples of what good and bad interactions could be. It all depends on the problem you are trying to solve and the context of the problem. At the end of the day it’s up to you as the designer and developer to make things accessible. The camp is here to help you get started and set you loose to scout the forest.
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section>

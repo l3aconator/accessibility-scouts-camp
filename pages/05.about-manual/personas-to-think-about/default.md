@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/05.about-manual/about-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -28,38 +28,62 @@ stats:
 </section>
 
 <section>
-<div class="container--content" markdown="1">
-# Brief history
-
----
-
-[A SMALL VISUAL TIMELINE THAT USERS CAN INTERACT WITH]
+<div class="container--content section--marg">
+<div class="box purple stripe" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+### Persona—Color Blind
+[real life persona to reference]
+</div>
 </div>
 </section>
 
 <section>
-[ILLUSTRATION]
-</section>
-
-<section>
-<div class="container--content" markdown="1">
-### Why it’s important
-
-content
+<div class="container--content section--marg">
+<div class="box purple stripe" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+### Persona—Blind
+[real life persona to reference]
+</div>
 </div>
 </section>
 
 <section>
-[ILLUSTRATION]
+<div class="container--content section--marg">
+<div class="box purple stripe" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+### Persona—Elderly
+[real life persona to reference]
+</div>
+</div>
 </section>
 
 <section>
-<div class="container--content" markdown="1">
-### Scout Review
+<div class="container--content section--marg">
+<div class="box purple stripe" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+### Persona—Deaf
+[real life persona to reference]
+</div>
+</div>
+</section>
 
-* This has been a long road and the future is bright for those who can’t use the web as others can
-* Broadening the web to more users to provide the same access to information that others have
-* Knowledge is power and the pool of knowledge that web has should be open to the all those who need it
+<section>
+<div class="container--content section--marg">
+<div class="box purple stripe" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+### Persona—New to computers
+[real life persona to reference]
+</div>
+</div>
+</section>
+
+<section>
+<div class="container--content section--marg">
+<div class="box purple stripe" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+### Persona—No arms
+[real life persona to reference]
+</div>
 </div>
 </section>
 

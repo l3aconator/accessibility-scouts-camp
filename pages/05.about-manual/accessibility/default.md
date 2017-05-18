@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/05.about-manual/about-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -37,8 +37,8 @@ stats:
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -47,10 +47,6 @@ stats:
 
 content
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section>

@@ -19,5 +19,32 @@ $( document ).ready(function() {
         });
     });
 
-    console.log( "ready!" );
+    $('.checkbox').click(function() {
+        var checkboxChild = $(this).children('input[type=checkbox]');
+
+        if (checkboxChild.is( ":checked" )) {
+            checkboxChild.prop('checked', false);
+        } else {
+           checkboxChild.prop('checked', true);
+        }
+    });
+
+    // ---- Toggle night mode ----
+
+    $('.js-checkbox--night-mode').click(function() {
+        var checkboxChild = $(this).children('input[type=checkbox]');
+
+        $('body').toggleClass('night-mode');
+
+        if (localStorage.getItem('night-mode') == 'true') {
+            localStorage.setItem('night-mode', 'false');
+        } else {
+            localStorage.setItem('night-mode', 'true');
+        }
+    });
+
+    if (localStorage.getItem('night-mode') == 'true') {
+        $('body').addClass('night-mode');
+        $('.js-checkbox--night-mode input[type=checkbox]').prop('checked', true);
+    }
 });

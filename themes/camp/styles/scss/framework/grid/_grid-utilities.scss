@@ -8,6 +8,10 @@
 
 .pt {
 
+    &--30 {
+        padding-top: $padding--base;
+    }
+
     &--60 {
         padding-top: $padding--large;
     }
@@ -18,6 +22,10 @@
 }
 
 .pb {
+
+    &--30 {
+        padding-bottom: $padding--base;
+    }
 
     &--60 {
         padding-bottom: $padding--large;
@@ -42,6 +50,10 @@
 
 .mt {
 
+    &--30 {
+        margin-top: $padding--base;
+    }
+
     &--60 {
         margin-top: $padding--large;
     }
@@ -52,6 +64,10 @@
 }
 
 .mb {
+
+    &--30 {
+        margin-bottom: $padding--base;
+    }
 
     &--60 {
         margin-bottom: $padding--large;

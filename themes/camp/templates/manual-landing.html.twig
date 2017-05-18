@@ -4,6 +4,8 @@
 
 {% set collection = page.collection() %}
 
+{% set badgeCollection = page.collection('badges') %}
+
 <section>
     <div class="manual-landing--hero">
         <img src="{{ page.header.heroImg }}" alt="{{ page.header.heroImgAlt }}" />
@@ -53,6 +55,10 @@
             <div class="col--width__five">
                 <div class="manual-landing--sidebar">
                     <h5>Merit badges you can add to your coat once you finish!</h5>
+
+                    {% for badge in badgeCollection %}
+                        <img class="img--badge badge-collection--image" src="{{ (badge.media.images|first).url }}" alt="This is an image of the {{ badge.title }}" />
+                    {% endfor %}
                 </div>
             </div>
         </div>

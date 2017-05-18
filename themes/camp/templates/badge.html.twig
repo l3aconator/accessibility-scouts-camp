@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% set collection = page.collection() %}
+
 {# if user is authenticated #}
 <section class="hidden" id="js-badgeAuth">
     <div class="container mt--90 mb--90">
@@ -39,28 +41,16 @@
     </div>
     <div class="mt--90">
         <div class="container">
-            <ul class="flex-grid--gutters badge-manual--list">
-                <li class="badge-manual--list-item col ">
-                    <img class="badge-manual--list-item__image" src="user/pages/06.badge-manual/badge/color-contrast/color-contrast-badge.png" alt="" />
+            <ul class="flex-grid--gutters flex-wrap badge-manual--list">
+                {% for badge in collection %}
+                <li class="badge-manual--list-item col--width__four" data-badge="">
+                    <img class="badge-manual--list-item__image" src="{{ (badge.media.images|first).url }}" alt="" />
                     <div class="badge-manual--list-item__content">
-                        <h5>Title of the badge goes here man!</h5>
-                        <p>This is a short funny description of that badge and where it came from in your scouting journey</p>
+                        <h5>{{ badge.title }}</h5>
+                        <p>{{ badge.content }}</p>
                     </div>
                 </li>
-                <li class="badge-manual--list-item col">
-                    <img class="badge-manual--list-item__image" src="user/pages/06.badge-manual/badge/color-contrast/color-contrast-badge.png" alt="" />
-                    <div class="badge-manual--list-item__content">
-                        <h5>Title of the badge goes here man!</h5>
-                        <p>This is a short funny description of that badge and where it came from in your scouting journey</p>
-                    </div>
-                </li>
-                <li class="badge-manual--list-item col">
-                    <img class="badge-manual--list-item__image" src="user/pages/06.badge-manual/badge/color-contrast/color-contrast-badge.png" alt="" />
-                    <div class="badge-manual--list-item__content">
-                        <h5>Title of the badge goes here man!</h5>
-                        <p>This is a short funny description of that badge and where it came from in your scouting journey</p>
-                    </div>
-                </li>
+                {%  endfor %}
             </ul>
         </div>
         <p>

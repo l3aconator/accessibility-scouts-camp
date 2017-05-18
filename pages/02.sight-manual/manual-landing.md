@@ -10,6 +10,9 @@ content:
     order:
         by: date
         dir: desc
+badges:
+    items:
+       '@taxonomy.category': [sightManualBadges]
 twig_first: true
 process:
     twig: true

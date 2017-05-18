@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION]
+    <img src="/user/pages/02.sight-manual/sight-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -39,7 +39,10 @@ Contrast is just the beginning. The color you choose matters as well. 1 in 200 w
 
 <section>
 <div class="container--content" markdown="1">
-[LEAF ILLUSTRATION OF THIS TYPE]
+
+<div class="mt--90" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+</div>
 
 #### Red-Green color blindness
 
@@ -66,7 +69,10 @@ If you couldn’t see the illustration that opened up this section, you may have
 
 <section>
 <div class="container--content" markdown="1">
-[LEAF ILLUSTRATION OF THIS TYPE]
+
+<div class="mt--90" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+</div>
 
 #### Blue-Yellow color blindness
 
@@ -91,7 +97,11 @@ If you couldn’t see the illustration that opened up this section, you may have
 
 <section>
 <div class="container--content" markdown="1">
-[LEAF ILLUSTRATION OF THIS TYPE]
+
+<div class="mt--90" markdown="1">
+![ILLUSTRATION](http://placehold.it/450x250)
+</div>
+
 #### Total color blindness
 
 This condition is super rare but worth a mention. Color would be practically gone in this instance.
@@ -126,8 +136,8 @@ If you couldn’t see the illustration that opened up this section, you may have
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -154,10 +164,6 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
 * Try to avoid certain tints/shades of the same color together. That’s sometimes hard for non-color blind people to see
 * If using a color that those who are color blind can’t really see, make sure there’s a enough difference between them to make sure the colors are still distinct to their vision.
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section class="section--badge-cta section--badge-cta__yellow mt--60">

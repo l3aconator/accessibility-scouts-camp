@@ -9,6 +9,9 @@ content:
     order:
         by: date
         dir: desc
+badges:
+    items:
+       '@taxonomy.category': [audioManualBadges]
 twig_first: true
 process:
     twig: true

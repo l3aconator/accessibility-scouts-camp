@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/03.audio-manual/audio-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -37,8 +37,8 @@ If some one can’t see, they can still hear audio and video files on the web. W
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -63,7 +63,7 @@ Without the audio, it’s pretty hard to really know what is going on between th
 <div class="container--content" markdown="1">
 Hey scout! Don’t fret. These two problems have solutions. PROVIDE TRANSCRIPTS to your audio and video file. Think it’s a pain in the butt? Hire someone to do it. It will greatly improve the user experience for those who can’t hear. There’s also multiple ways for people to learn, some prefer video and audio, other’s prefer reading. You help those who can’t hear and those who have a different learning style. GREAT. That transcript can also be used be a screen reader too if that’s ever needed.
 
-[ILLUSTRATION]
+![ILLUSTRATION](http://placehold.it/450x250)
 
 There’s plenty of things that can be done also to improve the transcript reading process. Some a bit more difficult than others, but step one is providing the transcript before enriching the experience.
 </div>
@@ -96,8 +96,8 @@ Here are few ways to enrich the transcript experience, though:
     </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>

@@ -1,6 +1,11 @@
 ---
 title: Badges Manual
 icon: badge
+content:
+    items: @self.children
+    order:
+        by: date
+        dir: desc
 twig_first: true
 process:
     twig: true

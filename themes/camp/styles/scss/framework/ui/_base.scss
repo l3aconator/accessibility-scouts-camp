@@ -2,12 +2,6 @@ body {
     background-color: $color--default;
     color: $color--primary;
     background-image: url('#{$theme--images}light-noise.png');
-
-    &.night-mode {
-        background-color: $color--primary;
-        color: $color--default;
-        background-image: url('#{$theme--images}dark-noise.png');
-    }
 }
 
 p {

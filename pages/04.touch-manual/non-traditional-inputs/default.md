@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/04.touch-manual/touch-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -47,10 +47,6 @@ Again, old broken record over here, but keep your audience in mind. If you are b
 * Braille surfaces
 * Feet controlled devices
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section>

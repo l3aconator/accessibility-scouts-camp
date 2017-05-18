@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/04.touch-manual/touch-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -37,8 +37,8 @@ Sometimes a keyboard may be the only way a person can use a computer. This has b
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -66,10 +66,6 @@ Here are few ways to enrich the transcript experience, though:
         </div>
 
     </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section>

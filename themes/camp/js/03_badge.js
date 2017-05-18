@@ -370,6 +370,9 @@ window.onload = function() {
     initApp();
 };
 
+
+// TODO: Hook up toogleNightMode to database to save preference in firebase 
+
 // manuals: {
 //     sightManual: {
 //         badgesEarned: [badges]

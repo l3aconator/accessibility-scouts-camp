@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION] [BADGE]
+    <img src="/user/pages/02.sight-manual/sight-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -34,8 +34,8 @@ stats:
 ---
 
 As we draw a close to the end of the sight manual, keep in mind there are some behind the scenes items that users can’t really see—unless they pop open dev tools or are using screen reader technology.
-[ILLUSTRATION]
 
+![ILLUSTRATION](http://placehold.it/450x250)
 
 Make sure that your images have alt tags. Please for the love of god put alt tags on your images. Guess what? Screen readers READ the alt tags when used. It also provides a fallback when images aren’t loading and it helps with SEO. Do we have your scout’s honor?
 </div>
@@ -64,8 +64,8 @@ The ARIA spec is hard to read, so below are some of the key points to understand
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>

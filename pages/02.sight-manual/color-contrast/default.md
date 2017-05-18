@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-[ILLUSTRATION]
+    <img src="/user/pages/02.sight-manual/sight-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -49,7 +49,7 @@ The ARIA spec has two levels of contrast ratios that text on a background should
 
 <section>
 <div class="container--content" markdown="1">
-[IMAGE OF TEXT UP CLOSE WITH 7:1:1 RATIO]
+![ILLUSTRATION](http://placehold.it/450x250)
 </div>
 </section>
 
@@ -78,8 +78,8 @@ Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If itâ
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
+<section class="pt--30 pb--30">
+    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -105,10 +105,6 @@ Try it out here:
 * Ask others how your color palette is working and if the contrast between type, color, illustration, and content is working.
 * Donâ€™t use this as a crutch to stick to one color palette that works, explore, explore, and explore. The spec is flexible, just be mindful.
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section class="section--badge-cta section--badge-cta__yellow mt--60">

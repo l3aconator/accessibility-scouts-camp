@@ -7,8 +7,7 @@ stats:
     readingTime: '20 minutes'
     badges: '10'
 ---
-[ILLUSTRATION] [BADGE]
-<section class="container--content" markdown="1">
+<section class="container--content mt--90 mb--90" markdown="1">
 
 # Whoa scout, surprised you ended up here!
 Well since you are here, let’s learn some nerdy things about the site.
@@ -26,16 +25,13 @@ Well since you are here, let’s learn some nerdy things about the site.
 …is accessible and inspired by summer camps.
 
 #### The website…
-…is built using the flat-file [GRAV CMS](https://getgrav.org?target=_blank) with a custom CSS framework built by Kyle Bacon. The badge and account system is managed by a combination of a GRAV plugin and [React](https://facebook.github.io/react?target=_blank) by Facebook.
+…is built using the flat-file [GRAV CMS](https://getgrav.org?target=_blank) with a custom CSS framework built by Kyle Bacon. The badge and account system is managed by a combination of hand-crafted vanilla JS, tears, and [Firebase](https://firebase.google.com?target=_blank) by Google.
 
 #### The illustrations…
 …were crafted with beer and coffee by Kyle Bacon to fit with the content.
 </section>
-<section class="container" markdown="1">
-[ILLUSTRATION]
-</section>
 
-<section class="section--badge-cta section--badge-cta__yellow mt--60">
+<section class="section--badge-cta section--badge-cta__yellow mt--90">
     <div class="container">
         <div class="flex-grid--gutters">
             <div class="col--width__four">
