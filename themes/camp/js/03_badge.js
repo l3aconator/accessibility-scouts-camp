@@ -21,7 +21,6 @@ var auth = firebase.auth(),
     badgeManualAuth = document.getElementById('js-badgeAuth'),
     badgeManualNoAuth = document.getElementById('js-badgeNoAuth'),
     settingsAuth = document.getElementById('js-settingsAuth'),
-    settingsNoAuth = document.getElementById('js-settingsNoAuth'),
     changeEmailInput = document.getElementById('changeEmail'),
     changeEmailReset = document.getElementById('quickstart-email-reset'),
     changePasswordEmailInput = document.getElementById('email');
@@ -256,7 +255,6 @@ function initApp() {
             }
 
             settingsAuth.classList.remove('hidden');
-            settingsNoAuth.classList.add('hidden');
 
             if (headerUsername) {
                 headerUsername.textContent = (displayName == 'null' ?  displayName : 'scout');
@@ -333,7 +331,6 @@ function initApp() {
             }
 
             settingsAuth.classList.add('hidden');
-            settingsNoAuth.classList.remove('hidden');
             // [END_EXCLUDE]
 
         }
@@ -371,7 +368,7 @@ window.onload = function() {
 };
 
 
-// TODO: Hook up toogleNightMode to database to save preference in firebase 
+// TODO: Hook up toogleNightMode to database to save preference in firebase
 
 // manuals: {
 //     sightManual: {

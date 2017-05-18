@@ -18,6 +18,7 @@
 
     .header--logo {
         width: auto;
+        max-width: 175px;
         position: absolute;
         margin-top: $padding--small;
         z-index: 1001;
@@ -41,7 +42,9 @@
     .nav {
         padding: 0;
         margin: 0;
-        margin-left: $padding--large;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         position: relative;
     }
 
@@ -166,7 +169,6 @@
 
     .nav--item {
         display: inline-block;
-        width: 18%;
         background-image: url('#{$theme--images}light-noise.png');
         padding: 0;
         margin: 0;
@@ -175,41 +177,41 @@
         text-align: left;
         height: $nav--height;
         word-wrap: break-word;
-        transform: translateY(55px);
+        transform: translateY(50px);
         transition: $transition--default__button;
-
 
         .nav--icon {
             position: absolute;
             transition: $transition--default__button;
+            width: 25px;
             left: 15px;
             top: 15px;
 
             &__sight {
                 fill: $color--danger;
-                top: 22px;
             }
 
             &__audio {
                 fill: $color--info;
-                left: 20px;
-                top: 20px;
+                top: 12px;
             }
 
             &__touch {
                 fill: $color--success;
-                left: 22px;
+                width: 18px;
+                top: 10px;
             }
 
             &__about {
                 fill: $color--warning;
-                left: 22px;
+                width: 18px;
+                top: 10px;
             }
 
             &__badge {
                 fill: $color--default;
-                left: 20px;
-                top: 20px;
+                width: 18px;
+                top: 11px;
             }
         }
 
@@ -218,11 +220,13 @@
             text-transform: uppercase;
             font-size: $type--size__smallest;
             text-decoration: none;
-            padding: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
             display: block;
             font-weight: bold;
             letter-spacing: .2;
-            margin-left: 60px;
+            margin-left: 50px;
             transition: $transition--default__button;
         }
 
@@ -230,7 +234,7 @@
         &:focus,
         &:active,
         &.active {
-            transform: translateY(30px);
+            transform: translateY(35px);
 
             .nav--icon {
                 position: absolute;

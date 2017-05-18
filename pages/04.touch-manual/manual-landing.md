@@ -1,5 +1,5 @@
 ---
-title: Touch Manual
+title: Interaction
 icon: touch
 heroCover: '/user/pages/04.touch-manual/touch-cover.png'
 heroImg: '/user/pages/04.touch-manual/blue-placeholder.png'

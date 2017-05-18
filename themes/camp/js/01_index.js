@@ -7,14 +7,17 @@ $( document ).ready(function() {
             dropdown = $('.nav--dropdown' + '.nav--dropdown__' + navItem);
 
         dropdown.toggleClass('open');
+        parentAndNavItem.attr('aria-hidden', 'false');
 
         dropdown.hover(function() {
             parentAndNavItem.addClass('active');
+            parentAndNavItem.attr('aria-hidden', 'false');
             dropdown.addClass('open');
         });
 
         dropdown.mouseleave(function() {
             parentAndNavItem.removeClass('active');
+            parentAndNavItem.attr('aria-hidden', 'true');
             dropdown.removeClass('open');
         });
     });
@@ -24,8 +27,10 @@ $( document ).ready(function() {
 
         if (checkboxChild.is( ":checked" )) {
             checkboxChild.prop('checked', false);
+            checkboxChild.attr('aria-checked', 'false');
         } else {
            checkboxChild.prop('checked', true);
+           checkboxChild.attr('aria-checked', 'true');
         }
     });
 
@@ -46,5 +51,6 @@ $( document ).ready(function() {
     if (localStorage.getItem('night-mode') == 'true') {
         $('body').addClass('night-mode');
         $('.js-checkbox--night-mode input[type=checkbox]').prop('checked', true);
+        $('.js-checkbox--night-mode input[type=checkbox]').attr('aria-checked', 'true');
     }
 });

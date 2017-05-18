@@ -1,5 +1,5 @@
 ---
-title: Badges Manual
+title: Badges
 icon: badge
 content:
     items: @self.children

@@ -1,5 +1,5 @@
 ---
-title: Audio Manual
+title: Sound
 icon: audio
 heroCover: '/user/pages/03.audio-manual/audio-cover.png'
 heroImg: '/user/pages/03.audio-manual/yellow-placeholder.png'

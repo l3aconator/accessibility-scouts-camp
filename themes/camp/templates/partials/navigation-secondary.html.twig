@@ -1,7 +1,7 @@
 <section class="secondary--navigation">
 
     {% if page.find('/sight-manual').children.visible %}
-    <ul class="nav--dropdown nav--dropdown__sight">
+    <ul class="nav--dropdown nav--dropdown__sight" aria-hidden="true">
         <div class="nav--dropdown__margin">
             {% for p in page.find('/sight-manual').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
@@ -14,7 +14,7 @@
     {% endif %}
 
     {% if page.find('/audio-manual').children.visible %}
-    <ul class="nav--dropdown nav--dropdown__audio">
+    <ul class="nav--dropdown nav--dropdown__audio" aria-hidden="true">
         <div class="nav--dropdown__margin">
             {% for p in page.find('/audio-manual').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
@@ -27,7 +27,7 @@
     {% endif %}
 
     {% if page.find('/touch-manual').children.visible %}
-    <ul class="nav--dropdown nav--dropdown__touch">
+    <ul class="nav--dropdown nav--dropdown__touch" aria-hidden="true">
         <div class="nav--dropdown__margin">
             {% for p in page.find('/touch-manual').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
@@ -40,7 +40,7 @@
     {% endif %}
 
     {% if page.find('/about-manual').children.visible %}
-    <ul class="nav--dropdown nav--dropdown__about">
+    <ul class="nav--dropdown nav--dropdown__about" aria-hidden="true">
         <div class="nav--dropdown__margin">
             {% for p in page.find('/about-manual').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}

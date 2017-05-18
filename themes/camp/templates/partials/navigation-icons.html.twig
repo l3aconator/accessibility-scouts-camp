@@ -2,7 +2,6 @@
     <a class="nav--wrap hidden" id="js-settingsAuth" href="{{ page.url }}">
         <img class="nav--icon__{{ page.header.icon|lower }}" src="{{ url('theme://images/settings.svg') }}" alt="Settings Icon" />
     </a>
-    <span id="js-settingsNoAuth">&nbsp;</span>
 {% else %}
     {% if page.header.icon == 'sight' %}
         <a class="nav--wrap" href="{{ page.url }}">
