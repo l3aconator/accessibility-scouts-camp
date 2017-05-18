@@ -1,8 +1,8 @@
 ---
 title: Interaction
 icon: touch
-heroCover: '/user/pages/04.touch-manual/touch-cover.png'
-heroImg: '/user/pages/04.touch-manual/blue-placeholder.png'
+heroCover: '/user/pages/04.interaction/touch-cover.png'
+heroImg: '/user/pages/04.interaction/blue-placeholder.png'
 heroImgAlt: 'Illustration'
 content:
     items: @self.children
