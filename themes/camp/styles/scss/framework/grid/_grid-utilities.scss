@@ -1,79 +1,130 @@
 // ---- Padding Utilities ----
-
 .section--pad {
-    padding-top: $padding--large;
-    padding-bottom: $padding--large;
+    padding-top: $padding--base;
+    padding-bottom: $padding--base;
 }
-
 
 .pt {
 
-    &--30 {
-        padding-top: $padding--base;
-    }
-
-    &--60 {
-        padding-top: $padding--large;
-    }
-
+    &--30,
+    &--60,
     &--90 {
-        padding-top: $padding--huge;
+        padding-top: $padding--base;
     }
 }
 
 .pb {
 
-    &--30 {
-        padding-bottom: $padding--base;
-    }
-
-    &--60 {
-        padding-bottom: $padding--large;
-    }
-
+    &--30,
+    &--60,
     &--90 {
-        padding-bottom: $padding--huge;
+        padding-bottom: $padding--base;
     }
 }
 
 // ---- Margin Utilities ----
 
-.section--marg {
-    margin-top: $padding--large;
-    margin-bottom: $padding--large;
-}
-
+.section--marg,
 .section--marg__huge {
-    margin-top: $padding--huge;
-    margin-bottom: $padding--huge;
+    margin-top: $padding--base;
+    margin-bottom: $padding--base;
 }
 
 .mt {
 
-    &--30 {
-        margin-top: $padding--base;
-    }
-
-    &--60 {
-        margin-top: $padding--large;
-    }
-
+    &--30,
+    &--60,
     &--90 {
-        margin-top: $padding--huge;
+        margin-top: $padding--base;
     }
 }
 
 .mb {
 
-    &--30 {
+    &--30,
+    &--60,
+    &--90 {
         margin-bottom: $padding--base;
     }
+}
 
-    &--60 {
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    // ---- Padding Utilities ----
+    .section--pad {
+        padding-top: $padding--large;
+        padding-bottom: $padding--large;
+    }
+
+    .pt {
+
+        &--30 {
+            padding-top: $padding--base;
+        }
+
+        &--60 {
+            padding-top: $padding--large;
+        }
+
+        &--90 {
+            padding-top: $padding--huge;
+        }
+    }
+
+    .pb {
+
+        &--30 {
+            padding-bottom: $padding--base;
+        }
+
+        &--60 {
+            padding-bottom: $padding--large;
+        }
+
+        &--90 {
+            padding-bottom: $padding--huge;
+        }
+    }
+
+    // ---- Margin Utilities ----
+
+    .section--marg {
+        margin-top: $padding--large;
         margin-bottom: $padding--large;
     }
 
-    &--90 {
+    .section--marg__huge {
+        margin-top: $padding--huge;
         margin-bottom: $padding--huge;
+    }
+
+    .mt {
+
+        &--30 {
+            margin-top: $padding--base;
+        }
+
+        &--60 {
+            margin-top: $padding--large;
+        }
+
+        &--90 {
+            margin-top: $padding--huge;
+        }
+    }
+
+    .mb {
+
+        &--30 {
+            margin-bottom: $padding--base;
+        }
+
+        &--60 {
+            margin-bottom: $padding--large;
+        }
+
+        &--90 {
+            margin-bottom: $padding--huge;
+        }
     }
 }

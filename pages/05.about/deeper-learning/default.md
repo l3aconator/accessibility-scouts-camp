@@ -16,7 +16,7 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/05.about-manual/about-hero-placeholder.png" alt="Illustration placeholder" />
+    <img src="/user/pages/05.about/about-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">
@@ -37,7 +37,7 @@ process:
 
 <section>
     <div class="container">
-        <ul class="flex-grid--gutters flex-wrap mt--90 mb--60">
+        <ul class="link--list flex-grid--gutters flex-wrap mt--90 mb--60">
         {% set collection = page.collection() %}
 
         {% for child in collection %}

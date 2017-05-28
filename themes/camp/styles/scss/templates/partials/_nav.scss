@@ -1,3 +1,8 @@
+.flex-header {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
 .header {
     background-color: $color--primary;
     background-image: url('#{$theme--images}dark-noise.png');
@@ -9,34 +14,94 @@
     transition: $transition--default__button;
 }
 
-// -- DESKTOP QUERY --
-@media only screen and (min-width: $breakpoint--tablet) {
+.header--logo {
+    width: 100%;
+    max-width: 20%;
+    position: absolute;
+    margin-top: $padding--small;
+    z-index: 1001;
+    border-radius: 100%;
+    box-shadow: 0 4px 11px 0 rgba(0,0,0,0.23);
 
-    .flex-header {
-        display: flex;
+    a {
+
+        &:hover,
+        &:active,
+        &:focus {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+}
+
+.nav {
+    margin-top: 15%;
+    padding-left: 0;
+    margin-bottom: 5%;
+}
+
+.nav--item {
+    display: inline-block;
+    margin-top: 0;
+
+    &:before {
+        content: '';
+        display: none;
     }
 
-    .header--logo {
-        width: auto;
-        max-width: 175px;
-        position: absolute;
-        margin-top: $padding--small;
-        z-index: 1001;
+    .nav--wrap {
 
-        a {
-
-            &:hover,
-            &:active,
-            &:focus {
-                padding: 0;
-                background-color: transparent;
-            }
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            padding: 0;
         }
     }
 
-    .header--navbar {
-        width: 80%;
-        margin-left: 20%;
+    &.active {
+
+        .nav--wrap {
+            color: $color--default;
+            text-decoration: none;
+        }
+    }
+
+    .nav--link {
+        font-family: $heading-font-family;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+        letter-spacing: .1;
+        margin-left: 8px;
+        transition: $transition--default__button;
+    }
+
+    .nav--icon {
+
+        &__sight,
+        &__audio,
+        &__touch,
+        &__about,
+        &__badge {
+            display: none;
+        }
+
+        &__settings {
+            width: 60%;
+            margin-left: 30%;
+        }
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .header--logo {
+        width: 100%;
+        max-width: 15%;
     }
 
     .nav {
@@ -46,6 +111,7 @@
         align-items: flex-end;
         justify-content: flex-end;
         position: relative;
+        flex-wrap: wrap;
     }
 
     .nav--wrap {
@@ -63,11 +129,17 @@
     }
 
     .nav--item {
-
-        &:before {
-            content: '';
-            display: none;
-        }
+        display: inline-block;
+        background-image: url('#{$theme--images}light-noise.png');
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: $border-radius--default;
+        border-top-left-radius: $border-radius--default;
+        text-align: left;
+        height: $nav--height;
+        word-wrap: break-word;
+        transform: translateY(50px);
+        transition: $transition--default__button;
 
         &:first-child {
             background-color: darken($color--danger, 15%);
@@ -165,20 +237,6 @@
                 color: $color--default;
             }
         }
-    }
-
-    .nav--item {
-        display: inline-block;
-        background-image: url('#{$theme--images}light-noise.png');
-        padding: 0;
-        margin: 0;
-        border-top-right-radius: $border-radius--default;
-        border-top-left-radius: $border-radius--default;
-        text-align: left;
-        height: $nav--height;
-        word-wrap: break-word;
-        transform: translateY(50px);
-        transition: $transition--default__button;
 
         .nav--icon {
             position: absolute;
@@ -186,6 +244,14 @@
             width: 25px;
             left: 15px;
             top: 15px;
+
+            &__sight,
+            &__audio,
+            &__touch,
+            &__about,
+            &__badge {
+                display: block;
+            }
 
             &__sight {
                 fill: $color--danger;
@@ -213,21 +279,18 @@
                 width: 18px;
                 top: 11px;
             }
+
+            &__settings {
+                width: 100%;
+                margin-left: 0;
+            }
         }
 
         .nav--link {
-            font-family: $heading-font-family;
-            text-transform: uppercase;
-            font-size: $type--size__smallest;
-            text-decoration: none;
             padding-top: 15px;
             padding-bottom: 15px;
             padding-right: 15px;
-            display: block;
-            font-weight: bold;
-            letter-spacing: .2;
             margin-left: 50px;
-            transition: $transition--default__button;
         }
 
         &:hover,
@@ -261,6 +324,7 @@
             }
 
             .nav--link {
+                font-size: $type--size__smallest;
                 color: $color--primary;
             }
         }

@@ -1,21 +1,5 @@
 .nav--dropdown {
     display: none;
-
-    &.open {
-        // test
-    }
-
-    &__sight {
-        // test
-    }
-
-    &__audio {
-        // test
-    }
-
-    .nav--sub-item {
-
-    }
 }
 
 // -- DESKTOP QUERY --
@@ -39,7 +23,7 @@
             box-shadow: 0 4px 11px 0 rgba(0,0,0,0.23);
 
             .nav--dropdown__margin {
-                margin-left: 32%;
+                margin-left: 44%;
                 margin-right: auto;
             }
 

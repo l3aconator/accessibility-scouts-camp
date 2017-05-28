@@ -4,14 +4,6 @@ body {
     background-image: url('#{$theme--images}light-noise.png');
 }
 
-p {
-    font-size: $type--paragraph;
-}
-
-ul {
-    font-size: $type--paragraph;
-}
-
 #body {
     z-index: 10;
 }

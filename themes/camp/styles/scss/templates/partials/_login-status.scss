@@ -1,10 +1,10 @@
 .login-status {
-    width: 100%;
     color: $color--default;
-    display: block;
-    text-align: right;
-    padding-top: $padding--small;
+    align-items: flex-end;
     font-size: $type--size__small;
+    display: inline-block;
+    margin-left: 30%;
+    padding-top: 10%;
 
     .js-badgeAuth {
         display: none; // display none because no auth
@@ -20,5 +20,17 @@
         &.auth {
             display: none; // display none once user is authed, removed element with js from
         }
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .login-status {
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        text-align: right;
+        padding-top: $padding--small;
     }
 }

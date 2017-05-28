@@ -203,6 +203,21 @@ function updateEmail() {
     });
 }
 
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+}
+
 /**
 * initApp handles setting up UI event listeners and registering Firebase auth listeners:
 *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
@@ -231,19 +246,89 @@ function initApp() {
             var uid = user.uid;
             var providerData = user.providerData;
 
+            function dispatchBadge() {
+
+                var badges = document.getElementsByClassName('img--badge');
+
+                for (var i = 0; i < badges.length; ++i) {
+
+                    var item = badges[i],
+                        dataSection = item.getAttribute('data-section'),
+                        dataBadge = item.getAttribute('data-badge'),
+                        imageBottom = item.offsetTop + item.height,
+                        isNotScrolledPast = (window.innerHeight + window.scrollY + imageBottom) >= document.body.scrollHeight;
+
+                    function updateBadge(userId, section, badge) {
+
+                        var manuals = database.ref('users/' + userId + '/manuals'),
+                            visionBadgesArray = [];
+
+                        console.log(section + badge);
+
+                        if (section == 'vision') {
+                            // visionBadgesArray.push(badge);
+                            // manuals.set({
+                            //     vision: {
+                            //         badgesEarned: visionBadgesArray
+                            //     }
+                            // });
+                            console.log('vision');
+                        } else if (section == 'sound') {
+                            console.log('sound');
+                        } else if (section == 'interaction') {
+                            console.log('interaction');
+                        } else if (section == 'about') {
+                            console.log('about');
+                        } else if (section == 'other') {
+                            console.log('other');
+                        } else {
+                            // do nothing
+                        }
+                    }
+
+                    // test where the badge is
+                    if (isNotScrolledPast) {
+                        item.classList.add('active');
+
+                        if (item.classList.contains('active')) {
+                            updateBadge(uid, dataSection, dataBadge);
+                        }
+
+                    } else {
+                        item.classList.remove('active');
+                        console.log('dispatching badge not active');
+                    }
+                }
+            }
+
             function writeUserData(userId, email) {
 
                 database.ref('users/' + userId).set({
-                    email: email
+                    email: email,
+                    manuals: {
+                        vision: {
+                            badgesEarned: []
+                        },
+                        sound: {
+                            badgesEarned: []
+                        },
+                        interaction: {
+                            badgesEarned: []
+                        },
+                        about: {
+                            badgesEarned: []
+                        },
+                        badge: {
+                            badgesEarned: []
+                        },
+                        other: {
+                            badgesEarned: []
+                        }
+                    }
                 });
             }
 
             writeUserData(uid, email);
-
-            var starCountRef = database.ref('users/' + uid + '/badge');
-            starCountRef.on('value', function(snapshot) {
-                console.log(snapshot.val());
-            });
 
             // [CUSTOM HEADER FOR USER]
             headerLogin.classList.add('hidden');
@@ -297,6 +382,8 @@ function initApp() {
             if (changePasswordEmailInput) {
                 changePasswordEmailInput.setAttribute('value', email);
             }
+
+            window.addEventListener('scroll', debounce(dispatchBadge, 20));
 
         } else {
 
@@ -369,24 +456,3 @@ window.onload = function() {
 
 
 // TODO: Hook up toogleNightMode to database to save preference in firebase
-
-// manuals: {
-//     sightManual: {
-//         badgesEarned: [badges]
-//     },
-//     audioManual: {
-//         badgesEarned: [badges]
-//     },
-//     touchManual: {
-//         badgesEarned: [badges]
-//     },
-//     aboutManual: {
-//         badgesEarned: [badges]
-//     },
-//     badgeManual: {
-//         badgesEarned: [badges]
-//     },
-//     miscManual: {
-//         badgesEarned: [badges]
-//     }
-// }

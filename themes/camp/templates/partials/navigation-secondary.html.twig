@@ -1,9 +1,9 @@
 <section class="secondary--navigation">
 
-    {% if page.find('/sight-manual').children.visible %}
+    {% if page.find('/vision').children.visible %}
     <ul class="nav--dropdown nav--dropdown__sight" aria-hidden="true">
         <div class="nav--dropdown__margin">
-            {% for p in page.find('/sight-manual').children.visible %}
+            {% for p in page.find('/vision').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
                 <li class="{{ current_page }} nav--sub-item">
                     <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
@@ -13,10 +13,10 @@
     </ul>
     {% endif %}
 
-    {% if page.find('/audio-manual').children.visible %}
+    {% if page.find('/sound').children.visible %}
     <ul class="nav--dropdown nav--dropdown__audio" aria-hidden="true">
         <div class="nav--dropdown__margin">
-            {% for p in page.find('/audio-manual').children.visible %}
+            {% for p in page.find('/sound').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
                 <li class="{{ current_page }} nav--sub-item">
                     <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
@@ -26,10 +26,10 @@
     </ul>
     {% endif %}
 
-    {% if page.find('/touch-manual').children.visible %}
+    {% if page.find('/interaction').children.visible %}
     <ul class="nav--dropdown nav--dropdown__touch" aria-hidden="true">
         <div class="nav--dropdown__margin">
-            {% for p in page.find('/touch-manual').children.visible %}
+            {% for p in page.find('/interaction').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
                 <li class="{{ current_page }} nav--sub-item">
                     <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>
@@ -39,10 +39,10 @@
     </ul>
     {% endif %}
 
-    {% if page.find('/about-manual').children.visible %}
+    {% if page.find('/about').children.visible %}
     <ul class="nav--dropdown nav--dropdown__about" aria-hidden="true">
         <div class="nav--dropdown__margin">
-            {% for p in page.find('/about-manual').children.visible %}
+            {% for p in page.find('/about').children.visible %}
                 {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
                 <li class="{{ current_page }} nav--sub-item">
                     <a class="nav--wrap" href="{{ p.url }}"><span class="nav--link">{{ p.menu }}</span></a>

@@ -8,7 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-    <img src="/user/pages/05.about-manual/about-hero-placeholder.png" alt="Illustration placeholder" />
+    <img src="/user/pages/05.about/about-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section class="section--badge-cta section--badge-cta__purple">

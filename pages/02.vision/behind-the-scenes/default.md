@@ -8,23 +8,7 @@ stats:
     badges: '10'
 ---
 <section>
-    <img src="/user/pages/02.sight-manual/sight-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section class="section--badge-cta section--badge-cta__purple">
-    <div class="container">
-        <div class="flex-grid--gutters">
-            <div class="col--width__nine">
-                <h3>Let’s get you some badges, champ.</h3>
-                <h5><em>Hey scout! Read and complete the example to get some shit  on your coat. <br /><a href="/badge-manual">See it here! &raquo;</a></em></h5>
-            </div>
-            <div class="col--width__three">
-                <div class="badge--box">
-                    <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
-                </div>
-            </div>
-        </div>
-    </div>
+    <img src="/user/pages/02.vision/sight-hero-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -92,7 +76,7 @@ Wonderful learning scout! Your 1/3rd of the way to becoming a full-fledge Access
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
+                    <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="vision" data-badge="behind-the-scenes">
                 </div>
             </div>
             <div class="col--width__eight">

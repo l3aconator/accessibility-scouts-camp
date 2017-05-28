@@ -1,24 +1,20 @@
 .section--badge-cta {
-    position: relative;
 
     &__yellow {
         background-color: $color--info;
         background-image: url('#{$theme--images}light-noise.png');
     }
+}
 
-    &__purple {
-        background-color: $color--primary;
-        background-image: url('#{$theme--images}dark-noise.png');
-        color: $color--default;
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
 
-        h5 {
-            font-family: $base-font-family;
+    .section--badge-cta {
+        position: relative;
+
+        .badge--box {
+            position: absolute;
+            top: -60px;
         }
     }
-
-    .badge--box {
-        position: absolute;
-        top: -60px;
-    }
-
 }

@@ -2,7 +2,7 @@
 title: About
 icon: about
 heroCover: '/user/pages/05.about/about-cover.png'
-heroImg: '/user/pages/05.about-manual/orange-placeholder.png'
+heroImg: '/user/pages/05.about/orange-placeholder.png'
 heroImgAlt: 'Illustration'
 content:
     items: @self.children
