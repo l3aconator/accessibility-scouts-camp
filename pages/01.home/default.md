@@ -81,7 +81,7 @@ We'll be looking at the three senses used to interact with content: sight, touch
                 <div class="cover--box">
                     <img alt="The cover of the accessibilityscouts.camp touch manual." src="/user/pages/01.home/touch-cover.png">
                 </div>
-                <h4 class="manual--title">TOUCH Manual</h4>
+                <h4 class="manual--title">INTERACTION Manual</h4>
                 <ul class="toc--list">
                 {% for child in page.find('/interaction').children %}
                     <li class="toc--list__item toc--list__item-touch">
