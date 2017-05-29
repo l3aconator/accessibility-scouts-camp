@@ -72,6 +72,31 @@
     }
 }
 
+.badge-collection--image {
+    display: inline;
+    padding: $padding--button--base__horizontal;
+
+    &:first-child {
+        width: 30%;
+    }
+
+    &:nth-child(2) {
+        width: 40%;
+    }
+
+    &:nth-child(3) {
+        width: 55%;
+    }
+
+    &:nth-child(4) {
+        width: 55%;
+    }
+
+    &:nth-child(5) {
+        width: 35%;
+    }
+}
+
 // -- DESKTOP QUERY --
 @media only screen and (min-width: $breakpoint--tablet) {
 
@@ -107,6 +132,6 @@
     }
 
     .manual-landing--sidebar {
-        margin-top: 40%
+        margin-top: 40%;
     }
 }
