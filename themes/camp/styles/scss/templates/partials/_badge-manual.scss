@@ -1,9 +1,9 @@
 .badge-manual--badge-amount {
-    font-size: $type--size__h3;
+    font-size: $type--size__h6;
     font-style: italic;
 
     &__flag {
-        width: 40px;
+        width: 20px;
     }
 
     &__red {
@@ -23,16 +23,14 @@
     display: block;
 }
 
-.badge-manual--list-item {
-    position: relative;
-    height: 100%;
-    margin-top: $padding--huge;
-    transition: $transition--default__button;
-    margin-bottom: 12%;
+.badge-manual--list {
+    padding-left: 0;
+}
 
-    &:last-child {
-        margin-bottom: $padding--huge;
-    }
+.badge-manual--list-item {
+    height: 100%;
+    transition: $transition--default__button;
+    margin-bottom: $padding--huge;
 
     &:before {
         display: none;
@@ -43,19 +41,10 @@
     &:focus {
         transform: scale(1.025);
 
-
         .badge-manual--list-item__content {
             box-shadow: none;
         }
     }
-}
-
-.badge-manual--list-item__image {
-    position: absolute;
-    left: 25px;
-    top: -30%;
-    width: auto;
-    display: block;
 }
 
 .badge-manual--list-item__content {
@@ -63,16 +52,22 @@
     padding: 30px;
     background-color: white;
     background-image: url('#{$theme--images}light-noise.png');
-    border-bottom-left-radius: $border-radius--default;
-    border-bottom-right-radius: $border-radius--default;
+    border-radius: $border-radius--default;
     box-shadow: $box-shadow--default;
     transition: $transition--default__button;
 
-    h5 {
-        padding-top: 50%;
-    }
-
     p {
         margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .badge-manual--badge-amount {
+        font-size: $type--size__h3;
+
+        &__flag {
+            width: 40px;
+        }
     }
 }

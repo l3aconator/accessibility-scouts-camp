@@ -44,8 +44,8 @@
             <ul class="flex-grid--gutters flex-wrap badge-manual--list">
                 {% for badge in collection %}
                 <li class="badge-manual--list-item col--width__four" data-earned="false" data-section="{{ badge.header.taxonomy.category }}" data-badge="{{ badge.header.taxonomy.tag }}">
-                    <img class="badge-manual--list-item__image" src="{{ (badge.media.images|first).url }}" alt="" />
                     <div class="badge-manual--list-item__content">
+                        <img class="badge-manual--list-item__image" src="{{ (badge.media.images|first).url }}" alt="" />
                         <h5>{{ badge.title }}</h5>
                         <p>{{ badge.content }}</p>
                     </div>
