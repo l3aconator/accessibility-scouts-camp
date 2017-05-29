@@ -12,7 +12,7 @@
                 <img class="img--coat" src="/user/pages/06.badge/coat.png" alt="A scout coat illustration" />
             </div>
             <div class="col--width__seven">
-                <h1>Hiya <span id="js-username"></span>! Here are the badges you’ve earned so far.</h1>
+                <h1>Hiya <span id="js-badgeUsername"></span>! Here are the badges you’ve earned so far.</h1>
                 <div class="flex-grid--gutters">
                     <div class="col">
                         <div class="flex-grid--gutters">
@@ -20,7 +20,7 @@
                                 <img class="badge-manual--badge-amount__flag" src="{{ url('theme://images/green-flag.svg') }}" alt="" />
                             </div>
                             <div class="col--width__ten">
-                                <span class="badge-manual--badge-amount badge-manual--badge-amount__green">0 badges collected</span>
+                                <span class="badge-manual--badge-amount badge-manual--badge-amount__green"><span id="js-badgesEarnedNumber">0</span> badges collected</span>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                                 <img class="badge-manual--badge-amount__flag" src="{{ url('theme://images/red-flag.svg') }}" alt="" />
                             </div>
                             <div class="col--width__ten">
-                                <span class=" badge-manual--badge-amount badge-manual--badge-amount__red">22 badges left to earn</span>
+                                <span class=" badge-manual--badge-amount badge-manual--badge-amount__red"><span id="js-badgesLeftNumber">13</span> badges left to earn</span>
                             </div>
                         </div>
 
@@ -39,11 +39,11 @@
             </div>
         </div>
     </div>
-    <div class="mt--90">
+    <div class="mt--90" onload="run">
         <div class="container">
             <ul class="flex-grid--gutters flex-wrap badge-manual--list">
                 {% for badge in collection %}
-                <li class="badge-manual--list-item col--width__four" data-badge="">
+                <li class="badge-manual--list-item col--width__four" data-earned="false" data-section="{{ badge.header.taxonomy.category }}" data-badge="{{ badge.header.taxonomy.tag }}">
                     <img class="badge-manual--list-item__image" src="{{ (badge.media.images|first).url }}" alt="" />
                     <div class="badge-manual--list-item__content">
                         <h5>{{ badge.title }}</h5>

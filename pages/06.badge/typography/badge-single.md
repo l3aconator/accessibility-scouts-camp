@@ -1,7 +1,7 @@
 ---
 title: 'Typography Badge'
 taxonomy:
-    category: [sight, badge]
-    tag: [typography]
+    category: sight
+    tag: typography
 ---
 This is a short funny description of that badge and where it came from in your scouting journey

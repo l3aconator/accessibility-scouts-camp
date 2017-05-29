@@ -1,3 +1,15 @@
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyB1X8bT9Oafv7zmcE6m_CTOj93m2uljS8g",
+  authDomain: "accessibilityscouts-camp.firebaseapp.com",
+  databaseURL: "https://accessibilityscouts-camp.firebaseio.com",
+  projectId: "accessibilityscouts-camp",
+  storageBucket: "accessibilityscouts-camp.appspot.com",
+  messagingSenderId: "141901880495"
+};
+
+firebase.initializeApp(config);
+
 // ---- Global vars for the authentication script ----
 var auth = firebase.auth(),
     database = firebase.database(),
@@ -10,6 +22,7 @@ var auth = firebase.auth(),
     signInStatus = document.getElementById('quickstart-sign-in-status'),
     headerLoginStatus = document.getElementById('js-headerLoginStatus'),
     headerUsername = document.getElementById('js-username'),
+    badgeManualUsername = document.getElementById('js-badgeUsername'),
     signUp = document.getElementById('quickstart-sign-up'),
     signUpStatus = document.getElementById('quickstart-sign-up-status'),
     passwordReset = document.getElementById('quickstart-password-reset'),
@@ -73,7 +86,7 @@ function toggleSignIn() {
         // Sign in with email and pass.
         // [START authwithemail]
         auth.signInWithEmailAndPassword(email, password).then(function(result) {
-            window.location = '/badge-manual'
+            window.location = '/badge'
         }).catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
@@ -123,7 +136,7 @@ function handleSignUp() {
     // Sign in with email and pass.
     // [START createwithemail]
     auth.createUserWithEmailAndPassword(email, password).then(function(result) {
-        window.location = '/badge-manual'
+        window.location = '/badge'
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -182,6 +195,7 @@ function sendPasswordReset() {
 function updateEmail() {
     var email = changeEmailInput.value;
     auth.currentUser.updateEmail(email).then(function() {
+        updateUserEmail(auth.currentUser, email);
         // Email updated!
         // [START_EXCLUDE]
         alert('Email updated');
@@ -248,7 +262,7 @@ function initApp() {
 
             function dispatchBadge() {
 
-                var badges = document.getElementsByClassName('img--badge');
+                var badges = document.getElementsByClassName('badge--dispatch');
 
                 for (var i = 0; i < badges.length; ++i) {
 
@@ -261,26 +275,87 @@ function initApp() {
                     function updateBadge(userId, section, badge) {
 
                         var manuals = database.ref('users/' + userId + '/manuals'),
-                            visionBadgesArray = [];
-
-                        console.log(section + badge);
+                            visionManual = database.ref('users/' + userId + '/manuals/vision'),
+                            interactionManual = database.ref('users/' + userId + '/manuals/interaction'),
+                            aboutManual = database.ref('users/' + userId + '/manuals/about'),
+                            soundManual = database.ref('users/' + userId + '/manuals/sound');
 
                         if (section == 'vision') {
-                            // visionBadgesArray.push(badge);
-                            // manuals.set({
-                            //     vision: {
-                            //         badgesEarned: visionBadgesArray
-                            //     }
-                            // });
-                            console.log('vision');
+
+                            if (badge == 'colorContrast') {
+                                visionManual.update({
+                                    colorContrast: true
+                                });
+                            } else if (badge == 'colorBlindness') {
+                                visionManual.update({
+                                    colorBlindness: true
+                                });
+                            } else if (badge == 'behindTheScenes') {
+                                visionManual.update({
+                                    behindTheScenes: true
+                                });
+                            } else if (badge == 'typography') {
+                                visionManual.update({
+                                    typography: true
+                                });
+                            } else {
+                                // do nothing
+                            }
+
                         } else if (section == 'sound') {
-                            console.log('sound');
+
+                            if (badge == 'screenReaders') {
+                                soundManual.update({
+                                    screenReaders: true
+                                });
+                            } else if (badge == 'alternativesAudioVisualContent') {
+                                soundManual.update({
+                                    alternativesAudioVisualContent: true
+                                });
+                            } else {
+                                // do nothing
+                            }
+
                         } else if (section == 'interaction') {
-                            console.log('interaction');
+
+                            if (badge == 'keyboardSupport') {
+                                interactionManual.update({
+                                    keyboardSupport: true
+                                });
+                            } else if (badge == 'nonTraditionalInputs') {
+                                interactionManual.update({
+                                    nonTraditionalInputs: true
+                                });
+                            } else if (badge == 'visibleInteractions') {
+                                interactionManual.update({
+                                    visibleInteractions: true
+                                });
+                            } else {
+                                // do nothing
+                            }
+
                         } else if (section == 'about') {
-                            console.log('about');
-                        } else if (section == 'other') {
-                            console.log('other');
+
+                            if (badge == 'personasToThinkAbout') {
+                                aboutManual.update({
+                                    personasToThinkAbout: true
+                                });
+                            } else if (badge == 'deeperLearning') {
+                                aboutManual.update({
+                                    deeperLearning: true
+                                });
+                            } else if (badge == 'accessibility') {
+                                aboutManual.update({
+                                    accessibility: true
+                                });
+                            } else if (badge == 'colophon') {
+                                aboutManual.update({
+                                    colophon: true
+                                });
+                            } else {
+                                // do nothing
+                            }
+
                         } else {
                             // do nothing
                         }
@@ -301,34 +376,111 @@ function initApp() {
                 }
             }
 
-            function writeUserData(userId, email) {
+            function getBadgeList(userId) {
+                var visionBadgeObject = database.ref('users/' + userId + '/manuals/vision'),
+                    soundBadgeObject = database.ref('users/' + userId + '/manuals/sound'),
+                    interactionBadgeObject = database.ref('users/' + userId + '/manuals/interaction'),
+                    aboutBadgeObject = database.ref('users/' + userId + '/manuals/about');
 
-                database.ref('users/' + userId).set({
-                    email: email,
-                    manuals: {
-                        vision: {
-                            badgesEarned: []
-                        },
-                        sound: {
-                            badgesEarned: []
-                        },
-                        interaction: {
-                            badgesEarned: []
-                        },
-                        about: {
-                            badgesEarned: []
-                        },
-                        badge: {
-                            badgesEarned: []
-                        },
-                        other: {
-                            badgesEarned: []
+                visionBadgeObject.on('value', function(snapshot) {
+                    var userBadgesEarned = snapshot.val();
+
+                    Object.keys(userBadgesEarned).forEach(function(key) {
+
+                        var badges = document.getElementsByClassName('badge-manual--list-item');
+
+                        for (var i = 0; i < badges.length; ++i) {
+
+                            var item = badges[i],
+                                dataBadge = item.getAttribute('data-badge');
+
+                            if (key == dataBadge) {
+                                item.setAttribute('data-earned', 'true');
+                                item.classList.add('badge--active');
+                            }
                         }
-                    }
+                    });
+                });
+
+                soundBadgeObject.on('value', function(snapshot) {
+                    var userBadgesEarned = snapshot.val();
+
+                    Object.keys(userBadgesEarned).forEach(function(key) {
+
+                        var badges = document.getElementsByClassName('badge-manual--list-item');
+
+                        for (var i = 0; i < badges.length; ++i) {
+
+                            var item = badges[i],
+                                dataBadge = item.getAttribute('data-badge');
+
+                            if (key == dataBadge) {
+                                item.setAttribute('data-earned', 'true');
+                                item.classList.add('badge--active');
+                            }
+                        }
+                    });
+                });
+
+                interactionBadgeObject.on('value', function(snapshot) {
+                    var userBadgesEarned = snapshot.val();
+
+                    Object.keys(userBadgesEarned).forEach(function(key) {
+
+                        var badges = document.getElementsByClassName('badge-manual--list-item');
+
+                        for (var i = 0; i < badges.length; ++i) {
+
+                            var item = badges[i],
+                                dataBadge = item.getAttribute('data-badge');
+
+                            if (key == dataBadge) {
+                                item.setAttribute('data-earned', 'true');
+                                item.classList.add('badge--active');
+                            }
+                        }
+                    });
+                });
+
+                aboutBadgeObject.on('value', function(snapshot) {
+                    var userBadgesEarned = snapshot.val();
+
+                    Object.keys(userBadgesEarned).forEach(function(key) {
+
+                        var badges = document.getElementsByClassName('badge-manual--list-item');
+
+                        for (var i = 0; i < badges.length; ++i) {
+
+                            var item = badges[i],
+                                dataBadge = item.getAttribute('data-badge');
+
+                            if (key == dataBadge) {
+                                item.setAttribute('data-earned', 'true');
+                                item.classList.add('badge--active');
+                            }
+                        }
+                    });
                 });
             }
 
-            writeUserData(uid, email);
+            function calculate() {
+                var activeBadges = document.getElementsByClassName('badge--active'),
+                    totalBadges = document.getElementsByClassName('badge-manual--list-item'),
+                    badgesEarnedNumber = document.getElementById('js-badgesEarnedNumber'),
+                    badgesLeftNumber = document.getElementById('js-badgesLeftNumber');
+
+                for (var i = 0; i < activeBadges.length; ++i) {
+                    var item = activeBadges[i];
+
+                    badgesEarnedNumber.textContent = i + 1;
+                    badgesLeftNumber.textContent = totalBadges.length - i - 1;
+                }
+            }
+
+            if (badgeManualAuth) {
+                badgeManualAuth.addEventListener('load', getBadgeList(uid))
+                window.setTimeout(calculate, 1250)
+            }
 
             // [CUSTOM HEADER FOR USER]
             headerLogin.classList.add('hidden');
@@ -343,6 +495,10 @@ function initApp() {
 
             if (headerUsername) {
                 headerUsername.textContent = (displayName == 'null' ?  displayName : 'scout');
+            }
+
+            if (badgeManualUsername) {
+                badgeManualUsername.textContent = (displayName == 'null' ?  displayName : 'scout');
             }
 
             // [START_EXCLUDE]
@@ -454,5 +610,11 @@ window.onload = function() {
     initApp();
 };
 
-
 // TODO: Hook up toogleNightMode to database to save preference in firebase
+// TODO: Refactor get badge list
+// TODO: refactor firebase to one function for something like this??
+    // https://stackoverflow.com/questions/2241875/how-to-create-an-object-property-from-a-variable-value-in-javascript
+    // var myObj = new Object;
+    // var a = 'string1';
+    // myObj[a] = 'testing';
+    // alert(myObj.string1)

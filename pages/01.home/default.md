@@ -119,12 +119,12 @@ Consider if a business didn't have wheelchair ramps for those to get inside? Or 
 
 <section class="container section--pad">
     <div class="flex-grid--gutters">
-        <div class="col--width__four">
+        <div class="col--width__three">
             <div class="badge--box">
                 <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
             </div>
         </div>
-        <div class="col--width__eight">
+        <div class="col--width__nine">
             <h3>Ready to jump in and start earnin’ some  merit badges?</h3>
             <p class="h3 h3__serif">Let's start with <a class="img--badge__trigger" href="/sight-manual/color-contrast">color contrast &raquo;</a></p>
         </div>

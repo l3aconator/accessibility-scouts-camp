@@ -6,6 +6,9 @@ stats:
     examples: '2'
     readingTime: '20 minutes'
     badges: '10'
+twig_first: true
+process:
+    twig: true
 ---
 <section class="container--content mt--90 mb--90" markdown="1">
 
@@ -36,11 +39,18 @@ Well since you are here, let’s learn some nerdy things about the site.
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="about" data-badge="colophon">
                 </div>
             </div>
             <div class="col--width__eight">
                 <h3>Welp! Since you made it here, here’s a special badge. We are a bit badge happy at the accessibilityscouts.camp.</h3>
+                <h4>Woohoo!</h4>
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isLast %}
+                    <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
             </div>
         </div>
     </div>

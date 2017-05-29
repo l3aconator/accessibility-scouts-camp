@@ -6,6 +6,9 @@ stats:
     examples: '2'
     readingTime: '20 minutes'
     badges: '10'
+twig_first: true
+process:
+    twig: true
 ---
 <section>
     <img src="/user/pages/04.interaction/touch-hero-placeholder.png" alt="Illustration placeholder" />
@@ -138,13 +141,18 @@ These are only a few examples of what good and bad interactions could be. It all
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="interaction" data-badge="visibleInteractions">
                 </div>
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Type is freakin' wonderful, isn't it!</h4>
-                <span>Up next: </span><a href="/">Visible interactions &raquo;</a>
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isLast %}
+                    <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
             </div>
         </div>
     </div>

@@ -1,8 +1,35 @@
 .section--badge-cta {
+    padding-top: $padding--base;
+    padding-bottom: $padding--base;
+
+    span {
+        margin-bottom: $padding--base;
+        font-family: $heading-font-family;
+        font-weight: bold;
+        font-size: $type--size__h6;
+    }
+
+    a {
+        color: $color--primary;
+        font-size: $type--size__h6;
+        margin-right: 10%;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color--default;
+        }
+    }
 
     &__yellow {
         background-color: $color--info;
         background-image: url('#{$theme--images}light-noise.png');
+    }
+
+    .img--badge {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -12,9 +39,22 @@
     .section--badge-cta {
         position: relative;
 
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            margin-top: $padding--small;
+        }
+
         .badge--box {
             position: absolute;
             top: -60px;
+        }
+
+        .img--badge {
+            margin-right: 20%;
         }
     }
 }

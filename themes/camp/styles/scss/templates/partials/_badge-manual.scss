@@ -15,16 +15,23 @@
     }
 }
 
+[data-earned=false] {
+    display: none;
+}
+
+[data-earned=true] {
+    display: block;
+}
+
 .badge-manual--list-item {
     position: relative;
     height: 100%;
     margin-top: $padding--huge;
     transition: $transition--default__button;
+    margin-bottom: 12%;
 
-    &:first-child,
-    &:nth-child(2),
-    &:nth-child(3) {
-        margin-bottom: 12%;
+    &:last-child {
+        margin-bottom: $padding--huge;
     }
 
     &:before {
