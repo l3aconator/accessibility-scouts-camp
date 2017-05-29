@@ -55,9 +55,9 @@ We'll be looking at the three senses used to interact with content: sight, touch
                 <div class="cover--box">
                     <img alt="The cover of the accessibilityscouts.camp sight manual." src="/user/pages/01.home/sight-cover.png">
                 </div>
-                <h4 class="manual--title">SIGHT Manual</h4>
+                <h4 class="manual--title">VISION Manual</h4>
                 <ul class="toc--list">
-                {% for child in page.find('/sight-manual').children %}
+                {% for child in page.find('/vision').children %}
                     <li class="toc--list__item toc--list__item-sight">
                         <a class="toc--list-item__link" href="{{ child.url }}">{{ child.title }}</a>
                     </li>
@@ -68,9 +68,9 @@ We'll be looking at the three senses used to interact with content: sight, touch
                 <div class="cover--box">
                     <img alt="The cover of the accessibilityscouts.camp sound manual." src="/user/pages/01.home/sound-cover.png">
                 </div>
-                <h4 class="manual--title">AUDIO Manual</h4>
+                <h4 class="manual--title">SOUND Manual</h4>
                 <ul class="toc--list">
-                {% for child in page.find('/audio-manual').children %}
+                {% for child in page.find('/sound').children %}
                     <li class="toc--list__item toc--list__item-audio">
                         <a class="toc--list-item__link" href="{{ child.url }}">{{ child.title }}</a>
                     </li>
@@ -83,7 +83,7 @@ We'll be looking at the three senses used to interact with content: sight, touch
                 </div>
                 <h4 class="manual--title">TOUCH Manual</h4>
                 <ul class="toc--list">
-                {% for child in page.find('/touch-manual').children %}
+                {% for child in page.find('/interaction').children %}
                     <li class="toc--list__item toc--list__item-touch">
                         <a class="toc--list-item__link" href="{{ child.url }}">{{ child.title }}</a>
                     </li>
@@ -96,7 +96,7 @@ We'll be looking at the three senses used to interact with content: sight, touch
                 </div>
                 <h4 class="manual--title">ABOUT Manual</h4>
                 <ul class="toc--list">
-                {% for child in page.find('/about-manual').children %}
+                {% for child in page.find('/about').children %}
                     <li class="toc--list__item toc--list__item-about">
                         <a class="toc--list-item__link" href="{{ child.url }}">{{ child.title }}</a>
                     </li>
