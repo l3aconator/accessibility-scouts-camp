@@ -11,7 +11,7 @@ content:
         dir: desc
 badges:
     items:
-       '@taxonomy.category': [audioManualBadges]
+       '@taxonomy.category': [sound]
 twig_first: true
 process:
     twig: true

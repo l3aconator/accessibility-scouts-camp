@@ -12,7 +12,7 @@ content:
         dir: desc
 badges:
     items:
-       '@taxonomy.category': [sightManualBadges]
+       '@taxonomy.category': [sight]
 twig_first: true
 process:
     twig: true

@@ -144,6 +144,17 @@ label {
     &__large {
         font-family: $heading-font-family;
         font-weight: bold;
-        font-size: $type--size__h3;
+        font-size: $type--size__h5;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .form--link {
+
+        &__large {
+            font-size: $type--size__h3;
+        }
     }
 }

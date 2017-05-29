@@ -1,7 +1,7 @@
 ---
-title: 'Color Blindness Badge'
+title: 'Colophon Badge'
 taxonomy:
-    category: [sight, badge]
-    tag: [color-blindness]
+    category: [about, badge]
+    tag: [colophon]
 ---
 This is a short funny description of that badge and where it came from in your scouting journey

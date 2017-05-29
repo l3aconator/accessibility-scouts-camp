@@ -11,7 +11,7 @@ content:
         dir: desc
 badges:
     items:
-       '@taxonomy.category': [touchManualBadges]
+       '@taxonomy.category': [touch]
 twig_first: true
 process:
     twig: true

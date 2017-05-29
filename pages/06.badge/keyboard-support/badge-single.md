@@ -1,7 +1,7 @@
 ---
-title: 'Color Blindness Badge'
+title: 'Keyboard Support Badge'
 taxonomy:
-    category: [sight, badge]
-    tag: [color-blindness]
+    category: [touch, badge]
+    tag: [keyboard-support]
 ---
 This is a short funny description of that badge and where it came from in your scouting journey
