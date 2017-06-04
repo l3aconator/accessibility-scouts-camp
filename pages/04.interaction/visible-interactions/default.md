@@ -1,7 +1,7 @@
 ---
 title: Visible Interactions
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Welcome again scouts! Now that we’ve learned about color and type. Let’s talk about interactions. Type, color, and interactions are the meat and potatoes of a site. Without those we would have a blank white screen when someone navigates to a website.'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -26,10 +26,6 @@ With color and type, we can create hierarchy of where the user should look first
 </div>
 </section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
-</section>
-
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
@@ -47,70 +43,23 @@ We are now going to be combining our UX, UI, and accessible code skills together
     </div>
 
     <div class="container">
-
-        <hr />
-
-        <p>Good use of links:</p>
-        <div class="flex-grid">
-            <div class="col">
-            [VISUAL EXAMPLE]
-            </div>
-            <div class="col">
-                <pre>
-                    <code>
-                    [CODE EXAMPLE]
-                    </code>
-                </pre>
-            </div>
+        <div class="box white mt--90 mb--90">
+            <h3 class="mt--0">Good use of links</h3>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="eRYLvG" data-default-tab="result" data-user="l3acon" data-embed-version="2" data-pen-title="Good use of links" class="codepen">See the Pen <a href="https://codepen.io/l3acon/pen/eRYLvG/">Good use of links</a> by Kyle Bacon (<a href="https://codepen.io/l3acon">@l3acon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
         </div>
-
-        <p>Bad use of links:</p>
-        <div class="flex-grid">
-            <div class="col">
-            [VISUAL EXAMPLE]
-            </div>
-            <div class="col">
-                <pre>
-                    <code>
-                    [CODE EXAMPLE]
-                    </code>
-                </pre>
-            </div>
+        <div class="box white mt--90 mb--90">
+            <h3 class="mt--0">Bad use of links</h3>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="LLYJWg" data-default-tab="html,result" data-user="l3acon" data-embed-version="2" data-pen-title="Bad use of links" class="codepen">See the Pen <a href="https://codepen.io/l3acon/pen/LLYJWg/">Bad use of links</a> by Kyle Bacon (<a href="https://codepen.io/l3acon">@l3acon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
         </div>
-
-    </div>
-
-    <div class="container">
-
-        <hr />
-
-        <p>A good button pattern:</p>
-        <div class="flex-grid">
-            <div class="col">
-            [VISUAL EXAMPLE]
-            </div>
-            <div class="col">
-                <pre>
-                    <code>
-                    [CODE EXAMPLE]
-                    </code>
-                </pre>
-            </div>
+        <div class="box white mt--90 mb--90">
+            <h3 class="mt--0">Good button pattern</h3>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="Pjodmo" data-default-tab="html,result" data-user="l3acon" data-embed-version="2" data-pen-title="Good button pattern" class="codepen">See the Pen <a href="https://codepen.io/l3acon/pen/Pjodmo/">Good button pattern</a> by Kyle Bacon (<a href="https://codepen.io/l3acon">@l3acon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
         </div>
-
-        <p>A bad button pattern:</p>
-        <div class="flex-grid">
-            <div class="col">
-            [VISUAL EXAMPLE]
-            </div>
-            <div class="col">
-                <pre>
-                    <code>
-                    [CODE EXAMPLE]
-                    </code>
-                </pre>
-            </div>
+        <div class="box white mt--90 mb--90">
+            <h3 class="mt--0">Bad button pattern</h3>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="BZaORN" data-default-tab="html,result" data-user="l3acon" data-embed-version="2" data-pen-title="Bad button pattern" class="codepen">See the Pen <a href="https://codepen.io/l3acon/pen/BZaORN/">Bad button pattern</a> by Kyle Bacon (<a href="https://codepen.io/l3acon">@l3acon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
         </div>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     </div>
 </section>
 
@@ -132,10 +81,6 @@ These are only a few examples of what good and bad interactions could be. It all
 </div>
 </section>
 
-<section>
-[ILLUSTRATION]
-</section>
-
 <section class="section--badge-cta section--badge-cta__yellow mt--60">
     <div class="container">
         <div class="flex-grid--gutters">
@@ -147,11 +92,11 @@ These are only a few examples of what good and bad interactions could be. It all
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Type is freakin' wonderful, isn't it!</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

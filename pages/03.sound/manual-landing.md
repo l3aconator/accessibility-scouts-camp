@@ -1,5 +1,6 @@
 ---
-title: Sound
+title: 'Can you hear us now? Made you…uh…look. You’re in the right place for helping those with sound impairments.'
+menu: sound
 icon: audio
 heroCover: '/user/pages/03.sound/audio-cover.png'
 heroImg: '/user/pages/03.sound/yellow-placeholder.png'

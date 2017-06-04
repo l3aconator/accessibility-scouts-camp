@@ -1,11 +1,11 @@
 ---
 title: Typography
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Way finding lives and dies by good typography and iconography. Here we are going to focus on typography. Way finding on the net ends up being navigation, but in reality the important parts of an experience is driven by typography. Color and typography are some of the most important things to keep a site accessible. (Next to screen readers of course but we will get there.)'
 stats:
-    examples: '2'
+    examples: '3'
     readingTime: '20 minutes'
-    badges: '10'
+    badges: '1'
 twig_first: true
 process:
     twig: true
@@ -21,11 +21,9 @@ process:
 ---
 
 Way finding lives and dies by good typography and iconography. Here we are going to focus on typography. Way finding on the net ends up being navigation, but in reality the important parts of an experience is driven by typography. Color and typography are some of the most important things to keep a site accessible. (Next to screen readers of course but we will get there.)
-</div>
-</section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
+![ILLUSTRATION](http://placehold.it/450x250)
+</div>
 </section>
 
 <section>
@@ -61,10 +59,6 @@ Some features of a type face to consider:
 </div>
 </section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
-</section>
-
 <section>
 <div class="container--content" markdown="1">
 ### Creating the trail signs
@@ -90,10 +84,6 @@ The size and color one uses can ruin a well designed typeface. Here are some dos
 	* these end up being to thin to read or too thick and the counters fill in at smaller sizes
 
 ![ILLUSTRATION](http://placehold.it/450x250)
-
-Still confused on the best practices or pairings for accessible typography?! Fret no more scout. The camp has created some best practice type pairings using system fonts and those that can be found for free on Google fonts.
-
-[CTA TO TYPE PAIRINGS]
 </div>
 </section>
 
@@ -120,11 +110,11 @@ Still confused on the best practices or pairings for accessible typography?! Fre
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Type is freakin' wonderful, isn't it!</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

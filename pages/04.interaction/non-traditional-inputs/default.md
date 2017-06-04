@@ -1,7 +1,7 @@
 ---
 title: Non-traditional inputs
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Sorry scouts, no fancy analogy for these devices. The keyboard is a fundamental device to computing. How does it work when that isn’t available to someone with an impairment? Other means of input are needed. Granted a lot of these are rarer than others, but please keep these in mind.'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -23,16 +23,53 @@ process:
 Sorry scouts, no fancy analogy for these devices. The keyboard is a fundamental device to computing. How does it work when that isn’t available to someone with an impairment? Other means of input are needed. Granted a lot of these are rarer than others, but please keep these in mind.
 
 Again, old broken record over here, but keep your audience in mind. If you are building a website with folks who don’t have arms, think of ways they can interact with it using speech, feet, or even eye tracking software. If you have the budget, get these devices and use them with your site. It’ll be mind blowing to see how easy or hard it is to use.
+</div>
 
-[GRIDDED VISUAL LIST WITH DESCRIPTIONS]
-
-* On-screen keyboards
-*  Word prediction software
-* Speech recognition
-* Breath and mouth controlled devices
-* Eye tracking software and hardware
-* Braille surfaces
-* Feet controlled devices
+<div class="container">
+    <ul class="link--list flex-grid--gutters flex-wrap mt--90 mb--60">
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>On-screen keyboards</h5>
+            </div>
+        </li>
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>Word prediction software</h5>
+            </div>
+        </li>
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>Speech recognition</h5>
+            </div>
+        </li>
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>Breath and mouth controlled devices</h5>
+            </div>
+        </li>
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>Eye tracking software and hardware</h5>
+            </div>
+        </li>
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>Braille surfaces</h5>
+            </div>
+        </li>
+        <li class="col--width__four link--list-item">
+            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+            <div class="link--list-item__content">
+                <h5>Feet controlled devices</h5>
+            </div>
+        </li>
+    </ul>
 </div>
 </section>
 
@@ -57,11 +94,11 @@ Again, old broken record over here, but keep your audience in mind. If you are b
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

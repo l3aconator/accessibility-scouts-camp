@@ -1,7 +1,7 @@
 ---
 title: Deeper learning
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Hmmmmmmm. Thought this guide was all inclusive? Not so much. The purpose of this camp was to have you start on a great foundation and use the small things to do the most good. Here are some of the camp’s sources and a lot more resources for more in-depth learning.'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -47,11 +47,11 @@ process:
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

@@ -1,9 +1,9 @@
 ---
 title: 'Behind the scenes'
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'As we draw a close to the end of the sight manual, keep in mind there are some behind the scenes items that users can’t really see—unless they pop open dev tools or are using screen reader technology. Make sure that your images have alt tags. Please for the love of god put alt tags on your images. Guess what? Screen readers READ the alt tags when used. It also provides a fallback when images aren’t loading and it helps with SEO. Do we have your scout’s honor?'
 stats:
-    examples: '2'
+    examples: '16'
     readingTime: '20 minutes'
     badges: '10'
 twig_first: true
@@ -20,7 +20,7 @@ process:
 
 ---
 
-As we draw a close to the end of the sight manual, keep in mind there are some behind the scenes items that users can’t really see—unless they pop open dev tools or are using screen reader technology.
+Keep in mind there are some behind the scenes items that users can’t really see—unless they pop open dev tools or are using screen reader technology. It may seem a little odd that this fits under the sight category, but ARIA tags aid the semantics see by humans and screen readers.
 
 ![ILLUSTRATION](http://placehold.it/450x250)
 
@@ -28,14 +28,22 @@ Make sure that your images have alt tags. Please for the love of god put alt tag
 </div>
 </section>
 
-<section>
+<section class="mt--60 mb--60">
     <div class="container">
-        <div class="flex-grid">
+        <div class="flex-grid--gutters">
             <div class="col">
-                [SCREEN READ EXAMPLE WITH AND WITHOUT ALT TAG ON ILLUSTRATION] CODE
+                <div class="box white">
+                    <h3 class="pt--0 mt--0">Broken image with alt text</h3>
+                    <p>Go ahead and turn on Chrome Vox to read this page. Listen for what happens when it hits a broken image <em>with</em> alt text.</p>
+                    <img src="#" alt="This image has alt text, which is the way it should be." />
+                </div>
             </div>
             <div class="col">
-                example
+                <div class="box white">
+                    <h3 class="pt--0 mt--0">Broken image without alt text</h3>
+                    <p>Go ahead and turn on Chrome Vox to read this page. Listen for what happens when it hits a broken image <em>without</em> alt text.</p>
+                    <img src="#" alt="" />
+                </div>
             </div>
         </div>
     </div>
@@ -47,18 +55,118 @@ Make sure that your images have alt tags. Please for the love of god put alt tag
 
 The ARIA spec is hard to read, so below are some of the key points to understand from it to include in your code to make your content and interactions more compliant. Some HTML5 attributes have ARIA roles attached to them, some can be modified, others have to be specified explicitly—like hidden objects.
 
-[ARIA in HTML](https://www.w3.org/TR/html-aria/) <= turning this into my own content on the web page with examples to make it easier to understand
 </div>
-</section>
-
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
-<div class="container--content" markdown="1">
-Wonderful learning scout! Your 1/3rd of the way to becoming a full-fledge Accessibility Scout. Our next building and manual is for audio.
-</div>
+    <div class="container--content">
+    <h2>Here are some of the most usefule ARIA attributes to be used in HTML and javascript!</h2>
+        <div class="flex-grid--gutters flex-wrap">
+            <div class="col--width__six">
+                <h5>Aria attribute:</h5>
+            </div>
+            <div class="col--width__six">
+                <h5>What it does:</h5>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-hidden="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-required="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>The aria-required attribute is used to indicate that user input is required on an element before a form can be submitted. This attribute can be used with any typical HTML form element; it is not limited to elements that have an ARIA role assigned.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-disabled="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-readonly="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates that the element is not editable, but is otherwise operable.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-invalid="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates the entered value does not conform to the format expected by the application.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-label="This is a label"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>The aria-label attribute is used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen. If there is visible text labeling the element, use aria-labelledby instead.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-expanded="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-checked="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates the current "pressed" state of toggle buttons.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-labelledby="camp"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Defines the number of items in the current set of listitems or treeitems.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>aria-selected="true"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Indicates the current "selected" state. If selected set to true, if not set to false.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>role="banner"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>A region that contains mostly site-oriented content, rather than page-specific content.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>role="contentinfo"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>A large perceivable region that contains information about the parent document.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>role="alert"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>A message with important, and usually time-sensitive, information.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>role="presentation"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>An element whose content is completely presentational (like a spacer image, decorative graphic, or clearing element.)</p>
+            </div>
+            <div class="col--width__six">
+                <pre>role="group"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>Authors SHOULD use a group to form logical collection of items in a widget such as children in a tree widget forming a collection of siblings in a hierarchy, or a collection of items having the same container in a directory.</p>
+            </div>
+            <div class="col--width__six">
+                <pre>tabindex="0"</pre>
+            </div>
+            <div class="col--width__six">
+                <p>The tabindex attribute of 1+ explicitly defines the navigation order for focusable elements (typically links and form controls) within a page. It can also be used to define whether elements should be focusable or not. It should not be messed with unless the default is not ideal or the order cannot be change be rearranging the items to be tabbed through.</p>
+            </div>
+        </div>
+        <p markdown="1">If you'd like to read the entire spec, or learn more about aria attributes and roles visit [ARIA in HTML](https://www.w3.org/TR/html-aria/)</p>
+    </div>
 </section>
 
 <section>
@@ -68,10 +176,6 @@ Wonderful learning scout! Your 1/3rd of the way to becoming a full-fledge Access
 * Review the ARIA examples to make sure you are incorporating the most important into your markup. It’s not that hard, you just need to know what goes where.
 * PUT CONTENT IN YOUR ALT TAGS.
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section class="section--badge-cta section--badge-cta__yellow mt--60">
@@ -85,11 +189,11 @@ Wonderful learning scout! Your 1/3rd of the way to becoming a full-fledge Access
             <div class="col--width__nine">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

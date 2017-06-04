@@ -1,7 +1,7 @@
 ---
 title: Screen readers
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Wouldn’t it be terrible sitting in the woods at night without a lamp or fire to see anything? Imagine trying to use the Internet without visuals. It would be very hard to use.  Almost next to impossible. There’s a solution though and those are screen readers and tools to accept voice input to control the computer.'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -24,43 +24,7 @@ Wouldn’t it be terrible sitting in the woods at night without a lamp or fire t
 
 ![ILLUSTRATION](http://placehold.it/450x250)
 
-As you’ve seen so far through the sight manual a strong focus on content, image alt tags, and adding the extra aria attributes to our markup. Well guess what?! You’ve already learned about most of the tools to make a site accessible and screen readers happy. In turn that makes your users happy. Here we are going to go through some more complex code examples to show how advanced one can get with the aria spec in a web app and still have things make sense to the user and you.
-</div>
-</section>
-
-<section>
-<div class="container--content section--marg">
-<div class="box purple stripe" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
-
-#### A shopping experience with a screen reader and focus states / tab index:
-
-[COMPLEX CODE EXAMPLE HERE—LINK TO BEFORE]
-[SHOW BAD HIERARCHY, POOR COLOR CHOICES, BAD INTERACTIONS]
-[COMPLEX CODE EXAMPLE HERE—LINK TO AFTER]
-[SHOW GOOD HIERARCHY, GOOD COLOR CHOICES, GOOD INTERACTIONS]
-</div>
-</div>
-</section>
-
-<section>
-<div class="container--content section--marg">
-<div class="box purple stripe" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
-
-#### Social media experience with a screen reader and focus states / tab index:
-
-[COMPLEX CODE EXAMPLE HERE—LINK TO BEFORE]
-[SHOW BAD HIERARCHY, POOR COLOR CHOICES, BAD INTERACTIONS]
-[COMPLEX CODE EXAMPLE HERE—LINK TO AFTER]
-[SHOW GOOD HIERARCHY, GOOD COLOR CHOICES, GOOD INTERACTIONS]
-</div>
-</div>
-</section>
-
-<section>
-<div class="container--content" markdown="1">
-Whew! That was a lot. You thought this was just the audio manual, huh? Accessibility is about catering to the largest audience. In practice one has to cater to both the visual and auditory audience at the same time. No easy task and takes a lot of work to pull off. Hopefully you can see how easy it can be to enrich the experience for those with visual impairments through the means of audio and dictation software.
+As you’ve seen so far through the sight manual a strong focus on content, image alt tags, and adding the extra aria attributes to our markup. Well guess what?! You’ve already learned about most of the tools to make a site accessible and screen readers happy. In turn that makes your users happy. Get to it! We'll have some examples here shortly, but practicing yourself will make your knowledge grow exponentially.
 </div>
 </section>
 
@@ -100,7 +64,19 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
             <li class="col--width__four link--list-item">
                 <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
                 <div class="link--list-item__content">
-                    <h5><a href="http://www.afb.org/prodBrowseCatResults.aspx?CatID=49" target="_blank">Finish list items</a></h5>
+                    <h5><a href="http://www.freedomscientific.com/Products/Blindness/JAWS" target="_blank">JAWS Screen reader</a></h5>
+                </div>
+            </li>
+            <li class="col--width__four link--list-item">
+                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+                <div class="link--list-item__content">
+                    <h5><a href="http://www.gwmicro.com/Window-Eyes/" target="_blank">Window-Eyes Pro.</a></h5>
+                </div>
+            </li>
+            <li class="col--width__four link--list-item">
+                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+                <div class="link--list-item__content">
+                    <h5><a href="http://mielke.cc/brltty/" target="_blank">BRLTTY</a></h5>
                 </div>
             </li>
         </ul>
@@ -123,7 +99,31 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
             <li class="col--width__four link--list-item">
                 <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
                 <div class="link--list-item__content">
-                    <h5><a href="" target="_blank">need to find more links</a></h5>
+                    <h5><a href="http://ttsreader.com/" target="_blank">ttsreader.com</a></h5>
+                </div>
+            </li>
+            <li class="col--width__four link--list-item">
+                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+                <div class="link--list-item__content">
+                    <h5><a href="https://www.naturalreaders.com/index.html" target="_blank">naturalreaders.com</a></h5>
+                </div>
+            </li>
+            <li class="col--width__four link--list-item">
+                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+                <div class="link--list-item__content">
+                    <h5><a href="https://dictation.io/" target="_blank">dictation.io</a></h5>
+                </div>
+            </li>
+            <li class="col--width__four link--list-item">
+                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+                <div class="link--list-item__content">
+                    <h5><a href="http://www.nch.com.au/express/index.html" target="_blank">Express Dictate</a></h5>
+                </div>
+            </li>
+            <li class="col--width__four link--list-item">
+                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+                <div class="link--list-item__content">
+                    <h5><a href="https://support.apple.com/en-us/HT202584" target="_blank">Apple Dictation</a></h5>
                 </div>
             </li>
         </ul>
@@ -152,11 +152,11 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

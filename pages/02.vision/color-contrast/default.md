@@ -1,9 +1,9 @@
 ---
 title: Color Contrast
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Imagine a world without color. It’d be a bit hard to tell the difference between things. Imagine a world were one has trouble differentiating colors. Image a world were you can’t see the same colors as others. These are all real possibilities. We’ll be getting to color blindness and not being able to see at all. But first, let’s discuss color contrast.'
 stats:
-    examples: '2'
+    examples: '4'
     readingTime: '20 minutes'
     badges: '10'
 twig_first: true
@@ -22,10 +22,6 @@ process:
 
 Imagine a world without color. It’d be a bit hard to tell the difference between things. Imagine a world were one has trouble differentiating colors. Image a world were you can’t see the same colors as others. These are all real possibilities. We’ll be getting to color blindness and not being able to see at all. But first, let’s discuss color contrast.
 </div>
-</section>
-
-<section>
-[ILLUSTRATION]
 </section>
 
 <section>
@@ -65,10 +61,6 @@ Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If it�
 </div>
 </section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
-</section>
-
 <section>
 <div class="container--content" markdown="1">
 Thankfully nerds on the Internet have built tools to test color contrast using your base background color and what colors will go on the top of them and pass either level 2 or 3. (Guess what? There’s a sample tester below.)
@@ -105,11 +97,11 @@ Try it out here:
             <div class="col--width__nine">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

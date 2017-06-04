@@ -42,7 +42,7 @@ process:
 
 The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the wild forest of the Internet and make it usable for all. (Or as close as we can get!)
 
-We'll be looking at the three senses used to interact with content: sight, touch, and hearing. People with one disability, or a combination of several, impacts the experience of a website or web app. Information, learning, or a specific tool shouldn't cater to one audience, but many.
+We'll be looking at the three senses used to interact with content: vision, sound, and interaction. People with one disability, or a combination of several, impacts the experience of a website or web app. Information, learning, or a specific tool shouldn't cater to one audience, but many.
 </section>
 
 <section class="manual--lists">

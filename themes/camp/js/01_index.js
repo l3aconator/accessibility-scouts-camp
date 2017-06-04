@@ -7,19 +7,30 @@ $( document ).ready(function() {
             dropdown = $('.nav--dropdown' + '.nav--dropdown__' + navItem);
 
         dropdown.toggleClass('open');
-        parentAndNavItem.attr('aria-hidden', 'false');
+
+        if (dropdown.attr('aria-hidden', 'true')) {
+            dropdown.attr('aria-hidden', 'false');
+        } else {
+            dropdown.attr('aria-hidden', 'false');
+        }
 
         dropdown.hover(function() {
             parentAndNavItem.addClass('active');
-            parentAndNavItem.attr('aria-hidden', 'false');
             dropdown.addClass('open');
         });
 
         dropdown.mouseleave(function() {
             parentAndNavItem.removeClass('active');
-            parentAndNavItem.attr('aria-hidden', 'true');
+            dropdown.attr('aria-hidden', 'true');
             dropdown.removeClass('open');
         });
+    });
+
+    $('.nav--item').mouseleave(function() {
+        var navItem = $(this).attr('data-dropdown'),
+            dropdown = $('.nav--dropdown' + '.nav--dropdown__' + navItem);
+
+        dropdown.attr('aria-hidden', 'true');
     });
 
     $('.checkbox').click(function() {

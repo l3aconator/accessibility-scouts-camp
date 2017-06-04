@@ -1,5 +1,6 @@
 ---
-title: Interaction
+title: 'Counselor! They want stop pestering me! Welcome to the interaction manual.'
+menu: Interaction
 icon: touch
 heroCover: '/user/pages/04.interaction/touch-cover.png'
 heroImg: '/user/pages/04.interaction/blue-placeholder.png'

@@ -1,7 +1,7 @@
 ---
 title: Providing alternatives to content with audio
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'If some one can’t see, they can still hear audio and video files on the web. What about those who can’t hear audio and visual content? WHOA. Didn’t think about that did ya? (You probably did, sorry the counselor in us is getting a little enthusiastic!)'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -24,12 +24,8 @@ If some one can’t see, they can still hear audio and video files on the web. W
 </div>
 </section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
-</section>
-
 <section>
-<div class="container--content section--marg">
+<div class="container section--marg">
 <div class="box purple stripe" markdown="1">
 As a thought exercise play the following audio file with your sound turned off—please don’t cheat:
 
@@ -61,30 +57,133 @@ There’s plenty of things that can be done also to improve the transcript readi
 Here are few ways to enrich the transcript experience, though:
 </div>
     <div class="container">
-
-        <div class="flex-grid">
-            <div class="col">
-                <p>[AUDIO FILE WITH TRANSCRIPT HIGHLIGHTING SYNCED WITH THE AUDIO, AUTO SCROLLS AS WELL]</p>
-            </div>
-            <div class="col">
-                <p>code</p>
-            </div>
+        <div class="box white mt--90 mb--90">
+         audio file with transcript
         </div>
 
-        <div class="flex-grid">
-            <div class="col">
-                <p>[VIDEO FILE WITH TRANSCRIPT HIGHLIGHTING SYNCED WITH THE VIDEO, AUTO SCROLLS AS WELL]</p>
+        <div class="box white mt--90 mb--90">
+            <h2 class="mt--0 pt--0">Videos and transcripts</h2>
+            <div class="videoWrapper mb--30">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/vNYJKUAuJ4U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col">
-                <p>code</p>
-            </div>
+            <h4 class="">Sample transcript from the above video—<em>Courtesy of YouTube</em></h4>
+            <p>
+            0:01 [Music]<br />
+            0:06 so I just got back from a movie I had a<br />
+            0:09 little extra time today because I just I<br />
+            0:12 just needed a little extra time today<br />
+            0:14 for myself just uh I go to a movie<br />
+            0:16 because it other than working out it's<br />
+            0:18 like the way that I destress when I work<br />
+            0:19 out I kind of just I throw myself into<br />
+            0:22 it so much that I'm just exhausted don't<br />
+            0:24 have the energy to feel whatever emotion<br />
+            0:25 i'm trying to run away from but in a<br />
+            0:27 movie theater it just it's just this<br />
+            0:28 this disconnect it's perfect it's my<br />
+            0:31 perfect perfect perfect thing I'm also<br />
+            0:33 in a good mood because I'm gonna be<br />
+            0:34 picking tray and Lindsay I but I've been<br />
+            0:35 just missing missing my love but the big<br />
+            0:39 thing was before I went to the movie I<br />
+            0:41 was just thinking of like how I was<br />
+            0:43 little I was being a little depressed<br />
+            0:44 which you know with a slam schedule a<br />
+            0:46 lot of stuff on my plate not a lot of<br />
+            0:48 sleep it's not surprising like I'm i'm<br />
+            0:51 very self aware of who i am and how i<br />
+            0:53 feel and why i feel those things but i<br />
+            0:56 feel like it was very important to throw<br />
+            0:58 out there that it's it doesn't matter if<br />
+            1:00 you're you're my age you're older you're<br />
+            1:02 younger it is ok to feel lost like most<br />
+            1:05 of my life i have i have bust my ass and<br />
+            1:08 I have gotten things where it's just<br />
+            1:10 good and and really I never use the word<br />
+            1:13 perfect because that's that's not a<br />
+            1:15 thing but it's just my life is good but<br />
+            1:18 it's still okay to feel lost I still<br />
+            1:21 have these bouts of anxious lonely bull<br />
+            1:24 shit where I feel like even when I'm in<br />
+            1:26 a room where I'm talking people that I'm<br />
+            1:28 by myself I'm lonely and that's normal<br />
+            1:31 you know you just you need to you just<br />
+            1:32 need to know that I don't I don't want<br />
+            1:34 you to feel like you're some big weirdo<br />
+            1:37 okay you're not I had this thing that I<br />
+            1:39 was gone for a part of it was this very<br />
+            1:41 interesting psych evaluation where you<br />
+            1:44 answer all these questions and then you<br />
+            1:46 talk to a shrink and they talk to you<br />
+            1:47 about your past and it's something that<br />
+            1:50 I never really think about I've blocked<br />
+            1:52 that out so so hard and this this psych<br />
+            1:55 was like well looking at everything<br />
+            1:57 aside from you know your issues with<br />
+            1:59 this person or that person it looks like<br />
+            2:01 you're very confident and you're<br />
+            2:03 resilient and you know you<br />
+            2:05 you you're open to people but you're<br />
+            2:08 also not trusting but you're very<br />
+            2:11 considering your past you're very put<br />
+            2:13 together well and I was like well thank<br />
+            2:16 you I think it's because when bad shit<br />
+            2:19 happens in your life is two things that<br />
+            2:21 can happen it can it can crush you right<br />
+            2:24 or you can try and learn from it you can<br />
+            2:26 try and not be that thing and you learn<br />
+            2:29 ways to stay away from that thing that's<br />
+            2:30 terrible okay whether it's emotional or<br />
+            2:33 physical or any of those things as<br />
+            2:35 really that's that's the only way you<br />
+            2:37 can win in life when those things that<br />
+            2:39 should break you don't they shape you<br />
+            2:41 and that's completely fine but don't let<br />
+            2:44 them break you because otherwise you<br />
+            2:47 lose and that's I don't know I think of<br />
+            2:50 life as a game in that way but that's<br />
+            2:51 also probably why I take the things that<br />
+            2:53 make me sad and I let them make me angry<br />
+            2:55 anger is such a better emotion because<br />
+            2:58 as long as you don't lash out it is it<br />
+            3:01 is never ending fuel like we're back in<br />
+            3:03 the office and I'm gonna be on the<br />
+            3:05 sourcefed podcast for the first time I<br />
+            3:07 actually have time to do it so we're<br />
+            3:08 let's do it obsessive let city cuckoo<br />
+            3:19 you soon you and me no no no remember<br />
+            3:27 that way yeah you don't know where this<br />
+            3:28 finger to that no oh yeah that's the<br />
+            3:31 left hand I don't respect my left hand<br />
+            3:32 get a gun anyway that was in the songs<br />
+            3:36 on youtube I don't know I know yeah hey<br />
+            3:45 not fan<br />
+            3:48 climb in happy all right doesn't this<br />
+            3:52 doesn't this make you have it yeah don't<br />
+            3:55 prefer berber berber oh you know what<br />
+            4:00 this song is called skinny Leonard yeah<br />
+            4:04 oh this one's called lightning bugs yeah<br />
+            4:09 all these are just like basic versions<br />
+            4:12 of this is is a Firefly no Firefly oh<br />
+            4:15 yeah yeah you walk differently depending<br />
+            4:20 on what you to be amazing are you<br />
+            4:23 kidding me that would be my kitchen I<br />
+            4:25 would listen I would listen to rap all<br />
+            4:26 the time with you pool and playing music<br />
+            4:30 to make you look stupid all the time Oh<br />
+            4:32 for this is singular perversion not just<br />
+            4:35 up<br />
+            4:37 why is it on me I'm eating babe you need<br />
+            4:40 to not address the camera otherwise this<br />
+            4:42 shot does it work I'm sorry<br />
+            4:51 oh sorry the number you have dialed is<br />
+            4:54 not in service<br />
+            5:15 no there's gonna be so good I might stop<br />
+            5:21 eating it I've tried so hard<br />
+            5:23 [Music]
+            </p>
         </div>
-
     </div>
-</section>
-
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
 </section>
 
 <section>
@@ -93,7 +192,7 @@ Here are few ways to enrich the transcript experience, though:
 
 * Provide a transcript…
 * (Psssst…we haven’t said this in awhile…but know your audience)
-* Enrich the transcript if it makes sense for you skillset and audience
+* Enrich the transcript if it makes sense for you skillset and audience. Meaning, enhance with technology that follows along with the video or audio file
 </div>
 </section>
 
@@ -108,11 +207,11 @@ Here are few ways to enrich the transcript experience, though:
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

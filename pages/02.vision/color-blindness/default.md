@@ -1,7 +1,7 @@
 ---
 title: Color Blindness
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Contrast is just the beginning. The color you choose matters as well. 1 in 200 women and 1 in 12 men are color blind. This gets even trickier with the the different types of color blindness. Let’s take a peak at the different types. Keep in mind this phenomena really only affects men the most, so pardon the frequent references to “males.”'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -123,10 +123,6 @@ If you couldn’t see the illustration that opened up this section, you may have
 </div>
 </section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
-</section>
-
 <section>
 <div class="container--content" markdown="1">
 Thankfully nerds on the Internet have built some tools around color blindness. You can find these other scout survival tools here:
@@ -135,9 +131,26 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
 
 <section>
 <div class="container" markdown="1">
-* [Toptal Color Blind Filter](https://www.toptal.com/designers/colorfilter)
-* [Enchroma: Color Blindness Test | Enchroma](http://enchroma.com/test/instructions/)
-* [Coblis — Color Blindness Simulator | Colblindor](http://www.color-blindness.com/coblis-color-blindness-simulator/)
+<ul class="flex-grid--gutters flex-wrap">
+    <li class="col--width__four link--list-item">
+        <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+        <div class="link--list-item__content">
+            <h5><a href="https://www.toptal.com/designers/colorfilter/" target="_blank">Toptal Color Blind Filter</a></h5>
+        </div>
+    </li>
+    <li class="col--width__four link--list-item">
+        <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+        <div class="link--list-item__content">
+            <h5><a href="http://enchroma.com/test/instructions/" target="_blank">Enchroma: Color Blindness Test</a></h5>
+        </div>
+    </li>
+    <li class="col--width__four link--list-item">
+        <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
+        <div class="link--list-item__content">
+            <h5><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Color Blindness Simulator</a></h5>
+        </div>
+    </li>
+<ul>
 </div>
 </section>
 
@@ -164,11 +177,11 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
             <div class="col--width__nine">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>

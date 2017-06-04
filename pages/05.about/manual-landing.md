@@ -1,5 +1,6 @@
 ---
-title: About
+title: 'Find out about this camp site, accessibility, and more resources for you to access.'
+menu: About
 icon: about
 heroCover: '/user/pages/05.about/about-cover.png'
 heroImg: '/user/pages/05.about/orange-placeholder.png'

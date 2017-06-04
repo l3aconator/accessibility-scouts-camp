@@ -1,7 +1,7 @@
 ---
 title: Keyboard support
 visible: true
-summary: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the'
+summary: 'Sometimes a keyboard may be the only way a person can use a computer. This has been mentioned already, but your tab ordering and keyboard support has to be on point. The best way to show this again is to use a screen reader and test out the examples.'
 stats:
     examples: '2'
     readingTime: '20 minutes'
@@ -24,34 +24,20 @@ Sometimes a keyboard may be the only way a person can use a computer. This has b
 </div>
 </section>
 
-<section class="pt--30 pb--30">
-    <img src="/user/themes/camp/images/illustration-placeholder.png" alt="Illustration placeholder" />
-</section>
-
 <section>
 <div class="container--content" markdown="1">
 Here are few ways to enrich the transcript experience, though:
 </div>
     <div class="container">
-
-        <div class="flex-grid">
-            <div class="col">
-                <p>[GOOD TAB ORDER EXAMPLE]</p>
-            </div>
-            <div class="col">
-                <p>code</p>
-            </div>
+        <div class="box white mt--90 mb--90">
+            <h3 class="mt--0">Good tab order example</h3>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="awbjbN" data-default-tab="html,result" data-user="l3acon" data-embed-version="2" data-pen-title="Good tab order example" class="codepen">See the Pen <a href="https://codepen.io/l3acon/pen/awbjbN/">Good tab order example</a> by Kyle Bacon (<a href="https://codepen.io/l3acon">@l3acon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
         </div>
-
-        <div class="flex-grid">
-            <div class="col">
-                <p>[BAD TAB ORDER EXAMPLE]</p>
-            </div>
-            <div class="col">
-                <p>code</p>
-            </div>
+        <div class="box white mt--90 mb--90">
+            <h3 class="mt--0">Bad tab order example</h3>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="wevxvE" data-default-tab="html,result" data-user="l3acon" data-embed-version="2" data-pen-title="Bad tab order example" class="codepen">See the Pen <a href="https://codepen.io/l3acon/pen/wevxvE/">Bad tab order example</a> by Kyle Bacon (<a href="https://codepen.io/l3acon">@l3acon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
         </div>
-
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     </div>
 </section>
 
@@ -75,11 +61,11 @@ Here are few ways to enrich the transcript experience, though:
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
-                {% if not page.isFirst %}
-                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
-                {% endif %}
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
+                {% endif %}
+                {% if not page.isFirst %}
+                    <span>Up next: </span><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }} &raquo;</a>
                 {% endif %}
             </div>
         </div>
