@@ -2,7 +2,7 @@
 title: 'Counselor! They want stop pestering me! Welcome to the interaction manual.'
 menu: Interaction
 icon: touch
-heroCover: '/user/pages/04.interaction/touch-cover.png'
+heroCover: '/user/pages/04.interaction/interaction-cover.png'
 heroImg: '/user/pages/04.interaction/blue-placeholder.png'
 heroImgAlt: 'Illustration'
 content:

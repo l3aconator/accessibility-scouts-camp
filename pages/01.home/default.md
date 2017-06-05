@@ -52,10 +52,9 @@ We'll be looking at the three senses used to interact with content: vision, soun
     <div class="container">
         <div class="flex-grid--gutters">
             <div class="col">
-                <div class="cover--box">
+                <div class="cover--box mb--30">
                     <img alt="The cover of the accessibilityscouts.camp sight manual." src="/user/pages/01.home/sight-cover.png">
                 </div>
-                <h4 class="manual--title">VISION Manual</h4>
                 <ul class="toc--list">
                 {% for child in page.find('/vision').children %}
                     <li class="toc--list__item toc--list__item-sight">
@@ -65,10 +64,9 @@ We'll be looking at the three senses used to interact with content: vision, soun
                 </ul>
             </div>
             <div class="col">
-                <div class="cover--box">
+                <div class="cover--box mb--30">
                     <img alt="The cover of the accessibilityscouts.camp sound manual." src="/user/pages/01.home/sound-cover.png">
                 </div>
-                <h4 class="manual--title">SOUND Manual</h4>
                 <ul class="toc--list">
                 {% for child in page.find('/sound').children %}
                     <li class="toc--list__item toc--list__item-audio">
@@ -78,10 +76,9 @@ We'll be looking at the three senses used to interact with content: vision, soun
                 </ul>
             </div>
             <div class="col">
-                <div class="cover--box">
-                    <img alt="The cover of the accessibilityscouts.camp touch manual." src="/user/pages/01.home/touch-cover.png">
+                <div class="cover--box mb--30">
+                    <img alt="The cover of the accessibilityscouts.camp touch manual." src="/user/pages/01.home/interaction-cover.png">
                 </div>
-                <h4 class="manual--title">INTERACTION Manual</h4>
                 <ul class="toc--list">
                 {% for child in page.find('/interaction').children %}
                     <li class="toc--list__item toc--list__item-touch">
@@ -91,10 +88,9 @@ We'll be looking at the three senses used to interact with content: vision, soun
                 </ul>
             </div>
             <div class="col">
-                <div class="cover--box">
+                <div class="cover--box mb--30">
                     <img alt="The cover of the accessibilityscouts.camp about manual." src="/user/pages/01.home/about-cover.png">
                 </div>
-                <h4 class="manual--title">ABOUT Manual</h4>
                 <ul class="toc--list">
                 {% for child in page.find('/about').children %}
                     <li class="toc--list__item toc--list__item-about">

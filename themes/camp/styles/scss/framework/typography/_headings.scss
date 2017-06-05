@@ -12,11 +12,13 @@ h6 {
     font-family: $heading-font-family;
     margin-top: $padding--base;
     margin-bottom: $padding--base;
+    line-height: 1.2;
 
     &__serif {
         font-family: $base-font-family;
         margin-top: $padding--base;
         margin-bottom: $padding--base;
+        line-height: 1.2;
     }
 }
 
