@@ -86,7 +86,7 @@ These are only a few examples of what good and bad interactions could be. It all
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="interaction" data-badge="visibleInteractions">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/visible-interactions/interactive.png" data-section="interaction" data-badge="visibleInteractions">
                 </div>
             </div>
             <div class="col--width__eight">

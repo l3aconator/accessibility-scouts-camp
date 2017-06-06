@@ -88,7 +88,7 @@ Again, old broken record over here, but keep your audience in mind. If you are b
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="interaction" data-badge="nonTraditionalInputs">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/non-traditional-inputs/inputs.png" data-section="interaction" data-badge="nonTraditionalInputs">
                 </div>
             </div>
             <div class="col--width__eight">

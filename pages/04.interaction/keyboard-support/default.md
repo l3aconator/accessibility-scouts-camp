@@ -55,7 +55,7 @@ Here are few ways to enrich the transcript experience, though:
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="interaction" data-badge="keyboardSupport">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/keyboard-support/keyboard-support.png" data-section="interaction" data-badge="keyboardSupport">
                 </div>
             </div>
             <div class="col--width__eight">

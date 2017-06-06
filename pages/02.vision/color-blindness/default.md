@@ -171,7 +171,7 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
         <div class="flex-grid--gutters">
             <div class="col--width__three">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="vision" data-badge="colorBlindness">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/color-blindness/color-blindness.png" data-section="vision" data-badge="colorBlindness">
                 </div>
             </div>
             <div class="col--width__nine">

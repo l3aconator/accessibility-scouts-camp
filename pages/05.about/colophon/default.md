@@ -41,7 +41,7 @@ This site is by no means 100% complete as of launch and a project I hope to main
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="about" data-badge="colophon">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/colophon/colophon.png" data-section="about" data-badge="colophon">
                 </div>
             </div>
             <div class="col--width__eight">

@@ -81,7 +81,7 @@ Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If itâ
         <div class="flex-grid--gutters">
             <div class="col--width__three">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="vision" data-badge="colorContrast">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/color-contrast/color-contrast.png" data-section="vision" data-badge="colorContrast">
                 </div>
             </div>
             <div class="col--width__nine">

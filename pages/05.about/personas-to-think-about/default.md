@@ -115,7 +115,7 @@ The elderly and those who are new to computers have similar challenges so we'll 
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="about" data-badge="personasToThinkAbout">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/personas-to-think-about/personas.png" data-section="about" data-badge="personasToThinkAbout">
                 </div>
             </div>
             <div class="col--width__eight">

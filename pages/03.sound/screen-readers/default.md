@@ -146,7 +146,7 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="sound" data-badge="screenReaders">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/screen-readers/alternatives.png" data-section="sound" data-badge="screenReaders" />
                 </div>
             </div>
             <div class="col--width__eight">

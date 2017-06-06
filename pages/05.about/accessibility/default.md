@@ -50,7 +50,7 @@ Aria attributes, semantic html, type and color choices, animation, proper design
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="about" data-badge="accessibility">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/accessibility/about-accessibility.png" data-section="about" data-badge="accessibility">
                 </div>
             </div>
             <div class="col--width__eight">

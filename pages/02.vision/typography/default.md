@@ -102,7 +102,7 @@ The size and color one uses can ruin a well designed typeface. Here are some dos
         <div class="flex-grid--gutters">
             <div class="col--width__four">
                 <div class="badge--box">
-                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/01.home/badge-star-holder.png" data-section="vision" data-badge="typography">
+                    <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/typography/typography.png" data-section="vision" data-badge="typography">
                 </div>
             </div>
             <div class="col--width__eight">
