@@ -4,4 +4,4 @@ taxonomy:
     category: touch
     tag: keyboardSupport
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Make sure people can slap that tab key like their life depends on it. (If they have to, well then their life depends on it, so make it happen.)

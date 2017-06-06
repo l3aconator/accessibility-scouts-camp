@@ -4,4 +4,4 @@ taxonomy:
     category: about
     tag: personasToThinkAbout
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Yeah, a little goofy and dramatic, but use these personas as a starting point.

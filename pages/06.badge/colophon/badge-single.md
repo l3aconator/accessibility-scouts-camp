@@ -4,4 +4,4 @@ taxonomy:
     category: about
     tag: colophon
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Really…you read the colophon? GOOD FOR YOU. Now you're a total expert.

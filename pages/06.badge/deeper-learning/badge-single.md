@@ -4,4 +4,4 @@ taxonomy:
     category: about
     tag: deeperLearning
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+accessibilityscouts.camp is just the tip of the ice berg. Get your butt in their and learn more.

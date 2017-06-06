@@ -4,4 +4,4 @@ taxonomy:
     category: sight
     tag: colorBlindness
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Color blindness doesn't have a sound. DUH. Sorry, trying too hard at this point.

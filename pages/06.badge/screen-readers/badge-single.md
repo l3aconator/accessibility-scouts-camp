@@ -4,4 +4,4 @@ taxonomy:
     category: sound
     tag: screenReaders
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Probably one of the most important things to take away from this camp other than color blindness and ARIA.

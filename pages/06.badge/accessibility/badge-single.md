@@ -4,4 +4,4 @@ taxonomy:
     category: about
     tag: accessibility
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Earned by reading the acccessibility section in the about manual. Are you an expert yet scout?

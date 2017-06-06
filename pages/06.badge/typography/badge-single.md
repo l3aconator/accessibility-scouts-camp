@@ -4,4 +4,4 @@ taxonomy:
     category: sight
     tag: typography
 ---
-This is a short funny description of that badge and where it came from in your scouting journey
+Typey, typey. We love it, you should love it. Make you users experience pleasurable.
