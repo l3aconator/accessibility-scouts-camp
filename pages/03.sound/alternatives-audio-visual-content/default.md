@@ -25,28 +25,26 @@ If some one can’t see, they can still hear audio and video files on the web. W
 </section>
 
 <section>
-<div class="container section--marg">
-<div class="box purple stripe" markdown="1">
-As a thought exercise play the following audio file with your sound turned off—please don’t cheat:
+    <div class="container section--marg">
+        <div class="box purple stripe">
+            <p>As a thought exercise play the following audio file with your sound turned off—please don’t cheat:</p>
 
-[AUDIO FILE]
+            <h5>Audio example</h5>
+            <audio controls>
+                <source src="/user/pages/03.sound/alternatives-audio-visual-content/silence.ogg" type="audio/ogg">
+                <source src="/user/pages/03.sound/alternatives-audio-visual-content/silence.mp3" type="audio/mpeg">
+                 Your browser does not support the audio tag.
+            </audio>
 
-Kind of infuriating you can’t hear it, huh? (Guess what, it’s just empty noise anyways to keep you from cheating.)
-
-Try this video with your sound turned off:
-
-[VIDEO FILE]
-
-Without the audio, it’s pretty hard to really know what is going on between the characters.
-</div>
-</div>
+            <p>Kind of infuriating you can’t hear it, huh? (Guess what, it’s just empty noise anyways to keep you from cheating.)</p>
+            <p>Videos are the same idea. A deaf user can SEE the content. But, they can't hear it!</p>
+        </div>
+    </div>
 </section>
 
 <section>
 <div class="container--content" markdown="1">
 Hey scout! Don’t fret. These two problems have solutions. PROVIDE TRANSCRIPTS to your audio and video file. Think it’s a pain in the butt? Hire someone to do it. It will greatly improve the user experience for those who can’t hear. There’s also multiple ways for people to learn, some prefer video and audio, other’s prefer reading. You help those who can’t hear and those who have a different learning style. GREAT. That transcript can also be used be a screen reader too if that’s ever needed.
-
-![ILLUSTRATION](http://placehold.it/450x250)
 
 There’s plenty of things that can be done also to improve the transcript reading process. Some a bit more difficult than others, but step one is providing the transcript before enriching the experience.
 </div>
@@ -54,19 +52,72 @@ There’s plenty of things that can be done also to improve the transcript readi
 
 <section>
 <div class="container--content" markdown="1">
-Here are few ways to enrich the transcript experience, though:
+Transcripts of course add more work and a design challenge. I've included two BARE BONE examples of how to handle this, but they are also the most accessible ways to handle this because they don't involved javascript. Just plain text labeled clearly as a transcript.
 </div>
     <div class="container">
-        <div class="box white mt--90 mb--90">
-         audio file with transcript
+        <div class="box white striped mt--90 mb--90">
+        <h2 class="mt--0 pt--0">Audio and transcripts</h2>
+        <audio controls>
+            <source src="/user/pages/03.sound/alternatives-audio-visual-content/Rick-Astley-Never-Gonna-Give-You-Up.ogg" type="audio/ogg">
+            <source src="/user/pages/03.sound/alternatives-audio-visual-content/Rick-Astley-Never-Gonna-Give-You-Up.mp3" type="audio/mpeg">
+             Your browser does not support the audio tag.
+        </audio>
+        <h4>Sample transcript from the above audio file above</h4>
+        <p>
+        <strong>Never Gonna Give you Up&mdash;Rick Astley</strong><br />
+        <br />
+        We're no strangers to love<br />
+        You know the rules and so do I<br />
+        A full commitment's what I'm thinking of<br />
+        You wouldn't get this from any other guy<br />
+        <br />
+        I just want to tell you how I'm feeling<br />
+        Gotta make you understand<br />
+        <br />
+        Never gonna give you up, never gonna let you down<br />
+        Never gonna run around and desert you<br />
+        Never gonna make you cry, never gonna say goodbye<br />
+        Never gonna tell a lie and hurt you<br />
+        <br />
+        We've known each other for so long<br />
+        Your heart's been aching but you're too shy to say it<br />
+        Inside we both know what's been going on<br />
+        We know the game and we're gonna play it<br />
+        <br />
+        And if you ask me how I'm feeling<br />
+        Don't tell me you're too blind to see<br />
+        <br />
+        Never gonna give you up, never gonna let you down<br />
+        Never gonna run around and desert you<br />
+        Never gonna make you cry, never gonna say goodbye<br />
+        Never gonna tell a lie and hurt you<br />
+        <br />
+        Never gonna give you up, never gonna let you down<br />
+        Never gonna run around and desert you<br />
+        Never gonna make you cry, never gonna say goodbye<br />
+        Never gonna tell a lie and hurt you<br />
+        <br />
+        We've known each other for so long<br />
+        Your heart's been aching but you're too shy to say it<br />
+        Inside we both know what's been going on<br />
+        We know the game and we're gonna play it<br />
+        <br />
+        I just want to tell you how I'm feeling<br />
+        Gotta make you understand<br />
+        <br />
+        Never gonna give you up, never gonna let you down<br />
+        Never gonna run around and desert you<br />
+        Never gonna make you cry, never gonna say goodbye<br />
+        Never gonna tell a lie and hurt you<br />
+        </p>
         </div>
 
-        <div class="box white mt--90 mb--90">
+        <div class="box white striped mt--90 mb--90">
             <h2 class="mt--0 pt--0">Videos and transcripts</h2>
             <div class="videoWrapper mb--30">
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/vNYJKUAuJ4U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
-            <h4 class="">Sample transcript from the above video—<em>Courtesy of YouTube</em></h4>
+            <h4>Sample transcript from the above video—<em>Courtesy of YouTube</em></h4>
             <p>
             0:01 [Music]<br />
             0:06 so I just got back from a movie I had a<br />

@@ -43,13 +43,13 @@ Typefaces are a dime a dozen nowadays—we don’t mean that in a bad way, we lo
 
 Some features of a type face to consider:
 
-* Readability vs legibility
+* Readability vs. legibility
 	* Can you tell what the words are and be able to read comfortably?
-* Langauge support [ILLUSTRATION]
+* Langauge support
 	* Does it support more than just english? What does the font software do if the glyph it needs isn’t present?
-* Sans serif vs serif [ILLUSTRATION]
+* Sans serif vs serif
 	* Are the letter forms distinct?
-* The design of the typeface [ILLUSTRATION]
+* The design of the typeface
 	* Are the letters too condensed?
 	* Are the serifs apparent?
 	* What about the tails? Are they distinct or do they blend in together?
@@ -82,8 +82,6 @@ The size and color one uses can ruin a well designed typeface. Here are some dos
 * Set type below 16px (though you can get away with 14px but that’s pushing it, scout!)
 * Use fonts with think stroke weights or too thick stroke weights
 	* these end up being to thin to read or too thick and the counters fill in at smaller sizes
-
-![ILLUSTRATION](http://placehold.it/450x250)
 </div>
 </section>
 

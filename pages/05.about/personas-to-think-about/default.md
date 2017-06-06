@@ -17,7 +17,6 @@ process:
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
 ### Persona—Color Blind
 
 #### Sam Camper
@@ -41,7 +40,6 @@ Your site is designed using a lot of warm colors. Sam can't distinguish the colo
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
 ### Persona—Blind
 
 #### Sally Camper
@@ -68,7 +66,6 @@ One would think it would be impossible to use the Internet if one was blind. It'
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
 ### Persona—Deaf
 
 #### Beet Camper
@@ -90,7 +87,6 @@ The web is definitely more friendly to those who can't hear, since one can see w
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
 ### Persona—Elderly and new to computers
 
 #### Phyllis Camper

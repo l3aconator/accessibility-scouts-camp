@@ -41,7 +41,9 @@ The ARIA spec has two levels of contrast ratios that text on a background should
 <div class="box purple stripe" markdown="1">
 #### WAIT CAMP COUNSELOR! WHAT THE HECK IS THE ARIA SPEC?!
 
-lorem ipsum dolor sit
+We'll get into some of the attributes that can be added to your mark up. In short, it's a specification that has been developed to standardized the way accessibility is handled by browsers and developers on the web. It gives us a way to 1) use native elements in the browser and have them work out of the box in the browser (if the browser supports ARIA.) and 2) allows developers to add these extra attributes to a site to extend the features that they are building to be accessible and be able to be parsed and understood through assistive technology.
+
+There's also general rules and limits for color contrast, type sizes, and design best practices.
 </div>
 </div>
 </section>
@@ -56,20 +58,8 @@ Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If it�
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-**KNOW YOUR AUDIENCE.** If you are designing for xx+: color contrast and legibility of colors on top of one another became a big freakin’ deal. If you are designing for a younger audience, it doesn’t matter as much, BUT still be mindful that anyone, at anytime, can access your designed content and should still be accessible to the greatest amount of people.
+**KNOW YOUR AUDIENCE.** If you are designing for 55+: color contrast and legibility of colors on top of one another became a big freakin’ deal. If you are designing for a younger audience, it doesn’t matter as much, BUT still be mindful that anyone, at anytime, can access your designed content and should still be accessible to the greatest amount of people.
 </div>
-</div>
-</section>
-
-<section>
-<div class="container--content" markdown="1">
-Thankfully nerds on the Internet have built tools to test color contrast using your base background color and what colors will go on the top of them and pass either level 2 or 3. (Guess what? There’s a sample tester below.)
-
-Try it out here:
-
-[TOOL]
-
-[CTA TO THE FULL TOOL]
 </div>
 </section>
 
