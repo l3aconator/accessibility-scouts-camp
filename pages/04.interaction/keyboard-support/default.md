@@ -11,10 +11,6 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/04.interaction/touch-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section>
 <div class="container--content" markdown="1">
 # No more mouse hunting
 

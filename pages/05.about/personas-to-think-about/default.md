@@ -11,10 +11,6 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/05.about/about-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
 ### Persona—Color Blind

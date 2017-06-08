@@ -11,10 +11,6 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/03.sound/audio-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section>
 <div class="container--content" markdown="1">
 # Alternatives to watching and hearing
 

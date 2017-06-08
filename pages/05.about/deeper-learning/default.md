@@ -16,11 +16,8 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/05.about/about-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section>
     <div class="container">
+        <h1>Deeper learning about accessibility</h1>
         <ul class="link--list flex-grid--gutters flex-wrap mt--90 mb--60">
         {% set collection = page.collection() %}
 

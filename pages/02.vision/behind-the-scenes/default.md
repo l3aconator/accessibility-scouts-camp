@@ -11,10 +11,6 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/02.vision/sight-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section>
 <div class="container--content" markdown="1">
 # Keeping the camp fire toasty and the axe sharp
 

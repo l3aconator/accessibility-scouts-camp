@@ -11,10 +11,6 @@ process:
     twig: true
 ---
 <section>
-    <img src="/user/pages/02.vision/sight-hero-placeholder.png" alt="Illustration placeholder" />
-</section>
-
-<section>
 <div class="container--content" markdown="1">
 # Seeing the forest through the trees
 
