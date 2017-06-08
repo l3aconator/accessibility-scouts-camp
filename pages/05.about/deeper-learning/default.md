@@ -23,8 +23,7 @@ process:
 
         {% for child in collection %}
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="{{ child.url }}" target="_blank">{{ child.title }}</a></h5>
                 </div>
             </li>
