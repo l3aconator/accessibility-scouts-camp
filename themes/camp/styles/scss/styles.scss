@@ -6,7 +6,6 @@
 // @import "vendor/";
 
 @import "framework/grid/grid";
-@import "framework/grid/grid-utilities";
 @import "framework/grid/grid-fallback";
 
 @import "framework/typography/fonts-load";
@@ -32,3 +31,5 @@
 @import "templates/partials/manual-landing";
 @import "templates/partials/badge-manual";
 @import "templates/partials/link-list";
+
+@import "framework/grid/grid-utilities";
