@@ -77,7 +77,7 @@ These are only a few examples of what good and bad interactions could be. It all
 </div>
 </section>
 
-<section class="section--badge-cta section--badge-cta__yellow mt--60">
+<section class="section--badge-cta section--badge-cta__blue mt--60">
     <div class="container">
         <div class="flex-grid--gutters">
             <div class="col--width__four">

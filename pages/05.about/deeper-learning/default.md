@@ -32,7 +32,7 @@ process:
     </div>
 </section>
 
-<section class="section--badge-cta section--badge-cta__yellow mt--60">
+<section class="section--badge-cta section--badge-cta__orange mt--60">
     <div class="container">
         <div class="flex-grid--gutters">
             <div class="col--width__four">

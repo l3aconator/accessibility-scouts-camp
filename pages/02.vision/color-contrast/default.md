@@ -72,15 +72,15 @@ Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If itâ
 </div>
 </section>
 
-<section class="section--badge-cta section--badge-cta__yellow mt--60">
+<section class="section--badge-cta section--badge-cta__red mt--60">
     <div class="container">
         <div class="flex-grid--gutters">
-            <div class="col--width__three">
+            <div class="col--width__four">
                 <div class="badge--box">
                     <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/color-contrast/color-contrast.png" data-section="vision" data-badge="colorContrast">
                 </div>
             </div>
-            <div class="col--width__nine">
+            <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
                 {% if not page.isLast %}

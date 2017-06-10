@@ -26,6 +26,38 @@
         background-image: url('#{$theme--images}light-noise.png');
     }
 
+    &__red {
+        background-color: $color--danger;
+        background-image: url('#{$theme--images}light-noise.png');
+        color: $color--default;
+
+        a {
+            color: $color--default;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $color--primary;
+            }
+        }
+    }
+
+    &__blue {
+        background-color: $color--success;
+        background-image: url('#{$theme--images}light-noise.png');
+        color: $color--default;
+
+        a {
+            color: $color--default;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $color--primary;
+            }
+        }
+    }
+
     .img--badge {
         width: 75%;
         margin-left: auto;

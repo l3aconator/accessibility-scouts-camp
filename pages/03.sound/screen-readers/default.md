@@ -18,8 +18,6 @@ process:
 
 Wouldn’t it be terrible sitting in the woods at night without a lamp or fire to see anything? Imagine trying to use the Internet without visuals. It would be very hard to use.  Almost next to impossible. There’s a solution though and those are screen readers and tools to accept voice input to control the computer.
 
-![ILLUSTRATION](http://placehold.it/450x250)
-
 As you’ve seen so far through the sight manual a strong focus on content, image alt tags, and adding the extra aria attributes to our markup. Well guess what?! You’ve already learned about most of the tools to make a site accessible and screen readers happy. In turn that makes your users happy. Get to it! We'll have some examples here shortly, but practicing yourself will make your knowledge grow exponentially.
 </div>
 </section>
@@ -40,38 +38,32 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
     <div class="container">
         <ul class="flex-grid--gutters flex-wrap">
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="http://www.chromevox.com/" target="_blank">ChromeVox</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
-                    <h5><a href="" target="_blank">Mac Voice over</a></h5>
+                <div class="link--list-item__content rounded-top">
+                    <h5><a href="https://www.apple.com/accessibility/mac/vision/" target="_blank">Mac Voice over</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="https://www.nvaccess.org/" target="_blank">NV Access</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="http://www.freedomscientific.com/Products/Blindness/JAWS" target="_blank">JAWS Screen reader</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="http://www.gwmicro.com/Window-Eyes/" target="_blank">Window-Eyes Pro.</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="http://mielke.cc/brltty/" target="_blank">BRLTTY</a></h5>
                 </div>
             </li>
@@ -87,38 +79,32 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
     <div class="container">
         <ul class="flex-grid--gutters flex-wrap">
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="https://www.nuance.com/mobile/mobile-applications/dragon-dictation.html" target="_blank">Dragon Dictation App</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
-                    <h5><a href="http://ttsreader.com/" target="_blank">ttsreader.com</a></h5>
+                <div class="link--list-item__content rounded-top">
+                    <h5><a href="http://ttsreader.com" target="_blank">ttsreader.com</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="https://www.naturalreaders.com/index.html" target="_blank">naturalreaders.com</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="https://dictation.io/" target="_blank">dictation.io</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="http://www.nch.com.au/express/index.html" target="_blank">Express Dictate</a></h5>
                 </div>
             </li>
             <li class="col--width__four link--list-item">
-                <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-                <div class="link--list-item__content">
+                <div class="link--list-item__content rounded-top">
                     <h5><a href="https://support.apple.com/en-us/HT202584" target="_blank">Apple Dictation</a></h5>
                 </div>
             </li>

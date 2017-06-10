@@ -36,7 +36,7 @@ This site is by no means 100% complete as of launch and a project I hope to main
 …were crafted with beer and coffee by Kyle Bacon to fit with the content.
 </section>
 
-<section class="section--badge-cta section--badge-cta__yellow mt--90">
+<section class="section--badge-cta section--badge-cta__orange mt--90">
     <div class="container">
         <div class="flex-grid--gutters">
             <div class="col--width__four">

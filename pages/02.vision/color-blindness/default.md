@@ -41,16 +41,6 @@ Scientific content adapted for this project from: [Facts About Color Blindness |
 </section>
 
 <section>
-<div class="container--content section--marg">
-<div class="box purple stripe" markdown="1">
-##### How to test yourself
-
-If you couldn’t see the illustration that opened up this section, you may have one of the above color blindness types.
-</div>
-</div>
-</section>
-
-<section>
 <div class="container--content" markdown="1">
 
 <div class="mt--90" markdown="1">
@@ -65,16 +55,6 @@ Again, please read the details but the summary is blues tend to appear greener a
 * *Tritanopia:* People with tritanopia, also known as blue-yellow color blindness, lack blue cone cells. Blue appears green and yellow appears violet or light grey. Tritanopia is an extremely rare autosomal recessive disorder affecting males and females equally.
 
 Scientific content adapted for this project from: [Facts About Color Blindness | National Eye Institute](https://nei.nih.gov/health/color_blindness/facts_about)
-</div>
-</section>
-
-<section>
-<div class="container--content section--marg">
-<div class="box purple stripe" markdown="1">
-##### How to test yourself
-
-If you couldn’t see the illustration that opened up this section, you may have one of the above color blindness types.
-</div>
 </div>
 </section>
 
@@ -104,16 +84,6 @@ As a thought exercise, pull your mock up or a screenshot into your favorite imag
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-##### How to test yourself
-
-If you couldn’t see the illustration that opened up this section, you may have one of the above color blindness types.
-</div>
-</div>
-</section>
-
-<section>
-<div class="container--content section--marg">
-<div class="box purple stripe" markdown="1">
 **KNOW YOUR AUDIENCE.** Howdy scouts! You’re probably going to see this box quite often. The camp stresses the importance of accessibility and it comes down to the audience. A website for women’s underwear, *probably* doesn’t need to worry so much about color blindness for men (since it affects them the most.) A site for camping gear, yeah, probably needs way more consideration when it comes to those with color blindness.
 </div>
 </div>
@@ -129,20 +99,17 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
 <div class="container" markdown="1">
 <ul class="flex-grid--gutters flex-wrap">
     <li class="col--width__four link--list-item">
-        <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-        <div class="link--list-item__content">
+        <div class="link--list-item__content rounded-top">
             <h5><a href="https://www.toptal.com/designers/colorfilter/" target="_blank">Toptal Color Blind Filter</a></h5>
         </div>
     </li>
     <li class="col--width__four link--list-item">
-        <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-        <div class="link--list-item__content">
+        <div class="link--list-item__content rounded-top">
             <h5><a href="http://enchroma.com/test/instructions/" target="_blank">Enchroma: Color Blindness Test</a></h5>
         </div>
     </li>
     <li class="col--width__four link--list-item">
-        <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-        <div class="link--list-item__content">
+        <div class="link--list-item__content rounded-top">
             <h5><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Color Blindness Simulator</a></h5>
         </div>
     </li>
@@ -162,15 +129,15 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
 </div>
 </section>
 
-<section class="section--badge-cta section--badge-cta__yellow mt--60">
+<section class="section--badge-cta section--badge-cta__red mt--60">
     <div class="container">
         <div class="flex-grid--gutters">
-            <div class="col--width__three">
+            <div class="col--width__four">
                 <div class="badge--box">
                     <img class="img--badge badge--dispatch" alt="A badge." src="/user/pages/06.badge/color-blindness/color-blindness.png" data-section="vision" data-badge="colorBlindness">
                 </div>
             </div>
-            <div class="col--width__nine">
+            <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
                 <h4>Great! This is just the beginning in our exploration of color.</h4>
                 {% if not page.isLast %}
