@@ -24,45 +24,39 @@ Again, old broken record over here, but keep your audience in mind. If you are b
 <div class="container">
     <ul class="link--list flex-grid--gutters flex-wrap mt--90 mb--60">
         <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
+            <div class="link--list-item__content rounded-top">
                 <h5>On-screen keyboards</h5>
+                <p>Keyboards that are on-screen can be either interacted with through the mouse and clicking on the keys or using a touchscreen if the users' laptop is equipped <br />with that.</p>
             </div>
         </li>
         <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
+            <div class="link--list-item__content rounded-top">
                 <h5>Word prediction software</h5>
+                <p>Similiar to what one uses during texting on a phone, predicts the word you are typing. Software like this can be used to help folks using a computer that typically would have trouble.</p>
             </div>
         </li>
         <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
+            <div class="link--list-item__content rounded-top">
                 <h5>Speech recognition</h5>
+                <p>Should be self-explanatory: speech that is recognized by a computer. There's software on the market that allows people to speak to computers to command them.</p>
             </div>
         </li>
         <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
-                <h5>Breath and mouth controlled devices</h5>
+            <div class="link--list-item__content rounded-top">
+                <h5>Eye tracking software <br />and hardware</h5>
+                <p>Eye tracking is measuring where one is looking or the motion of an eye. It can be rigged up to see where the eye has moved and whether or not those movements correspond to computer actions.   </p>
             </div>
         </li>
         <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
-                <h5>Eye tracking software and hardware</h5>
-            </div>
-        </li>
-        <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
+            <div class="link--list-item__content rounded-top">
                 <h5>Braille surfaces</h5>
+                <p>A keyboard specifically designed for those with visual disabilities. Helps them insert text into a computer and with the aid of a screen reader, those can be paired together to help a <br />blind user.</p>
             </div>
         </li>
         <li class="col--width__four link--list-item">
-            <img class="img--illustration" alt="Placeholder illustration" src="http://placehold.it/348x155">
-            <div class="link--list-item__content">
+            <div class="link--list-item__content rounded-top">
                 <h5>Feet controlled devices</h5>
+                <p>One can buy foot pedals to hook up to a computer and map actions to it so that the computer can take action. Say the user hooks it up to the tab key to move through a site or the enter key to submit data to a site.</p>
             </div>
         </li>
     </ul>
