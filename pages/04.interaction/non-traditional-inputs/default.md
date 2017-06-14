@@ -83,7 +83,7 @@ Again, old broken record over here, but keep your audience in mind. If you are b
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
-                <h4>Great! This is just the beginning in our exploration of color.</h4>
+                <h4>Using your feet, true story. Keep that in mind.</h4>
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
                 {% endif %}
