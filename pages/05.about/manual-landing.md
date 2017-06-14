@@ -3,7 +3,7 @@ title: 'Find out about this camp site, accessibility, and more resources for you
 menu: About
 icon: about
 heroCover: '/user/pages/05.about/about-cover.png'
-heroImg: '/user/pages/05.about/orange-placeholder.png'
+heroImg: '/user/pages/05.about/about.png'
 heroImgAlt: 'Illustration'
 content:
     items: @self.children

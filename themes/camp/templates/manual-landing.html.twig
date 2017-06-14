@@ -26,25 +26,22 @@
                             <h4>{{ child.title }}</h4>
                         </a>
 
-                        {% if child.header.stats %}
+                        <!-- {% if child.header.stats %}
                         <div class="manual-landing--status">
                             <ul class="manual-landing--status-list">
                                 <li class="manual-landing--status-list-item">
                                     {% if child.header.stats.examples %}<span>{{ child.header.stats.examples }} examples</span>{% endif %}
                                 </li>
                                 <li class="manual-landing--status-list-item">
-                                    {% if child.header.stats.readingTime %}<span>{{ child.header.stats.readingTime }} to read</span>{% endif %}
-                                </li>
-                                <li class="manual-landing--status-list-item">
-                                    {% if child.header.stats.badges %}<span>{{ child.header.stats.badges }} badges</span>{% endif %}
+                                    <span>{{ child.content|readingtime({'format': '{minutes_short_count} {minutes_text}'}) }} to read</span>
                                 </li>
                             </ul>
                         </div>
-                        {% endif %}
+                        {% endif %} -->
 
                         {% if child.header.summary %}
                         <p class="manual-landing--summary">
-                            {{ child.header.summary|slice(0,200) }}&hellip;<a href="{{ child.url }}"> Start this section &raquo;</a>
+                            {{ child.header.summary|slice(0,185) }}&hellip; <a href="{{ child.url }}"> Start this section &raquo;</a>
                         </p>
                         {% endif %}
 

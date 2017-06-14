@@ -3,7 +3,7 @@ title: 'Can you hear us now? Made you…uh…look. You’re in the right place f
 menu: sound
 icon: audio
 heroCover: '/user/pages/03.sound/sound-cover.png'
-heroImg: '/user/pages/03.sound/yellow-placeholder.png'
+heroImg: '/user/pages/03.sound/sound.png'
 heroImgAlt: 'Illustration'
 content:
     items: @self.children

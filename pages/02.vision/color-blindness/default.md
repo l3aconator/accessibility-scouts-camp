@@ -4,8 +4,6 @@ visible: true
 summary: 'Contrast is just the beginning. The color you choose matters as well. 1 in 200 women and 1 in 12 men are color blind. This gets even trickier with the the different types of color blindness. Let’s take a peak at the different types. Keep in mind this phenomena really only affects men the most, so pardon the frequent references to “males.”'
 stats:
     examples: '2'
-    readingTime: '20 minutes'
-    badges: '10'
 twig_first: true
 process:
     twig: true
@@ -24,7 +22,7 @@ Contrast is just the beginning. The color you choose matters as well. 1 in 200 w
 <div class="container--content" markdown="1">
 
 <div class="mt--90" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
+![ILLUSTRATION](red-green.png)
 </div>
 
 #### Red-Green color blindness
@@ -44,7 +42,7 @@ Scientific content adapted for this project from: [Facts About Color Blindness |
 <div class="container--content" markdown="1">
 
 <div class="mt--90" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
+![ILLUSTRATION](blue-yellow.png)
 </div>
 
 #### Blue-Yellow color blindness
@@ -62,7 +60,7 @@ Scientific content adapted for this project from: [Facts About Color Blindness |
 <div class="container--content" markdown="1">
 
 <div class="mt--90" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
+![ILLUSTRATION](total-blindness.png)
 </div>
 
 #### Total color blindness

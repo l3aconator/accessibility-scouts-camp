@@ -35,6 +35,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-feed
         path: user/plugins/feed
         branch: master
+    readingtime:
+        url: https://github.com/getgrav/grav-plugin-readingtime
+        path: user/plugins/readingtime
+        branch: master
 links:
     problems:
         src: grav-plugin-problems
@@ -71,4 +75,8 @@ links:
     feed:
         src: grav-plugin-feed
         path: user/plugins/feed
+        scm: github
+    feed:
+        src: grav-plugin-readingtime
+        path: user/plugins/readingtime
         scm: github

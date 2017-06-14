@@ -4,8 +4,6 @@ visible: true
 summary: 'Way finding lives and dies by good typography and iconography. Here we are going to focus on typography. Way finding on the net ends up being navigation, but in reality the important parts of an experience is driven by typography. Color and typography are some of the most important things to keep a site accessible. (Next to screen readers of course but we will get there.)'
 stats:
     examples: '3'
-    readingTime: '20 minutes'
-    badges: '1'
 twig_first: true
 process:
     twig: true
@@ -18,7 +16,7 @@ process:
 
 Way finding lives and dies by good typography and iconography. Here we are going to focus on typography. Way finding on the net ends up being navigation, but in reality the important parts of an experience is driven by typography. Color and typography are some of the most important things to keep a site accessible. (Next to screen readers of course but we will get there.)
 
-![ILLUSTRATION](http://placehold.it/450x250)
+![ILLUSTRATION](trail-signs.png)
 </div>
 </section>
 
