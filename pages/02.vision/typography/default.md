@@ -41,12 +41,12 @@ Some features of a type face to consider:
 	* Can you tell what the words are and be able to read comfortably?
 * Langauge support
 	* Does it support more than just english? What does the font software do if the glyph it needs isn’t present?
-* Sans serif vs serif
+* Sans serif vs. serif
 	* Are the letter forms distinct?
 * The design of the typeface
 	* Are the letters too condensed?
 	* Are the serifs apparent?
-	* What about the tails? Are they distinct or do they blend in together?
+	* What about the tails? Are they distinct or do they blend <br />in together?
 	* How are the counters working in the letter forms?
 	* Stroke weight aiding in the readability?
 	* Proportions good? Larger x-height and wider letters are most accessible.
@@ -59,9 +59,9 @@ Some features of a type face to consider:
 The size and color one uses can ruin a well designed typeface. Here are some dos and don’ts to keep in mind when making typography accessible. (Guess what?! **Know your audience.**)
 
 ##### DO:
-* Give generous line height
+* Give generous line height (but not too generous)
 * Provide good hierarchy
-* If pairing, make sure there’s contrast in the design of the typefaces
+* If pairing, make sure there’s contrast in the design of <br />the typefaces
 * If using color, make sure your most important areas have the most contrast
 * Have fallbacks fonts in case the rendering of one doesn’t work
 * Keep line lengths shorter than you think (70–80 characters) or about 16 words.
@@ -75,7 +75,7 @@ The size and color one uses can ruin a well designed typeface. Here are some dos
 * Make type too small
 * Set type below 16px (though you can get away with 14px but that’s pushing it, scout!)
 * Use fonts with think stroke weights or too thick stroke weights
-	* these end up being to thin to read or too thick and the counters fill in at smaller sizes
+	* These end up being to thin to read or too thick and the counters fill in at smaller sizes
 </div>
 </section>
 

@@ -14,7 +14,7 @@ process:
 
 ---
 
-Contrast is just the beginning. The color you choose matters as well. 1 in 200 women and 1 in 12 men are color blind. This gets even trickier with the the different types of color blindness. Let’s take a peak at the different types. Keep in mind this phenomena really only affects men the most, so pardon the frequent references to “males.”
+The colors you choose matter. 1 in 200 women and 1 in 12 men are color blind. This gets even trickier with the the different types of color blindness. Let’s take a peak at the different types. Keep in mind this phenomena really only affects men the most, so pardon the frequent references to “males.”
 </div>
 </section>
 
@@ -137,7 +137,7 @@ Thankfully nerds on the Internet have built some tools around color blindness. Y
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
-                <h4>Great! This is just the beginning in our exploration of color.</h4>
+                <h4>Great! Color blindness is a major aspect to keep in mind when creating a site.</h4>
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
                 {% endif %}

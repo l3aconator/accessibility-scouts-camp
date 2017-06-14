@@ -12,9 +12,9 @@ process:
 ---
 <section>
 <div class="container--content" markdown="1">
-### What is accessibility?
+### What is accessibility
 
-Consider if a business didn't have wheelchair ramps for those to get inside? Or cashiers told visually impaired patients the wrong amount of money to pay for something and pocketed the excess? Or denied service because the patron can't hear you? All these are extreme edge cases, but it happens. The severity of those concepts happen on the web.
+Consider if a business didn't have wheelchair ramps to get inside? Or cashiers told visually impaired patients the wrong amount of money to pay for something and pocketed the excess? Or denied service because the patron can't hear you? All these are extreme edge cases, but it happens. The severity of those concepts happen on the web.
 
 There's two main audiences that accessibility needs to matter to. Those who have disabilities and those who design and build experiences. We both have tools out our disposal to help ourselves and each other out to make the web a friendlier place.
 
@@ -22,7 +22,7 @@ There's two main audiences that accessibility needs to matter to. Those who have
 
 As designers and developers it's up to us to help those who can't natively use something. We have tools at our disposal to provide relief to obstacles on the web. An accessible web for everyone.
 
-Aria attributes, semantic html, type and color choices, animation, proper design thinking, and overall care is the same idea of a building having a ramp, rails for stairs, wheelchair accessible bathrooms, elevators, lower desks, different seating for those who need it, and the list goes on. Just because the Internet is digital, doesn't mean any less care should be taken.
+ARIA attributes, semantic HTML, type and color choices, animation, proper design thinking, and overall care is the same idea of a building having a ramp, rails for stairs, wheelchair accessible bathrooms, elevators, lower desks, different seating for those who need it, and the list goes on. Just because the Internet is digital, doesn't mean any less care should be taken.
 </div>
 </section>
 

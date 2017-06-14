@@ -14,7 +14,7 @@ process:
 
 ---
 
-Imagine a world without color. It’d be a bit hard to tell the difference between things. Imagine a world were one has trouble differentiating colors. Image a world were you can’t see the same colors as others. These are all real possibilities. We’ll be getting to color blindness and not being able to see at all. But first, let’s discuss color contrast.
+Imagine a world without color. It’d be a bit hard to tell the difference between things. Imagine a world were one has trouble differentiating colors. Image a world were you can’t see the same colors as others. These are all real possibilities.
 
 </div>
 </section>
@@ -36,7 +36,7 @@ The ARIA spec has two levels of contrast ratios that text on a background should
 <div class="box purple stripe" markdown="1">
 #### WAIT CAMP COUNSELOR! WHAT THE HECK IS THE ARIA SPEC?!
 
-We'll get into some of the attributes that can be added to your mark up. In short, it's a specification that has been developed to standardized the way accessibility is handled by browsers and developers on the web. It gives us a way to 1) use native elements in the browser and have them work out of the box in the browser (if the browser supports ARIA.) and 2) allows developers to add these extra attributes to a site to extend the features that they are building to be accessible and be able to be parsed and understood through assistive technology.
+We'll get into some of the attributes that can be added to your mark up (another chapter in your manual). In short, it's a specification that has been developed to standardized the way accessibility is handled by browsers and developers on the web. It gives us a way to 1) use native elements in the browser and have them work out of the box in the browser (if the browser supports ARIA.) and 2) allows developers to add these extra attributes to a site to extend the features that they are building to be accessible and be able to be parsed and understood through assistive technology.
 
 There's also general rules and limits for color contrast, type sizes, and design best practices.
 </div>
@@ -45,7 +45,7 @@ There's also general rules and limits for color contrast, type sizes, and design
 
 <section>
 <div class="container--content" markdown="1">
-Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If it’s hard to read for a user without an impairment, put yourself in someone else’s shoes. Yeah, light gray text on a white background softens the look and sometimes looks dope. BUT IT’S HARD TO READ, SILLY. At the end of the day, our job is disseminate information in the best way possible and engage the user.
+Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If it’s hard to read for a user without an impairment, put yourself in someone else’s shoes. Yeah, light gray text on a white background softens the look and sometimes looks dope. BUT IT’S HARD TO READ, SILLY. At the end of the day, our job is disseminate information in the best way possible and engage <br />the user.
 </div>
 </section>
 
@@ -81,7 +81,7 @@ Whew! Glad we got that covered. Anyways, color contrast is a simple idea. If it�
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
-                <h4>Great! This is just the beginning in our exploration of color.</h4>
+                <h4>Color, color, color, color, color, color contrast! Do dah do dah. (A song, we hope.)</h4>
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
                 {% endif %}

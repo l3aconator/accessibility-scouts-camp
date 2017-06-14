@@ -40,9 +40,9 @@ process:
 
 ### Welcome fellow scouts!
 
-The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within the online camp is to get you ready for the wild forest of the Internet and make it usable for all. (Or as close as we can get!)
+The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within this camp is to get you ready for the wild forest of the Internet and make it usable for all. (Or as close as we can get!)
 
-We'll be looking at the three senses used to interact with content: vision, sound, and interaction. People with one disability, or a combination of several, impacts the experience of a website or web app. Information, learning, or a specific tool shouldn't cater to one audience, but many.
+We'll be looking at the three senses used to interact with content: vision, sound, and interaction. People with one disability, or a combination of several, greatly impacts the experience of a website or web app. Information, learning, or a specific tool shouldn't cater to one audience, but many.
 </section>
 
 <section class="manual--lists">
@@ -108,7 +108,7 @@ We'll be looking at the three senses used to interact with content: vision, soun
 <div class="box purple stripe" markdown="1">
 #### A note from the camp counselor
 
-Consider if a business didn't have wheelchair ramps for those to get inside? Or cashiers told visually impaired patients the wrong amount of money to pay for something and pocketed the excess? Or denied service because the patron can't hear you? All these are extreme edge cases, but it happens. The severity of those concepts happen on the web. Let's work together to make the web better for everyone. Ready to start exploring?
+Consider if a business didn't have wheelchair ramps to get inside? Or cashiers told visually impaired patrons the wrong amount of money to pay for something and pocketed the excess? Or denied service because the patron can't hear you? All these are extreme edge cases, but it happens. The severity of those concepts happen on the web. Let's work together to make the web better for everyone. Start exploring!
 </div>
 </div>
 </section>
@@ -117,12 +117,12 @@ Consider if a business didn't have wheelchair ramps for those to get inside? Or 
     <div class="flex-grid--gutters">
         <div class="col--width__three">
             <div class="badge--box">
-                <img class="img--badge" alt="A badge." src="/user/pages/01.home/badge-star-holder.png">
+                <img class="img--badge" alt="A badge." src="/user/pages/06.badge/color-contrast/color-contrast.png">
             </div>
         </div>
         <div class="col--width__nine">
-            <h3>Ready to jump in and start earnin’ some  merit badges?</h3>
-            <p class="h3 h3__serif">Let's start with <a class="img--badge__trigger" href="/sight-manual/color-contrast">color contrast &raquo;</a></p>
+            <h3>Ready to jump in and start earnin’ some  merit badges, scout? (If you'd like to keep track, please <a href="register">create an account</a>.)</h3>
+            <p class="h3 h3__serif">Let's start with <a class="img--badge__trigger" href="/vision/color-contrast">color contrast &raquo;</a></p>
         </div>
     </div>
 </section>

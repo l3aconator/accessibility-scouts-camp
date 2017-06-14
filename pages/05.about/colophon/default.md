@@ -13,12 +13,12 @@ process:
 <section class="container--content mt--90 mb--90" markdown="1">
 
 # Whoa scout, surprised you ended up here!
-Well since you are here, let’s learn some nerdy things about the site.
+Well since you are here, let’s learn some nerdy things about <br />the site.
 
 #### The project…
 …is for Kyle Bacon’s senior thesis in the [Portland State Graphic Design](http://psu.gd?target=_blank) program. It is heavily inspired by camping and scout field manuals because the forest of the digital world is a scary place and should be accessible for all. This guide is meant to get people up to speed in creating accessible Internet experience as quickly as possible in a fun and quirky manner.
 
-This site is by no means 100% complete as of launch and a project I hope to maintain, perfect, and build upon in the future to keep up with changes in technologies and improving the learning experience.
+This site is by no means 100% complete as of launch and a project I hope to maintain, perfect, and build upon in the future to keep up with changes in technologies and improving the learning experience. (It's also open source, so slap in a PR if you'd like.)
 
 #### The content…
 …was written with love by Kyle Bacon referencing quite a few sources that are way smarter than him to provide well said and friendly language for all campers
@@ -33,7 +33,7 @@ This site is by no means 100% complete as of launch and a project I hope to main
 …is built using the flat-file [GRAV CMS](https://getgrav.org?target=_blank) with a custom CSS framework built by Kyle Bacon. The badge and account system is managed by a combination of hand-crafted vanilla JS, tears, and [Firebase](https://firebase.google.com?target=_blank) by Google.
 
 #### The illustrations…
-…were crafted with beer and coffee by Kyle Bacon to fit with the content.
+…were crafted with beer and coffee by Kyle Bacon.
 </section>
 
 <section class="section--badge-cta section--badge-cta__orange mt--90">

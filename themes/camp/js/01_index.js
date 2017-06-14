@@ -20,7 +20,6 @@ $( document ).ready(function() {
         });
 
         dropdown.mouseleave(function() {
-            parentAndNavItem.removeClass('active');
             dropdown.attr('aria-hidden', 'true');
             dropdown.removeClass('open');
         });

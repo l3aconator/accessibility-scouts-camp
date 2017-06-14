@@ -253,7 +253,7 @@ Transcripts of course add more work and a design challenge. I've included two BA
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
-                <h4>Great! This is just the beginning in our exploration of color.</h4>
+                <h4>Please, please, please, try to provide a transcript when possible. Please.</h4>
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
                 {% endif %}

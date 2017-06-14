@@ -20,14 +20,14 @@ Wouldn’t it be terrible sitting in the woods at night without a lamp or fire t
 
 ![ILLUSTRATION](forest-through-trees.png)
 
-As you’ve seen so far through the sight manual a strong focus on content, image alt tags, and adding the extra aria attributes to our markup. Well guess what?! You’ve already learned about most of the tools to make a site accessible and screen readers happy. In turn that makes your users happy. Get to it! We'll have some examples here shortly, but practicing yourself will make your knowledge grow exponentially.
+As you’ve seen so far through the vision manual a strong focus on content, image alt tags, and adding the extra aria attributes to our markup. Well guess what?! You’ve already learned about most of the tools to make a site accessible and screen readers happy. In turn that makes your users happy. Get to it! We'll have some examples here shortly, but practicing yourself will make your knowledge grow exponentially.
 </div>
 </section>
 
 <section>
 <div class="container--content section--marg">
 <div class="box purple stripe" markdown="1">
-Try some of them out. Go to a website you’ve never been to, a social media site, or even site you’ve developed. Close your eyes and see if you can navigate using the keyboard and maybe dictation. You’ll be surprised at how much harder it is easier to use if a good job was done or how easy it is if a good job was done.
+Try some of them out. Go to a website you’ve never been to, a social media site, or even a site you’ve developed. Close your eyes and see if you can navigate using the keyboard and a screen reader. You’ll be surprised at how much harder it is easier to use if a good job was done or how easy it is if a good job was done.
 </div>
 </div>
 </section>
@@ -119,9 +119,8 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
 ### Scout Review
 
 * Practice your ARIA tags
-* Make sure you understand the code that is happening with the examples and why the experience is better from a visual and audio standpoint
-* Test, test, and test with different screen readers to see if you can get around the site and that the tab order is working correctly. Make sure you content makes sense when read out loud
-* Make sure your form inputs can handle dictation software and when errors occur that the user can understand what went wrong
+* Test, test, and test with different screen readers to see if you can get around the site and that the tab order is working correctly. Make sure you content makes sense when read <br />out loud
+* Make sure your form inputs can handle dictation software and when errors occur that the user can understand what <br />went wrong
 </div>
 </section>
 
@@ -135,7 +134,7 @@ Try some of them out. Go to a website you’ve never been to, a social media sit
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
-                <h4>Great! This is just the beginning in our exploration of color.</h4>
+                <h4>Beep. Boop. Reading text to a user so they are able to get around sites.</h4>
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
                 {% endif %}

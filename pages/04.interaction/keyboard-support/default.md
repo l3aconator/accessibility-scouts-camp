@@ -22,7 +22,7 @@ Sometimes a keyboard may be the only way a person can use a computer. This has b
 
 <section>
 <div class="container--content" markdown="1">
-Here are few ways to enrich the transcript experience, though:
+### Here are few ways to enrich the transcript experience, though:
 </div>
     <div class="container">
         <div class="box white mt--90 mb--90">
@@ -41,7 +41,7 @@ Here are few ways to enrich the transcript experience, though:
 <div class="container--content" markdown="1">
 ### Scout Review
 
-* Test, test and test your tab order and keyboard support
+* Test, test, and test your tab order and keyboard support
 * Turn your mouse off, leave your track pad alone and see if you can use your site solely with a keyboard
 </div>
 </section>
@@ -56,7 +56,7 @@ Here are few ways to enrich the transcript experience, though:
             </div>
             <div class="col--width__eight">
                 <h3>Way to go! Nice badge scout.</h3>
-                <h4>Great! This is just the beginning in our exploration of color.</h4>
+                <h4>Don't mess with people slappin' the tab key unless you absolutely have to.</h4>
                 {% if not page.isLast %}
                     <span>Previous: </span><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} &raquo;</a>
                 {% endif %}
