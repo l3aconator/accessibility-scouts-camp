@@ -4,8 +4,6 @@ visible: true
 summary: 'Imagine a world without color. It’d be a bit hard to tell the difference between things. Imagine a world were one has trouble differentiating colors. Image a world were you can’t see the same colors as others. These are all real possibilities. We’ll be getting to color blindness and not being able to see at all. But first, let’s discuss color contrast.'
 stats:
     examples: '4'
-    readingTime: '20 minutes'
-    badges: '10'
 twig_first: true
 process:
     twig: true
@@ -17,6 +15,7 @@ process:
 ---
 
 Imagine a world without color. It’d be a bit hard to tell the difference between things. Imagine a world were one has trouble differentiating colors. Image a world were you can’t see the same colors as others. These are all real possibilities. We’ll be getting to color blindness and not being able to see at all. But first, let’s discuss color contrast.
+
 </div>
 </section>
 
@@ -28,7 +27,7 @@ The ARIA spec has two levels of contrast ratios that text on a background should
 
 <section>
 <div class="container--content" markdown="1">
-![ILLUSTRATION](http://placehold.it/450x250)
+![ILLUSTRATION](color-contrast.png)
 </div>
 </section>
 

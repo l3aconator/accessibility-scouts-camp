@@ -3,7 +3,7 @@ title: 'Welcome to manual 212-521…just kidding. Welcome to the all things acce
 menu: Vision
 icon: sight
 heroCover: '/user/pages/02.vision/sight-cover.png'
-heroImg: '/user/pages/02.vision/red-placeholder.png'
+heroImg: '/user/pages/02.vision/sight.png'
 heroImgAlt: 'Illustration'
 content:
     items: @self.children

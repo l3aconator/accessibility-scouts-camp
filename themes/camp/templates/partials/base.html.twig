@@ -36,14 +36,14 @@
 
     {# Load stylesheets #}
     {% block stylesheets %}
-        <!-- build:css -->{% do assets.addCss('theme://dist/styles/css-compiled/styles.css') %}<!-- endbuild -->
+        <!-- build:css -->{% do assets.addCss('theme://dist/styles/css-min/styles.min.css') %}<!-- endbuild -->
     {% endblock %}
     {{ assets.css() }}
 
     {# Load js #}
     {% block javascripts %}
         {% do assets.addJs('jquery', {'priority': 101, 'group':'footer'}) %}
-        <!-- build:js -->{% do assets.addJs('theme://dist/js/js-compiled/scripts.js', {'priority': 101, 'group':'footer'}) %}<!-- endbuild -->
+        <!-- build:js -->{% do assets.addJs('theme://dist/js/js-min/scripts.min.js', {'priority': 101, 'group':'footer'}) %}<!-- endbuild -->
     {% endblock %}
     {{ assets.js('header') }}
 

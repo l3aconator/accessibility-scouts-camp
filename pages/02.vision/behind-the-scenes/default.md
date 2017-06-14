@@ -4,8 +4,6 @@ visible: true
 summary: 'As we draw a close to the end of the sight manual, keep in mind there are some behind the scenes items that users can’t really see—unless they pop open dev tools or are using screen reader technology. Make sure that your images have alt tags. Please for the love of god put alt tags on your images. Guess what? Screen readers READ the alt tags when used. It also provides a fallback when images aren’t loading and it helps with SEO. Do we have your scout’s honor?'
 stats:
     examples: '16'
-    readingTime: '20 minutes'
-    badges: '10'
 twig_first: true
 process:
     twig: true
@@ -18,7 +16,7 @@ process:
 
 Keep in mind there are some behind the scenes items that users can’t really see—unless they pop open dev tools or are using screen reader technology. It may seem a little odd that this fits under the sight category, but ARIA tags aid the semantics see by humans and screen readers.
 
-![ILLUSTRATION](http://placehold.it/450x250)
+![ILLUSTRATION](camp-fire-axe.png)
 
 Make sure that your images have alt tags. Please for the love of god put alt tags on your images. Guess what? Screen readers READ the alt tags when used. It also provides a fallback when images aren’t loading and it helps with SEO. Do we have your scout’s honor?
 </div>

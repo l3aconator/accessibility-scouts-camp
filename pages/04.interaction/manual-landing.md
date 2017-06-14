@@ -3,7 +3,7 @@ title: 'Counselor! They want stop pestering me! Welcome to the interaction manua
 menu: Interaction
 icon: touch
 heroCover: '/user/pages/04.interaction/interaction-cover.png'
-heroImg: '/user/pages/04.interaction/blue-placeholder.png'
+heroImg: '/user/pages/04.interaction/interaction.png'
 heroImgAlt: 'Illustration'
 content:
     items: @self.children

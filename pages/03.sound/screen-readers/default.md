@@ -18,6 +18,8 @@ process:
 
 Wouldn’t it be terrible sitting in the woods at night without a lamp or fire to see anything? Imagine trying to use the Internet without visuals. It would be very hard to use.  Almost next to impossible. There’s a solution though and those are screen readers and tools to accept voice input to control the computer.
 
+![ILLUSTRATION](forest-through-trees.png)
+
 As you’ve seen so far through the sight manual a strong focus on content, image alt tags, and adding the extra aria attributes to our markup. Well guess what?! You’ve already learned about most of the tools to make a site accessible and screen readers happy. In turn that makes your users happy. Get to it! We'll have some examples here shortly, but practicing yourself will make your knowledge grow exponentially.
 </div>
 </section>

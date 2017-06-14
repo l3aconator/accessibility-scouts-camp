@@ -26,6 +26,11 @@
         background-image: url('#{$theme--images}light-noise.png');
     }
 
+    &__orange {
+        background-color: $color--warning;
+        background-image: url('#{$theme--images}light-noise.png');
+    }
+
     &__red {
         background-color: $color--danger;
         background-image: url('#{$theme--images}light-noise.png');
