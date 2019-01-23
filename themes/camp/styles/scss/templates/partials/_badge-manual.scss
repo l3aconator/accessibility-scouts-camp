@@ -1,0 +1,82 @@
+.badge-manual--badge-amount {
+    font-size: $type--size__h6;
+    font-style: italic;
+
+    &__flag {
+        width: 20px;
+    }
+
+    &__red {
+        color: $color--danger;
+    }
+
+    &__green {
+        color: $color--success;
+    }
+}
+
+.rounded-top {
+    border-top-left-radius: $border-radius--default;
+    border-top-right-radius: $border-radius--default;
+}
+
+[data-earned=false] {
+    display: none;
+}
+
+[data-earned=true] {
+    display: block;
+}
+
+.badge-manual--list {
+    padding-left: 0;
+}
+
+.badge-manual--list-item {
+    height: 100%;
+    transition: $transition--default__button;
+    margin-bottom: $padding--huge;
+
+    &:before {
+        display: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: scale(1.025);
+
+        .badge-manual--list-item__content {
+            box-shadow: none;
+        }
+    }
+}
+
+.badge-manual--list-item__content {
+    font-size: .7em;
+    padding: 30px;
+    background-color: white;
+    background-image: url('#{$theme--images}light-noise.png');
+    border-radius: $border-radius--default;
+    box-shadow: $box-shadow--default;
+    transition: $transition--default__button;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .badge-manual--badge-amount {
+        font-size: $type--size__h3;
+
+        &__flag {
+            width: 40px;
+        }
+    }
+
+    .badge-manual--list-item__content {
+        min-height: 698+60px;
+    }
+}

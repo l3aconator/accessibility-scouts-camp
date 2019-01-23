@@ -1,0 +1,46 @@
+body {
+    transition: all 200ms ease-in-out;
+
+    &.night-mode {
+        background-color: $color--primary;
+        color: $color--default;
+        background-image: url('#{$theme--images}dark-noise.png');
+
+        .header,
+        .footer,
+        .section--badge-cta__purple {
+            background-color: darken($color--primary, 3%);
+        }
+
+        .badge-manual--list-item__content,
+        .link--list-item__content {
+            color: $color--primary;
+            box-shadow: 0 4px 11px 0 #0E020D;
+        }
+
+        .link--list-item__content {
+            background-color: darken($color--primary, 3%);
+            background-image: url('#{$theme--images}dark-noise.png');
+        }
+
+        .box {
+            box-shadow: 0 4px 11px 0 #0E020D;
+            background-color: darken($color--primary, 3%);
+
+            h1,
+            .h1,
+            h2,
+            .h2,
+            h3,
+            .h3,
+            h4,
+            .h4,
+            h5,
+            .h5,
+            h6,
+            p {
+                color: $color--default;
+            }
+        }
+    }
+}

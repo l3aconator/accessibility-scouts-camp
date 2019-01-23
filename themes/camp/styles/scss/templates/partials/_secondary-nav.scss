@@ -1,0 +1,106 @@
+.nav--dropdown {
+    display: none;
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .secondary--navigation {
+        position: relative;
+
+        .nav--dropdown {
+            display: block;
+            position: absolute;
+            margin: 0;
+            min-height: 0px;
+            height: 0px;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1000;
+            background-image: url('#{$theme--images}light-noise.png');
+            transition: $transition--default__button;
+            list-style-type: none;
+            box-shadow: 0 4px 11px 0 rgba(0,0,0,0.23);
+
+            .nav--dropdown__margin {
+                margin-left: 44%;
+                margin-right: auto;
+            }
+
+            .nav--sub-item {
+                padding-top: $padding--small;
+                font-family: $heading-font-family;
+                font-weight: bold;
+                transition: $transition--default__button;
+
+                &:last-child {
+                    padding-bottom: $padding--small;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: darken($color--primary, 50%);
+                    transform: scale(1.1);
+                }
+            }
+
+            .nav--wrap {
+                color: $color--primary;
+                text-decoration: underline;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+
+            &.open {
+                min-height: auto;
+                height: 200px;
+            }
+
+            &__sight {
+                background-color: $color--danger;
+
+                &.open {
+                    height: 280px;
+                }
+            }
+
+            &__audio {
+                background-color: $color--info;
+
+                &.open {
+                    height: 150px;
+                }
+            }
+
+            &__touch {
+                background-color: $color--success;
+
+                &.open {
+                    height: 220px;
+                }
+            }
+
+            &__about {
+                background-color: $color--warning;
+
+                &.open {
+                    height: 300px;
+                }
+            }
+
+            &__badge {
+                background-color: $color--default;
+            }
+
+            .nav--sub-item {
+
+            }
+        }
+    }
+
+}

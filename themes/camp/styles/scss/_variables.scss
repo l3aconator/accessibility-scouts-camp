@@ -1,0 +1,84 @@
+// ---- Colors ----
+$theme--images: '../../../images/';
+
+// ---- Colors ----
+$color--gray-lightest: #F6FDFF;
+$color--gray-light: #E7ECEF;
+$color--gray-base: #C7CFDC;
+$color--gray-dark: #777E89;
+$color--gray-darkest: #3B434F;
+
+$color--default: #FDE9DD;
+$color--default__hover: darken($color--default, 10%);
+
+$color--primary: #2E112D;
+$color--primary__hover: darken($color--primary, 10%);
+
+$color--secondary: #00264D;
+$color--secondary__hover: darken($color--secondary, 10%);
+
+$color--success: #019875;
+$color--success__hover: darken($color--success, 10%);
+
+$color--info: #FFA11B;
+$color--info__hover: darken($color--info, 10%);
+
+$color--warning: #FF6C40;
+$color--warning__hover: darken($color--warning, 10%);
+
+$color--danger: #CC0037;
+$color--danger__hover: darken($color--danger, 10%);
+
+// ---- Typography ----
+$base-font-family: 'Noto Serif', serif;
+$heading-font-family: 'CenturyGothicPro-Bold', sans-serif;
+
+$type--size__large: 3.583em;
+$type--size__h1: 2.986em;
+$type--size__h2: 2.488em;
+$type--size__h3: 2.074em;
+$type--size__h4: 1.728em;
+$type--size__h5: 1.44em;
+$type--size__h6: 1.2em;
+$type--size__base: 16px;
+$type--size__small: 0.833em;
+$type--size__smallest: 0.694em;
+$type--paragraph: $type--size__h5;
+
+// ---- Grid ----
+$container: 80%;
+$container--content: 55%;
+$grid--gutter: 30px;
+
+// ---- Nav ----
+$nav--height: 100px;
+$nav--height__hover: 90px;
+
+// ---- Padding ----
+$padding--container: 60px;
+$padding--small: 15px;
+$padding--base: 30px;
+$padding--medium: 45px;
+$padding--large: 60px;
+$padding--huge: 90px;
+
+$padding--button--small__vertical: 10px;
+$padding--button--small__horizontal: 15px;
+$padding--button--base__vertical: 15px;
+$padding--button--base__horizontal: 20px;
+$padding--button--large__vertical: 20px;
+$padding--button--large__horizontal: 25px;
+
+// ---- Radius ----
+$border-radius--default: 15px;
+
+// ---- Breakpoints ----
+$breakpoint--mobile: 480px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 480px;
+
+// ---- Box shadows ----
+$box-shadow--default: 0 4px 11px 0 rgba(192,151,127,0.73);
+
+// ---- Transitions ----
+$transition--default__button: all 200ms ease-in-out;

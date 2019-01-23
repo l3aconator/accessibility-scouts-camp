@@ -1,0 +1,138 @@
+.manual-landing--hero {
+    position: relative;
+    margin-bottom: 5%;
+
+    .manual-landing--hero-cover {
+        position: absolute;
+        top: 24%;
+        right: 14.5%;
+        width: 25%;
+    }
+}
+
+.manual-landing--hero-heading {
+    margin-top: $padding--huge;
+}
+
+.manual-landing--list {
+    margin: 0;
+    padding: 0;
+
+    .manual-landing--list-item {
+
+        &:before {
+            display: none;
+        }
+
+        .manual-landing--list-item-link {
+
+            h4 {
+                display: inline;
+                transition: $transition--default__button;
+                border-radius: 5px;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                padding: 0;
+
+
+                h4 {
+                    padding: 2px 10px;
+                    background-color: $color--success;
+                }
+            }
+        }
+
+        .manual-landing--status {
+
+            .manual-landing--status-list {
+                padding: 0;
+            }
+
+            .manual-landing--status-list-item {
+                font-size: $type--size__small;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                padding-top: $padding--button--base__horizontal;
+                padding-left: $padding--button--base__horizontal;
+                font-weight: bold;
+                font-style: italic;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.badge-collection--image {
+    display: inline;
+    padding: $padding--button--base__horizontal;
+
+    &:first-child {
+        width: 30%;
+    }
+
+    &:nth-child(2) {
+        width: 40%;
+    }
+
+    &:nth-child(3) {
+        width: 55%;
+    }
+
+    &:nth-child(4) {
+        width: 55%;
+    }
+
+    &:nth-child(5) {
+        width: 35%;
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .manual-landing--hero-heading {
+        margin-top: 0;
+    }
+
+    .manual-landing--list {
+
+        .manual-landing--list-item {
+
+            p {
+                font-size: 1em;
+            }
+
+            &:last-child {
+                margin-bottom: $padding--huge;
+            }
+
+            .manual-landing--status {
+
+                .manual-landing--status-list {
+                    padding: 0;
+                }
+
+                .manual-landing--status-list-item {
+                    font-size: $type--size__base;
+                    display: inline-block;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+    .manual-landing--sidebar {
+        margin-top: 40%;
+    }
+}

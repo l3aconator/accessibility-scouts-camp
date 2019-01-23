@@ -1,0 +1,98 @@
+.section--badge-cta {
+    padding-top: $padding--base;
+    padding-bottom: $padding--base;
+
+    span {
+        margin-bottom: $padding--base;
+        font-family: $heading-font-family;
+        font-weight: bold;
+        font-size: $type--size__h6;
+    }
+
+    a {
+        color: $color--primary;
+        font-size: $type--size__h6;
+        margin-right: 10%;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color--default;
+        }
+    }
+
+    &__yellow {
+        background-color: $color--info;
+        background-image: url('#{$theme--images}light-noise.png');
+    }
+
+    &__orange {
+        background-color: $color--warning;
+        background-image: url('#{$theme--images}light-noise.png');
+    }
+
+    &__red {
+        background-color: $color--danger;
+        background-image: url('#{$theme--images}light-noise.png');
+        color: $color--default;
+
+        a {
+            color: $color--default;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $color--primary;
+            }
+        }
+    }
+
+    &__blue {
+        background-color: $color--success;
+        background-image: url('#{$theme--images}light-noise.png');
+        color: $color--default;
+
+        a {
+            color: $color--default;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $color--primary;
+            }
+        }
+    }
+
+    .img--badge {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .section--badge-cta {
+        position: relative;
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            margin-top: $padding--small;
+        }
+
+        .badge--box {
+            position: absolute;
+            top: -60px;
+            max-width: 28%;
+        }
+
+        .img--badge {
+            margin-left: 20%;
+        }
+    }
+}

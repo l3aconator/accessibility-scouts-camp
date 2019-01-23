@@ -1,0 +1,332 @@
+.flex-header {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: $color--primary;
+    background-image: url('#{$theme--images}dark-noise.png');
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    z-index: 100;
+    transition: $transition--default__button;
+}
+
+.header--logo {
+    width: 100%;
+    max-width: 20%;
+    position: absolute;
+    margin-top: $padding--small;
+    z-index: 1001;
+    border-radius: 100%;
+    box-shadow: 0 4px 11px 0 rgba(0,0,0,0.23);
+
+    a {
+
+        &:hover,
+        &:active,
+        &:focus {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+}
+
+.nav {
+    margin-top: 15%;
+    padding-left: 0;
+    margin-bottom: 5%;
+}
+
+.nav--item {
+    display: inline-block;
+    margin-top: 0;
+
+    &:before {
+        content: '';
+        display: none;
+    }
+
+    .nav--wrap {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            padding: 0;
+        }
+    }
+
+    &.active {
+
+        .nav--wrap {
+            color: $color--default;
+            text-decoration: none;
+        }
+    }
+
+    .nav--link {
+        font-family: $heading-font-family;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+        letter-spacing: .1;
+        margin-left: 8px;
+        transition: $transition--default__button;
+    }
+
+    .nav--icon {
+
+        &__sight,
+        &__audio,
+        &__touch,
+        &__about,
+        &__badge {
+            display: none;
+        }
+
+        &__settings {
+            width: 60%;
+            margin-left: 30%;
+        }
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .header--logo {
+        width: 100%;
+        max-width: 175px;
+    }
+
+    .nav {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .nav--wrap {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        &:hover,
+        &:active,
+        &:focus {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+
+    .nav--item {
+        display: inline-block;
+        background-image: url('#{$theme--images}light-noise.png');
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: $border-radius--default;
+        border-top-left-radius: $border-radius--default;
+        text-align: left;
+        height: $nav--height;
+        word-wrap: break-word;
+        transform: translateY(50px);
+        transition: $transition--default__button;
+
+        &:first-child {
+            background-color: darken($color--danger, 15%);
+            box-shadow: inset 0 4px 11px 0 #60021B;
+
+            .nav--link {
+                color: $color--danger;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color--danger;
+                box-shadow: none;
+
+                .nav--link {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            background-color: darken($color--info, 15%);
+
+            .nav--link {
+                color: $color--info;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color--info;
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: darken($color--success, 15%);
+            box-shadow: inset 0 4px 11px 0 #013227;
+
+            .nav--link {
+                color: $color--success;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color--success;
+                box-shadow: none;
+            }
+        }
+
+        &:nth-child(4) {
+            background-color: darken($color--warning, 25%);
+            box-shadow: inset 0 4px 11px 0 #923D24;
+
+            .nav--link {
+                color: $color--warning;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color--warning;
+                box-shadow: none;
+            }
+        }
+
+        &:nth-child(5) {
+            background-color: darken($color--default, 25%);
+            box-shadow: inset 0 4px 11px 0 #A25527;
+
+            .nav--link {
+                color: $color--default;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color--default;
+                box-shadow: none;
+            }
+        }
+
+        &:nth-child(6) {
+            background-color: transparent;
+            width: 2%;
+            margin-left: $padding--button--base__horizontal;
+
+            .nav--link {
+                color: $color--default;
+            }
+        }
+
+        .nav--icon {
+            position: absolute;
+            transition: $transition--default__button;
+            width: 25px;
+            left: 15px;
+            top: 15px;
+
+            &__sight,
+            &__audio,
+            &__touch,
+            &__about,
+            &__badge {
+                display: block;
+            }
+
+            &__sight {
+                fill: $color--danger;
+            }
+
+            &__audio {
+                fill: $color--info;
+                top: 12px;
+            }
+
+            &__touch {
+                fill: $color--success;
+                width: 18px;
+                top: 10px;
+            }
+
+            &__about {
+                fill: $color--warning;
+                width: 18px;
+                top: 10px;
+            }
+
+            &__badge {
+                fill: $color--default;
+                width: 18px;
+                top: 11px;
+            }
+
+            &__settings {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        .nav--link {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+            margin-left: 50px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            transform: translateY(35px);
+
+            .nav--icon {
+                position: absolute;
+
+                &__sight {
+                    fill: $color--primary;
+                }
+
+                &__audio {
+                    fill: $color--primary;
+                }
+
+                &__touch {
+                    fill: $color--primary;
+                }
+
+                &__about {
+                    fill: $color--primary;
+                }
+
+                &__badge {
+                    fill: $color--primary;
+                }
+            }
+
+            .nav--link {
+                font-size: $type--size__smallest;
+                color: $color--primary;
+            }
+        }
+    }
+}

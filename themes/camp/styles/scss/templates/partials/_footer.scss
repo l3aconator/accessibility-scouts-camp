@@ -1,0 +1,32 @@
+.footer {
+    background-color: $color--primary;
+    background-image: url('#{$theme--images}dark-noise.png');
+    color: $color--default;
+    padding: $padding--base;
+    font-family: $heading-font-family;
+    font-weight: bold;
+
+    .footer--link {
+        color: $color--default;
+        font-family: $base-font-family;
+    }
+
+    .copyright {
+        text-transform: uppercase;
+        font-size: $type--size__base;
+        letter-spacing: 0.1em;
+    }
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    .footer {
+
+        .col--custom__footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+}

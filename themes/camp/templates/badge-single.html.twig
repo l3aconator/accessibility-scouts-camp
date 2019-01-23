@@ -1,0 +1,10 @@
+{% extends 'default.html.twig' %}
+
+{% block content %}
+<section>
+    <div class="container--content section--marg">
+        <img class="img--badge badge-single--image" src="{{ (page.media.images|first).url }}" alt="This is an image of the {{ page.title }}" />
+        {{ page.content }}
+    </div>
+</section>
+{% endblock %}

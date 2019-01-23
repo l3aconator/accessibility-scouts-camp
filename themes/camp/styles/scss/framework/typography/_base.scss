@@ -1,0 +1,31 @@
+body {
+    font-family: $base-font-family;
+    line-height: 1.5;
+}
+
+pre {
+    white-space: normal;
+    font-size: $type--paragraph;
+}
+
+// -- DESKTOP QUERY --
+@media only screen and (min-width: $breakpoint--tablet) {
+
+    ul {
+        font-size: $type--paragraph;
+
+        li {
+
+            ul {
+
+                li {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: $type--paragraph;
+    }
+}

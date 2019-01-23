@@ -1,0 +1,51 @@
+.notices,
+.box {
+    border-radius: $border-radius--default;
+    padding: $padding--base;
+
+    h4 {
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &.blue,
+    &.yellow,
+    &.purple,
+    &.white {
+        background-color: white;
+        box-shadow: $box-shadow--default;
+        transition: $transition--default__button;
+
+        &:hover,
+        &:active,
+        &:focus {
+            transform: scale(1.025);
+            box-shadow: none;
+        }
+    }
+
+    &.white {
+        background-color: white;
+    }
+
+    &.stripe {
+        background-image: url('#{$theme--images}multi-stripe.png');
+        background-repeat: no-repeat;
+    }
+
+    &.blue {
+        color: $color--success;
+        border-color: $color--success;
+    }
+
+    &.yellow {
+        color: $color--info;
+        border-color: $color--info;
+    }
+
+    &.purple {
+        color: $color--primary;
+        border-color: $color--primary;
+    }
+}
